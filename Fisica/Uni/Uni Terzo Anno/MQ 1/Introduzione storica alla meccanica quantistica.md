@@ -11,12 +11,16 @@ source:
 
 > [!info] Contesto
 > Corso: Meccanica Quantistica 1
-> Argomenti previsti: Introduzione storica alla meccanica quantistica
+> Argomenti previsti: Introduzione storica alla meccanica quantistica, corpo nero, effetto fotoelettrico, effeto compton, primi modelli atomici
 
 ## Riassunto veloce
 
-.
-
+.In questa prima parte diamo un'introduzione storica alla meccanica quantistica, contestualizzandone la nascita.
+Per farlo studiamo una serie di osservazioni sperimentali e problemi inspiegabili classicamente e vediamo come si risolvono attraverso la quantizzazione. In particolare guardiamo allo studio della radiazione del corpo nero e le leggi che erano state formulate per spiegarla:
+Stephan-Boltzmann -> Wien -> Rydberg-Wien -> Planck.
+Subito dopo abbiamo analizzato l'effetto fotoelettrico e la soluzione proposta da Einstein, che abbandona l'assolutezza delle equazioni di Maxwell.
+Abbiamo poi visto l'effetto Compton e come questo venga risolto andando a quantizzare la luce in pacchetti di onde che chiamiamo fotoni e che trattiamo come particelle prive di massa.
+Infine siamo andati a studiare il ramo della spettroscopia degli atomi vedendo la nascita dei primi modelli atomici. Per primo il modello a panettone di Thomson, confutato da Rutherford che scopre che la materia è prevalentemente vuota e poi il modello planetario di Bohr che risolve il problema della decaduta dell'$e^-$ andando a "bloccarlo" su orbite privilegiate, di energia quantizzata, sulle quali l'elettrone non emette radiazione.
 ## Appunti
 
 Lo sviluppo della meccanica quantistica inizia nel '900, secolo in cui avvengono due rivoluzioni scientifiche:
@@ -104,20 +108,23 @@ cioè una costante con le dimensioni dell'azione
 
 #### Legge di Rayleigh-Jeans
 
-L'idea adesso è di ricavare la densità $\rho(\nu,T)$ da principi primi.
+L'idea adesso è di ricavare la densità $\rho(\nu,T)$ contenuta tra $\nu \text{ e }\nu+d\nu$ da principi primi.
 Partiamo dalla seguente ipotesi:
-- il corpo nero è una cavità piena di onde stazionarie da cui emerge la densità di energia $\rho$, che possiamo trovare considerazioni di natura meccanico-statistica
+- il corpo nero è una cavità in equilibrio termico con le pareti. Per il principio di sovrapposizione che emerge dalla linearità di Maxwell, ad ogni istante, posso vedere la radiazione interna come una sovrapposizione di onde stazionarie indipendenti, ciascuna con un modo di oscillazione diverso dalle altre. La densità di energia può dunque essere riscritta come: 
 $$
 	\rho(\nu,T) d\nu=n(\nu)d\nu \bar{E}(\nu,T)
 $$
-dove $n(\nu)$ è la densità volumica dei modi di oscillazione delle onde stazionarie e $\bar{E}(\nu,T)$ è l'energia media trasportata da un'onda stazionaria di frequenza $\nu$ a temperatura $T$.
-(Ogni modo di oscillazione rappresenta un microstato, di cui vado a calcolare l'enrgia media).
+dove $n(\nu)$ è la densità volumica di modi di oscillazione delle onde stazionarie (che equivale al numero di onde stazionarie visto che oscillano tutte con modi diversi) e  $\bar{E}(\nu,T)$ è l'energia media trasportata da un'onda stazionaria di frequenza $\nu$ a temperatura $T$ (cioè l'energia media associata ad ogni modo di oscillazione).
 Il calcolo di $n(\nu)$ ha natura puramente geometrica.
+
 Partiamo dall'analisi dimensionale:
-Sia $N(\nu)$ il numero di modi di oscillazione di frequenza $\nu$ nel volume $V \equiv L^3$. Dunque $[N(\nu)d\nu]=1$, numero puro e necessariamente proporzionale a $L^3$.
+
+Sia $N(\nu)$ il numero di modi di oscillazione di frequenza $\nu$ nel volume $V \equiv L^3$. 
+Dunque $[N(\nu)d\nu]=1\text{,}$ numero puro e necessariamente proporzionale a $L^3$.
 L'unica forma possibile per $N(\nu)$ è $N(\nu) \propto L^3 \frac{\nu^2d\nu}{c^3}$.
 Dunque $n(\nu)d\nu=\frac{1}{V} N(\nu)d\nu \propto \frac{\nu^2}{c^3}d\nu$.
-Occupiamoci del calcolo della costante di probabilità. Considero una regione cubica del forno, la cui dimensione sia trascurabile rispetto al forno e tale che $L\gg \lambda$.
+
+Occupiamoci del calcolo della costante di proporzionalità. Considero una regione cubica del forno, la cui dimensione sia trascurabile rispetto al forno e tale che $L\gg \lambda$.
 
 - Caso **1-D**
 ________________________________________________________________________
@@ -163,21 +170,24 @@ $$
 $$
 In particolare poichè $n_{1},n_{2},n_{3}>0$, stiamo descrivendo un ottante di sfera.
 Quest'equazione mi va a descrivere una variazione continua dei 3 indici, cioè tutti i modi di oscillazione compatibili.
-Sappiamo tuttavia che le uniche combinazioni di indici che ci interessano sono quelle in cui $n_{1},n_{2},n_{3}$ assumono tutti valori interi. Su un ottante di sfera questo' succede poco o mai.
-Consideriamo dunque una corona circolare (sferica) di spessore infinitesimo. A causa della differenza di scala tra $\lambda$ e $L$ avrò che questa corona sarà piena dei punti a coordinate intere.
+Sappiamo tuttavia che le uniche combinazioni di indici che ci interessano sono quelle in cui $n_{1},n_{2},n_{3}$ assumono tutti valori interi (tutti i modi con indici a valori non interi si eliminano a vicenda per interferenza distruttiva). 
+Su un ottante di sfera questo' succede poco o mai.
+Consideriamo dunque una corona sferica di spessore infinitesimo. A causa della differenza di scala tra $\lambda$ e $L$ avrò che questa corona sarà piena dei punti a coordinate intere.
 ![[Pasted image 20260922114430.png|]]
 Alla fine, avrò che il numero di modi di oscillazione compatibili con la lunghezza $L$ di frequenza compresa tra $\nu$ e $\nu+d\nu$ è il numero di punti a coordinate intere che cadono nell'ottante positivo della corona sferica di $r=\frac{2\nu L}{c}$ e spessore $dr=\frac{2L}{c} d\nu$.
-A causa della differenza di scale tra $\lambda$ e $L$ possiamo trascurare effetti di bordo e questa quantità sarà pari al volume della corona sferica.
+A causa della differenza di scale tra $\lambda$ e $L$ possiamo trascurare gli effetti di bordo e questa quantità sarà pari al volume della corona sferica.
 $$
 	N(\nu)d\nu=\frac{1}{8}4\pi\left( \frac{2\nu L}{c} \right)^2 \frac{2L}{c}d\nu =\frac{4\pi \nu^2}{c^3}L^3d\nu
 $$
-considerando che ogni onda stazionaria è un'onda elettromagnetica composta che ammette due polarizzazioni tra loro indipendenti, dobbiamo raddoppiare i modi di oscillazione e otteniamo:
+considerando che ogni onda stazionaria è un'onda elettromagnetica che ammette due polarizzazioni tra loro indipendenti (elettrica e magnetica), dobbiamo raddoppiare i modi di oscillazione e otteniamo:
 $$
 	\begin{aligned}
 	N(\nu)d\nu&=\frac{8\pi \nu^2}{c^3}L^3 d\nu \\
 	\Rightarrow n(\nu)d\nu&=\frac{8\pi \nu^2}{c^3}d\nu
 	\end{aligned}
 $$
+E abbiamo ottenuto la densità volumica delle onde stazionarie.
+
 Occupiamoci ora di trovare $\bar{E}(\nu,T)$. Da qua emergeranno tutti i problemi del caso.
 - Dal teorema di equipartizione sappiamo che $<K> = \frac{1}{2}k_{B}T$
 - Dal teorema del viriale sappiamo che $<K> = <V>$
@@ -272,8 +282,208 @@ I primi 2 effetti sono ragionevoli anche da un punto di vista classico, gli altr
 - c'è emissione solo se $h\nu-V_{0}>0$, allora la frequenza $\nu_{0}=\frac{V_{0}}{h}$ non dipende dall'intensità.
 - l'energia cinetica massima è data $K_{max}=h\nu-V_{0}$ . Elettroni energeticamente più alti sono pressochè impossibili e prevedono che lo stesso elettrone venga colpito consecutivamente da più di un fotone.
 
+#### Effetto Compton
+
+L'effetto Compton descrive il processo d'urto tra un $e^-$ e della radiazione elettromagnetica (raggi x). Anche in questo caso sorgono dei problemi nella descrizione classica del fenomeno ed è necessario andare ad introdurre una quantizzazione.
+
+![[Pasted image 20260924141007.png]]
+
+Per risolvere il problema classicamente, vado a risolvere le equazioni di Maxwell con opportune condizioni al contorno. Così facendo trovo che $\lambda$ della radiazione non cambia dopo l'urto ed è indipendente dall'angolo $\theta$. Tuttavia entrambe queste affermazioni sono in disaccordo con i risultati sperimentali.
+
+Introduciamo dunque la quantizzazione e immaginiamo l'onda come se fosse fatta di tanti pacchetti (quantizzati) dotati di un'energia e un impulso (i fotoni).
+Adesso modelliamo l'urto come un urto tra particelle relativistiche.
+
+![[Pasted image 20260924141326.png]]
+
+scriviamo il quadrimpulso delle particelle:
+$$p^\mu=\left( \frac{E}{c}, \vec{p} \right)$$.
+Sappiamo che l'energia del fotone è $E_{\gamma}=h\nu$ e la sua massa è $m_{\gamma}=0$. Applicando mass-shell si trova:
+$$
+	(h\nu)^2=|\vec{p}|^2 c^2 \Rightarrow |\vec{p}|=\frac{h\nu}{c}=\frac{h}{\lambda}
+$$
+cioè anche l'impulso del fotone è quantizzato.
+Per l'elettrone ho invece:
+$$
+	E_{e}=\sqrt{ |p_{e}|^2c^2+m_{e}^2c^2 }
+$$
+Studiamo l'urto imponendo la conservazione del quadrimpulso:
+$$
+	\begin{cases}
+	E_{\gamma}+E_{e}= E'_{\gamma}+E'_{e} \\ \\
+	\vec{p}_{\gamma}+\vec{p}_{e}=\vec{p}'_{\gamma}+\vec{p}'_{e}
+	\end{cases}
+$$
+scelgo il sistema a targhetta fissa in cui l'elettrone è a riposo.
+$$
+	\begin{cases}
+	E_{\gamma}+m_{e}c^2=E_{\gamma}'+E_{e}' \\
+	\vec{p}_{\gamma}=\vec{p}'_{\gamma}+\vec{p}'_{e}
+	\end{cases}
+$$
+$$
+\begin{aligned}
+	E_{\gamma}-E'_{\gamma}+m_{e}c^2&=E_{e}' = \sqrt{ m_{e}^2c^4+|\vec{p}_{e}|^2 c^2 }=\sqrt{ m_{e}c^4+|\vec{p}_{\gamma}-\vec{p}_{\gamma}'|^2c^2 } \\
+	&=\sqrt{ m_{e}^2 c^4+|\vec{p}_{\gamma}|^2 c^2+|\vec{p}'_{\gamma}|c^2-2|\vec{p}_{\gamma}||\vec{p}_{\gamma}'|\cos^2\theta c^2 }\\
+	&=\sqrt{ m_{e}^2c^2 +E_{\gamma}^2+E'^2_{\gamma}-2E_{\gamma}E'_{\gamma}\cos \theta c^2}
+\end{aligned}
+$$
+elevo tutto al quadrato:
+$$
+	(E_{\gamma}+E'_{\gamma}+m_{e}c^2)^2= m_{e}^2c^2 +E_{\gamma}^2+E'^2_{\gamma}-2E_{\gamma}E'_{\gamma}\cos \theta c^2
+$$
+andando a sviluppare il quadrato a sinistra e semplificando otteniamo:
+$$
+	m_{e}c^2(E_{\gamma}-E_{\gamma}')-E_{\gamma}E'_{\gamma}=-E_{\gamma}E_{\gamma}'\cos \theta
+$$
+andando a sostituire $E=h\nu$:
+$$
+	\begin{aligned}
+	m_{e}c^2\left( \frac{hc}{\lambda}-\frac{hc}{\lambda'} \right)-\frac{h^2c^2}{\lambda \lambda'}&=-\frac{h^2c^2}{\lambda \lambda'}\cos \theta \\
+	\Rightarrow \lambda'-\lambda&=\frac{h}{m_{e}c}(1-\cos \theta)
+	\end{aligned}
+$$
+Abbiamo ottenuto la formula dell'effetto Compton, che contraddice totalmente i calcoli classici in quanto $\lambda'$ non solo differisce da $\lambda$ ma varia anche con $\theta$.
+
+Questa formula ci permette anche di introdurre la lunghezza d'onda Compton (dell'elettrone):
+$$
+	\lambda_{c}=\frac{h}{m_{e}c}
+$$
+che equivale alla lunghezza d'onda di un fotone che ha come energia l'energia a riposo dell'$e^-$.
+Analogamente posso definire la lunghezza d'onda Compton di varie particelle differenti.
+
+#### Spettroscopia e modelli atomici.
+
+Ancora una volta partiamo da osservazioni sperimentali difficili da spiegare con la fisica classica, in particolare osserviamo che:
+- una scarica elettrica in un gas produce radiazione elettromagnetica con uno **spettro discreto**, lo spettro di emissione
+- un gas illuminato da una luce generica assorbe luce solo alle stesse lunghezze d'onda del proprio spettro di emissione.
+![[Pasted image 20260924143813.png]]
+
+Con esperimenti più precisi si arriva ad osservare che ogni riga è in realtà un multipletto di righe molto fitte, questo porterà allo studio della struttura fine dell'atomo.
+Comparando i pattern di emissione di varie sostanze diverse emerge un pattern, descritto dalla formula di Rydberg:
+$$
+	\frac{1}{\lambda}=R\left( \frac{1}{n_{1}^2}-\frac{1}{n_{2}^2} \right) \text{ con } n_{2}>n_{1} \in\mathbb{N}
+$$
+$R$ si dice costante di Rydberg. Fissando $n_{1}$ e variando gli altri numeri posso studiare la distanza tra le righe, ottengo così serie che prendono nomi diversi:
+- $n_{1}=1, \, n_{2}=2,3,\dots$ prende il nome di Serie di Lyman
+- $n_{1}=2, \, n_{2}=3,4,\dots$ prende il nome di Serie di Balmer
+- $n_{1}=3, \, n_{2}=4,5,\dots$ prende il nome di Serie di Ritz
+Tuttavia non si riesce a spiegare l'origine di questa formula, pertanto nasce la necessità (intorno agli anni '10 del 1900) di studiare dei modelli atomici coerenti che spieghino questa formula.
+Come il corpo nero, questo problema affronta l'interazione tra materia e radiazione.
+
+Con la scoperta dell'elettrone (Thomson), si scopre che l'atomo si può "rompere".
+L'elettrone è carico negativamente ma sappiamo che la materia è neutra dunque l'atomo dev'essere in parte carico positivamente e contenere degli elettroni.
+Per questa ragione Thomson formula il modello "plum-pudding" ipotizzando l'atomo come una sfera carica piena, di densità di carica positiva contenente elettroni "incastrati". All'epoca questo è l'unico modello plausibile, infatti le equazioni di Maxwell escludono il modello planetario, l'elettrone emettendo radiazioni perderebbe energia, cadendo nel nucleo in $10^{-11} s$.
+
+![[Pasted image 20260924150440.png|700]]
+
+Nel 1911 Rutherford elabora un esperimento per verificare il modello di Thomson.
+Una lastra d'oro viene bombardata di particelle $\alpha$, cariche positivamente e si studiano le deviazioni di questa particella su di un rivelatore. Ci si aspetta molte piccole deviazioni ma ciò che si osserva sono poche deviazioni di entità molto elevata. Questo porta alla riemersa del modello planetario.
+![[Pasted image 20260924150706.png]]
+
+Rutherford riesce anche a calcolare la densità di carica del nucleo positivo, $\rho_{nucleo} \sim 10^{11} kg/cm^3$,  quindi il nucleo è estremamente concentrato. 
+$$
+	\frac{r_{atomo}}{r_{nucleo}}\sim 10^5
+$$
+Dunque la materia è prevalentemente vuota.
+Resta però aperto il problema legato al collasso dell'elettrone nel nucleo.
+
+Nel 1913 Bohr propone una soluzione tramite le seguenti ipotesi:
+- $\exists$ "stati stazionari", orbite privilegiate alle quali gli $e^-$ sono vincolati e dalle quali **NON irradiano**. La radiazione viene emessa/assorbita soltanto al passaggio da un'orbita all'altra.
+- 
+Bohr fornisce anche una regola di selezione per queste orbite.
+Imponiamo che l'integrale di linea del moto dell'elettrone sulle orbite periodiche sia quantizzato. Questo integrale ha dimensioni di un'azione e ci porta all'introduzione del *quanto d'azione*.
+$$
+	\oint p_{i}dq_{i} = n_{i}h
+$$
+Studiamo il caso semplificato di orbite circolari. D'ora in poi useremo sempre unità Gaussiane.
+
+![[Pasted image 20260924151513.png]]
+
+Il potenziale coulombiano è: $-Z \frac{e^2}{r}$
+$$
+	\begin{aligned}
+	|\vec{v}|&=\text{cost}\\
+	|\vec{r}|&=\text{cost}=r \\
+	dq&=r d\phi\\
+	\oint pdq &=2\pi pr=2\pi mvr=2\pi L_{z}
+	\end{aligned}
+$$
+cioè:
+$$
+	L_{z}=\frac{n_{i}}{2\pi} h=n_{i}\hbar
+$$
+Cioè il momento angolare è quantizzato.
+
+**Oss:** il momento angolare è quantizzato in una sola componente (che dipende dalla mia scelta di assi) e questo diventa problematico quando vado a ruotare il mio sistema è il momento totale va ad ammettere anche altre componenti non quantizzate. Vedremo poi che significato ha questo.
+
+Studiamo ora l'energia di queste orbite.
+$$
+	E\to E_{n} = \frac{1}{2}mv_{n}^2-\frac{Ze^2}{n}
+$$
+Per il secondo princio della dinamica, essendo l'accelerazione solo centripeta, la forza elettrostatica agente sulla particella è centripeta:
+$$
+	\frac{mv^2_{n}}{r_{n}}=\frac{Ze^2}{r_{n}^2}
+$$
+dunque:
+$$
+	\begin{aligned}
+	mv^2_{n}=\frac{Ze^2}{r_{n}} \quad \Rightarrow E_{n} = -\frac{1}{2} \frac{Ze^2}{r_{n}}
+	\end{aligned}
+$$
+Riprendiamo il quanto d'azione:
+$$
+	mv_{n}r_{n}=n\hbar \quad \Rightarrow v_{n}=\frac{n\hbar}{mr_{n}}
+$$
+da cui:
+$$
+	m \frac{n^2\hbar^2}{m^2 r_{n}^2}=\frac{Ze^2}{r_{n}} \to r_{n}=\frac{\hbar^2}{mZe^2}n^2
+$$
+e:
+___
+$$
+	E_{n}=-\frac{1}{2} \frac{mZ^2e^4}{2\hbar^2} \frac{1}{n^2}
+$$
+___
+
+Questa formula per trovare i livelli energetici degli orbitali "privilegiati" è esatta e verrà ristrovata dall'equazione di Schrödinger.
+Inoltre ritrova efficacemente la formula di Rydberg andando a fare:
+$$
+	\nu_{n_{1}n_{2}}=\frac{c}{\lambda_{n_{1}n_{2}}}=\frac{E_{n_{1}}-E_{n_{2}}}{h}
+$$
+Così facendo Bohr predice anche efficacemente il valore della costante di Rydberg dell'idrogeno:
+$$
+	R_{H}=\frac{me^4}{4\pi \hbar^3 c}
+$$
+
+#### Notazioni utili allo sviluppo della teoria
+
+Introduciamo ora alcune notazioni che torneranno utili nello sviluppo della teoria.
+
+- Raggio di Bohr: $$r_{1}=a_{0}=\frac{\hbar^2}{me^2}\simeq 0,053\,nm$$
+- Costante di struttura fine (adimensionale, qua sotto espressa in unità Gaussiane): 
+$$
+	\alpha=\frac{e^2}{\hbar c}\simeq \frac{1}{137}
+$$
+- Lunghezza d'onda compton dell'elettrone: $$\lambda_{c}=\frac{h}{m_{e}c}\simeq 2.4\cdot 10^{-12}m$$
+- Equivalente energetico della massa dell'elettrone: $m_{e}c^2\simeq 0.511 \, MeV$
+- Raggio, ed energia dell'n-simo orbitale:
+$$
+	\begin{aligned}
+	r_{n}&=a_{0}n^2 \\
+	E_{n}&=-\frac{e^2}{2a_{0}} \frac{1}{n^2} \\
+	E_{1}&=-\frac{e^2}{2a_{0}}=-\frac{me^4}{2\hbar^2}=-\frac{\alpha^2}{2} mc^2\simeq -13.6 \, eV
+	\end{aligned}
+$$
+- Costante di Rydberg: 
+$$R=\frac{\alpha}{4\pi a_{0}}$$
+
 ## Domande per revisione
-- [ ] 
+- [ ] Quali sono i tentativi classici di soluzione al problema della radiazione del corpo nero?
+- [ ] Quali sono i problemi della legge di Wien e di quella di Rayleigh-Jeans? Come risolve il problema Planck?
+- [ ] Come posso applicare l'ipotesi di Planck all'effetto fotoelettrico?
+- [ ] Come posso applicare la stessa ipotesi all'effetto Compton?
+- [ ] Come Bohr riesce a spiegare gli spettri di emissione dell'idrogeno e la formula di Rydberg?
+- [ ] Quanto valgono il raggio di Bohr, la costante di struttura fine, l'equivalente energetico della massa dell'elettrone e l'energia del primo orbitale dell'idrogeno?
 ## Collegamenti
 - Lezione precedente: [[]]
 - Concetti collegati: [[]]

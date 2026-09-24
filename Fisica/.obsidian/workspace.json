@@ -20,8 +20,23 @@
               "icon": "lucide-file",
               "title": "Lezioni \"turistiche\""
             }
+          },
+          {
+            "id": "431064cdeafb4311",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Uni/Uni Terzo Anno/MQ 1/Introduzione storica alla meccanica quantistica.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Introduzione storica alla meccanica quantistica"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -187,33 +202,35 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "9859942fb4a516da",
+  "active": "431064cdeafb4311",
   "lastOpenFiles": [
+    "Pasted image 20260924151513.png",
+    "Pasted image 20260924150706.png",
+    "Pasted image 20260924150440.png",
+    "Pasted image 20260924143813.png",
+    "Pasted image 20260924141326.png",
+    "Pasted image 20260924141007.png",
+    "Uni/Uni Terzo Anno/Metodi 2/Mappe conformi e Continuazione Analitica.md",
+    "Uni/Uni Terzo Anno/MQ 1/Introduzione storica alla meccanica quantistica.md",
+    "Uni/Uni Terzo Anno/GAL 2/Curve e superfici nello spazio.md",
+    "immagini/Immagini GAL2/Curve e Superfici",
+    "immagini/Immagini GAL2",
+    "immagini/Immagini GAL2/Curve e Superfici/Pasted image 20260924092431.png",
+    "immagini/Immagini GAL2/Curve e Superfici/Pasted image 20260924085226.png",
+    "Uni/Uni Terzo Anno/GAL 2",
     "immagini/immagini_mq1/Lezioni Turistiche/Pasted image 20260922113034.png",
-    "Uni/Uni Terzo Anno/MQ 1/Lezioni \"turistiche\".md",
     "immagini/immagini_mq1/Lezioni Turistiche/Pasted image 20260922121459.png",
     "Self study/Meccanica statistica (delle particelle)/Ripasso di Termodinamica/Termodinamica (lezione 2).md",
     "immagini/Campi Classici",
-    "Untitled.md",
     "immagini/Meccanica Stat",
     "immagini/immagini_mq1/Lezioni Turistiche/Pasted image 20260922114430.png",
     "Uni/Uni Terzo Anno/MQ 1/Untitled.md",
-    "immagini/immagini_mq1/Lezioni Turistiche/corpo-nero.png",
     "immagini/immagini_mq1/Lezioni Turistiche",
-    "immagini/immagini_mq1/Lezioni Turistiche/lezione1_1.png",
-    "Uni/Uni Terzo Anno/Metodi 2/Lezione 1.md",
     "immagini/immagini_mq1",
     "Uni/Uni Terzo Anno/MQ 1",
     "Templates/template-lezione.md",
-    "immagini/Meccanica Stat/Temp_Termo.png",
-    "immagini/Immagini_metodi_2/Metodi2_1_4.png",
-    "immagini/Immagini_metodi_2/Metodi2_1_3.png",
-    "immagini/Immagini_metodi_2/Metodi2_1_6.png",
-    "immagini/Immagini_metodi_2/Metodi2_1_5.png",
     "immagini/Immagini_metodi_2",
     "Uni/Uni Terzo Anno/Metodi 2",
-    "Uni/Uni Terzo Anno",
-    "Uni",
     "Self study/Campi classici/a) Generalità delle teorie di campo/Quantità conservate in teorie di campo.md",
     "Self study/Campi classici/a) Generalità delle teorie di campo/Formulazione di una teoria di campo (classica) col formalismo lagrangiano.md",
     "Self study/Meccanica statistica (delle particelle)/Ripasso di Termodinamica/Termodinamica (lezione 1).md",
@@ -221,7 +238,6 @@
     "Self study/Campi classici/c) Teorie di Gauge/Simmetrie e teorie di Gauge.md",
     "Self study/Campi classici/c) Teorie di Gauge/Untitled.md",
     "Self study/Campi classici/Untitled.md",
-    "Self study/Campi classici/c) Teorie di Gauge",
     "2026-07-30.md",
     "ottenuta troviamo.md",
     "null.md",
