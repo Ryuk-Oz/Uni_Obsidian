@@ -41,7 +41,7 @@ Prima del '900 avevamo fondamentalmente 2 teorie della fisica classica che copri
 Queste teorie funzionano così bene che nel 1894 Albert Michelson afferma che tutte le leggi fisiche importanti siano già state scoperte e che la materia possa spostarsi solo verso i calcoli di precisione da ora in avanti, e nel 1900 Lord Kelvin afferma che gli unici problemi rimasti fossero il teorema di equipartizione e quello del moto dei corpi attraverso l'etere. 
 Entrambi saranno smentiti da una serie di esperimenti che avverranno a cavallo di quegli anni.
 
-#### Radiazione del corpo nero
+#### 1. Radiazione del corpo nero
 
 Partiamo da un fatto empirico, scaldando un corpo questo cambia colore (passando dall'infrarosso all'ultravioletto, cioè aumentando la propria frequenza).
 Dunque la materia emette radiazione.
@@ -268,7 +268,7 @@ $$
 
 Per un po' si era convinti che questa quantizzazione provenisse dalla proprietà della materia che emetteva la radiazione, finchè nel 1905 Einstein non spiegò l'effetto fotoelettrico tramite l'ipotesi che la quantizzazione fosse propria delle radiazioni elettromagnetiche.
 
-### Effetto Fotoelettrico
+### 2. Effetto Fotoelettrico
 
 L'effetto fotoelettrico è un esperimento in cui una lastra di metallo viene colpita da un fascio di luce monocromatica e si osservano i seguenti effetti:
 1. la lastra **può** emettere $e^-$
@@ -282,7 +282,7 @@ I primi 2 effetti sono ragionevoli anche da un punto di vista classico, gli altr
 - c'è emissione solo se $h\nu-V_{0}>0$, allora la frequenza $\nu_{0}=\frac{V_{0}}{h}$ non dipende dall'intensità.
 - l'energia cinetica massima è data $K_{max}=h\nu-V_{0}$ . Elettroni energeticamente più alti sono pressochè impossibili e prevedono che lo stesso elettrone venga colpito consecutivamente da più di un fotone.
 
-#### Effetto Compton
+#### 3. Effetto Compton
 
 L'effetto Compton descrive il processo d'urto tra un $e^-$ e della radiazione elettromagnetica (raggi x). Anche in questo caso sorgono dei problemi nella descrizione classica del fenomeno ed è necessario andare ad introdurre una quantizzazione.
 
@@ -351,7 +351,7 @@ $$
 che equivale alla lunghezza d'onda di un fotone che ha come energia l'energia a riposo dell'$e^-$.
 Analogamente posso definire la lunghezza d'onda Compton di varie particelle differenti.
 
-#### Spettroscopia e modelli atomici.
+#### 4. Spettroscopia e modelli atomici.
 
 Ancora una volta partiamo da osservazioni sperimentali difficili da spiegare con la fisica classica, in particolare osserviamo che:
 - una scarica elettrica in un gas produce radiazione elettromagnetica con uno **spettro discreto**, lo spettro di emissione
@@ -455,7 +455,7 @@ $$
 	R_{H}=\frac{me^4}{4\pi \hbar^3 c}
 $$
 
-#### Notazioni utili allo sviluppo della teoria
+#### Notazioni e numeri utili
 
 Introduciamo ora alcune notazioni che torneranno utili nello sviluppo della teoria.
 
@@ -474,9 +474,151 @@ $$
 	E_{1}&=-\frac{e^2}{2a_{0}}=-\frac{me^4}{2\hbar^2}=-\frac{\alpha^2}{2} mc^2\simeq -13.6 \, eV
 	\end{aligned}
 $$
-- Costante di Rydberg: 
-$$R=\frac{\alpha}{4\pi a_{0}}$$
+- Costante di Rydberg dell'idrogeno: 
+$$R_{H}=\frac{\alpha}{4\pi a_{0}}$$
 
+Vediamo adesso la verifica sperimentale della quantizzazione del momento angolare.
+
+#### 5. Esperimento di Stern-Gerlach (1922)
+
+L'obiettivo è quello di andare a verificare sperimentalmente la quantizzazione del momento angolare. Per farlo, si utilizzano degli atomi neutri (Ag) che vengono fatti deviare da un campo magnetico, per via del momento magnetico degli atomi.
+
+![[Pasted image 20260927231221.png]]
+
+$$
+	\begin{aligned}
+	U &= - \vec{\mu}\cdot \vec{B} \\
+	\Rightarrow F_{z} &= \mu_{z}\frac{ \partial B_{z} }{ \partial z } \\ 
+	\end{aligned}
+$$
+da cui otteniamo, ricodando la relazione che avevamo ottenuto nell'atomo di Bohr:
+$$
+	\vec{\mu}\propto \vec{L}
+$$
+Classicamente mi aspetto che la direzione di $\vec{\mu}$ sia casuale e sullo schermo compaia una distribuzione simile a un $\cos x$, invece ottengo una serie di picchi isolati ed equidistanti (nel caso dell'argento ho 2 picchi).
+
+![[Pasted image 20260927231654.png]]
+
+Come vado ad interpretare questi risultati sperimentali?
+- Ho la conferma che $L_{z}$ sia quantizzato, inoltre ruotando l'apparato sperimentale ottengo gli stessi risultati sulle proiezioni di $L$, da cui capisco che l'invarianza per rotazione è conservata.
+- Dall'invarianza per rotazione capisco che $\vec{L}$ non può essere un vettore nel senso classico del termine
+Infine, mettendo più apparati in serie, si osserva qualcosa di incredibilmente interessante. Se divido il fascio in 2 in una direzione, poi scelgo uno dei due fasci e lo faccio passare per 2 magneti ruotati dividendo nuovamente il fascio in 2, ed infine, ne scelgo nuovamente uno e lo faccio passare per altri magneti orientati nel modo originale, vado ad osservare nuovamente una separazione del fascio. Questo significa che la seconda misura ha "distrutto" la vecchia misura del momento angolare.
+
+Vedremo poi che questo esperimento non stava davvero misurando il momento angolare, bensì lo spin dell'atomo.
+
+#### Ipotesi di De Broglie, dualismo onda-particella (~1924)
+
+Nel 1924, viene proposta una nuova ipotesi rivoluzionaria per chiarire ulteriormente il modello di Bohr.
+Sappiamo che per la luce vale:
+$$
+	pc =E=h\nu=\hbar \omega \Rightarrow p=\frac{h}{\lambda}=\hbar k
+$$
+per particelle di materia non relativistiche sappiamo invece che:
+$$
+	p=mv
+$$
+immaginiamo adesso di poter adattare quello che vale per la luce anche ad altre particelle di materia (questa è l'ipotesi di de Broglie):
+$$
+	p=mv=\frac{h}{\lambda}
+$$
+sotto l'ipotesi di Bohr sappiamo che:
+$$
+	2\pi L_{z}=2\pi mvr=p\mathcal{L}=\frac{h}{\lambda}\mathcal{L}=nh
+$$
+dove $\mathcal{L}$ è la lunghezza dell'orbita.
+Così otteniamo:
+$$
+	\mathcal{L}=n\lambda
+$$
+Applicandolo all'elettrone, questo significa che all'$e^{-}$ associamo un'onda le cui orbite stazionarie sono quelle in cui l'onda che gli abbiamo associato è stazionaria. Laddove questa condizione fallisse, ho un fenomeno di autointerferenza distruttiva e l'orbita sarebbe instabile (o non esisterebbe proprio).
+
+![[Pasted image 20260927233548.png|278]]
+
+L'eleganza di quest'ipotesi, al di là del fatto che spiegherebbe l'ipotesi di Bohr, sta nell'aver ristabilito una simmetria tra radiazione elettromagnetica (luce) e materia.
+Quale sarebbe la lunghezza d'onda dell'elettrone?
+Per una differenza di potenziale di circa $100\text{V}$ otteniamo un energia di circa $10^{-17}$ Joule che equivale a $\lambda \sim {10}^{-10} \text{m}$.
+Nel caso in cui questa ipotesi fosse verificata sperimentalmente, ci mancherebbero però 2 cose:
+- un interpretazione
+- un'equazione d'onda
+
+#### 6. Esperimento della doppia fenditura
+
+Come fatto da Young per la luce, possiamo studiare il comportamento ondulatorio degli elettroni tramite l'esperimento della doppia fenditura.
+Per comprendere meglio i risultati di questo esperimento studiamo prima il caso di particelle puramente newtoniane e poi quello per onde  classiche.
+
+##### Particelle Newtoniane
+
+Per particelle Newtoniane, come i proiettili di un cannone, abbiamo la seguente situazione
+
+![[Pasted image 20260927234438.png|700]]
+
+Sullo schermo vado a misurare una densità di probabilità
+$$
+	\begin{aligned}
+	P(z)&=\text{densità di probabilità che una particella arrivi in z} \\
+	P(z)dz&=\text{probabilità che un proiettile arrivi tra } z \text{ e } dz
+	\end{aligned}
+$$
+Osserviamo i seguenti fatti:
+1. l'arrivo dei proiettili è **DISCRETO**, i proiettili arrivano interi e localizzati
+2. I proiettili passano da una o dall'altra fenditura e $P_{tot}(z)=P_{1}(z)+P_{2}(z)$, probabilità che il proiettile sia passato in una delle 2 fenditure
+
+#### Onde classiche
+
+Per le onde classiche abbiamo invece quello che abbiamo studiato a OFT e Fisica 3.
+
+![[Pasted image 20260928001454.png]]
+
+Non misuro più una distribuzione di probabilità bensì un'intensità.
+L'energia depositata tra $z$ e $dz$ è:
+$$
+	E(z) \propto I(z) \propto |A(z)|^2
+$$
+In questo caso possiamo fare le seguenti osservazioni:
+1. l'energia depositata è una variabile **CONTINUA**
+2. Non è vero che l'onda passa da una sola fenditura o dall'altra, dunque:   $$
+   	I_{tot}(z) \neq I_{1}(z)+I_{2}(z)
+   $$
+bensì: 
+$$
+	I_{tot}(z)=I_{1}+I_{2}+2\sqrt{ I_{1}I_{2} }\cos(\delta)
+$$
+#### Esperimento fatto con gli elettroni, particelle quantistiche
+
+Vediamo ora cosa succede nel caso di particelle quantistiche come gli $e^{-}$.
+In questo caso abbiamo dei problemi causati dalle dimensioni dell'elettrone nella creazione di fenditure adatte (devono essere nanometriche), pertanto facciamo uso di reticoli cristallini.
+
+![[Pasted image 20260928002846.png]]
+
+Nel caso della particella quantistiche osserviamo qualcosa che sta a metà tra i 2 casi precedenti:
+1. L'arrivo degli elettroni è un fenomeno **DISCRETO**, gli elettroni arrivano interi e localizzati, misuriamo dunque delle distribuzioni di probabilità
+2. a differenza delle particelle Newtoniane, non è vero che $P_{tot}=P_{1}(z)+P_{2}(z)$, dunque non posso dire se gli elettroni sono passati in una o nell'altra fenditura. Tuttavia il risultato non è caotico, ma è "ordinato" com nel caso di onde classiche. Intuitivamente capiamo che è come se:
+$$
+	\begin{aligned}
+	P(z)&=|\phi(z)^2| \\
+	P_{tot}(z)&=|\phi_{1}(z)+\phi_{2}(z)|
+	\end{aligned}
+$$
+con $\phi(z)$ che si comporta come un'onda.
+Questo è indubbiamente molto controintuitivo rispetto al modo in cui siamo abituati a pensare, anzi, non siamo proprio in grado di capirlo.
+
+Negli anni ci sono stati diversi tentativi di spiegazioni fallimentari, ad esempio:
+1. gli elettroni sono delocalizzati, il che è falso in quanto non siamo mai riusciti a osservare una "frazione" di elettrone
+2. il moto degli elettroni è molto più complesso rispetto a quello che pensiamo. Questo andrebbe a implicare la presenza di un campo di forze a noi ignoto che fa assumere all'elettrone esattamente il comportamento di un'onda. Questa argomentazione è così complessa da cadere sotto il rasoio di Ockham.
+3. questo è un effetto colletivo del fascio. Questo è falso perchè ora siamo in grado di sparare un'elettrone solo alla volta, ogni quanto vogliamo, e osserviamo sempre lo stesso risultato.
+
+A questo punto viene naturale chiederci cosa succeda all'elettrone durante il passaggio attraverso la fenditura.
+
+![[Pasted image 20260928004118.png]]
+
+Vado a mettermi molto vicino alla fenditura con una luce e studio la presenza dell'elettrone studiando come vengono deviati i fotoni per effetto Compton.
+Quello che osserviamo è che se riesco a vedere il passaggio dell'$e^{-}$, allora quel singolo elettrone non contribuisce alla figura d'interferenza, cioè, per ogni elettrone che riesco a ossevrare alla fenditura, sullo schermo **vale** $P_{tot}=P_{1}+P_{2}$, come se fosse una particella classica.
+
+Pensandoci meglio, non ci stupisce che il processo di misura vada a influenzare il risultato, infatti per riuscire a localizzare l'elettrone ho bisogno di lunghezze d'onda paragonabili a quelle dell'elettrone, $\lambda$ piccolo. A luci di questo tipo corrispondono però una frequenza e dunque un energia molto elevata, non ci stupisce dunque che vadano a influenzare il moto dell'elettrone in qualche modo.
+
+In poche parole, non esistono esperimenti che mi permettino di vedere dove passa l'elettrone conservando la figura di interferenza.
+
+Nel caso dei proiettili classici, la lunghezza d'onda è così bassa che le oscillazioni di $P_{T}(z)$ sono invisibili e se ne osserva la media su un numero di cicli elevatissimo.
 ## Domande per revisione
 - [ ] Quali sono i tentativi classici di soluzione al problema della radiazione del corpo nero?
 - [ ] Quali sono i problemi della legge di Wien e di quella di Rayleigh-Jeans? Come risolve il problema Planck?
@@ -484,6 +626,11 @@ $$R=\frac{\alpha}{4\pi a_{0}}$$
 - [ ] Come posso applicare la stessa ipotesi all'effetto Compton?
 - [ ] Come Bohr riesce a spiegare gli spettri di emissione dell'idrogeno e la formula di Rydberg?
 - [ ] Quanto valgono il raggio di Bohr, la costante di struttura fine, l'equivalente energetico della massa dell'elettrone e l'energia del primo orbitale dell'idrogeno?
+
+### Domande per Magnea
+- [ ] Come funziona davvero l'esperimento della doppia fenditura per la luce? Sto sempre misurando una probabilità? Più fotoni = più energia?
+
+
 ## Collegamenti
 - Lezione precedente: [[]]
 - Concetti collegati: [[]]
