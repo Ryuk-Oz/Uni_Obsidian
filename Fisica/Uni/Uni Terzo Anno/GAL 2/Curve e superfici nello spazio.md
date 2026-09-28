@@ -124,6 +124,170 @@ Per verificare che una parametrizzazione $\alpha(s)$ sia la parametrizzazione pe
 Ogni curva ammette una parametrizzazione per lunghezza d'arco e $$L(C)=\text{valore max-valore mic della coordinata s}$$
 **Oss:** in realtà la scelta della parametrizzazione per lunghezza d'arco non è perfettamente univoca in quanto posso sempre variare la scelta del punto di partenza o dell'orientamento.
 
+**Oss:** l'esistenza di $S$ parametrizzazione per lunghezza d'arco, ci dice qualcosa di abbastanza ovvio ma comunque molto profondo.
+Ogni curva io prenda, è sempre isometrica ad un segmento in $\mathbb{R}$. Esiste cioè una corrispondenza biunivoca tra i punti di una retta e di una curva, che **conserva le distanze**.
+
+![[Pasted image 20260928135110.png]]
+
+Questa isometria non è altro che la parametrizzazione per lunghezza d'arco.
+
+L'importanza di questo fatto diventa immediatamente più evidente quando proviamo a fare qualcosa di analogo in dimensioni superiori alla prima, dove ci accorgiamo non essere possibile. Lo renderemo poi esplicito tramite il Teorema Egregium di Gauss, dove identificheremo in una proprietà chiamata curvatura l'origine del problema.
+
+![[Pasted image 20260928135310.png]]
+
+Continuiamo ora con la definizione di proprietà intrinseche delle curve.
+
+#### Integrazione di una funzione lungo una curva
+
+Considero $f:C\to\mathbb{R}$, come posso integrare questa funzione lungo $C$?
+
+- **Strategia 1**
+___
+definisco l'integrale nel seguente modo:
+$$
+	\int_{C} f :=\int^b_{a}(f \circ \gamma)(t)|\dot{\gamma}|dt
+$$
+e successivamente vado a dimostrare l'invarianza sotto cambi di parametrizzazione. Questo è il modo in cui vado a definire il lavoro.
+
+- **Strategia 2**
+___
+Uso la parametrizzazione "privilegiata", quella della lunghezza d'arco $\alpha(s)$.
+$$
+	\int_{C}f:=\int(f \circ \alpha(s))|\dot{\alpha}|ds=\int f \circ \alpha(s) ds
+$$
+
+A questo punto è lecito andarsi a chiedere cosa succederebbe se usassimo come integrale il seguente:
+$$
+	\int^a_{b}(f \circ\gamma)(t)dt
+$$
+senza il modulo della velocità.
+Possiamo facilmente dimostrare come questo non sia invariante per cambi di parametrizzazione, e non sia dunque una buona definizione per l'integrale **sulla curva**. Possiamo usarlo tutt'al più come integrale sulla parametrizzazione $\gamma(t)$.
+
+#### Curvatura
+
+Abbiamo precedentemente accennato che il problema delle cartine perfette per una superficie è legato al concetto di curvatura. Non avendo lo stesso preoblema sulle curve, ne possiamo dedurre che il significato geometrico di curvatura per una curva sia significativamente diverso.
+A grandi linee la curvatura di una curva mi va ad indicare *quanto la curva si contorce nel suo spazio ambiente.*
+
+Partiamo dallo studio di un caso semplificato. D'ora in poi adotteremo solo più l'approccio della lunghezza d'arco.
+
+Partiamo con lo studio di $C \subseteq \mathbb{R}^2$, cioè una curva che giace su di un piano.
+
+![[Pasted image 20260928141009.png|388]]
+
+Intuitivamente l'idea di contorsione sarà legata alla variazione della retta tangente, andiamo ora a formalizzarlo.
+
+>[!Abstract] **Def:** Spazio Tangente (in $\mathbb{R}^2$)
+>Considero una curva $C$ ed un punto $p \in C$.
+>Scelgo una parametrizzazione $\alpha(t)$, allora $p:=\alpha(t_{0})$. Il vettore velocità $\dot{\alpha}(t_{0})\in \mathbb{R}^2$.
+>Definiamo Spazio Tangente di $C$ in $p$ il sottospazio unidimensionale di $\mathbb{R}^2$ così definito: 
+>$$
+>	T_{p}C:=Span\{ \dot{\alpha}(t_{0}) \}=\{ \lambda \dot{\alpha}(t_{0}):\lambda\in\mathbb{R} \}
+>$$
+>![[Pasted image 20260928141802.png]]
+
+In realtà possiamo osservare una discrepanza tra la definizione e la figura. Quello che abbiamo definito è un sottospazio ed in quanto tale deve passare per l'origine. Quello che abbioamo disegnato invece passa per $p$ ed è dunque stato traslato.
+
+Lo $Span$ della parametrizzazione resta invariato sotto cambi di coordinate e potrei dimostrarlo, altrimenti posso andare a definire lo spazio tangente utilizzando direttamente la parametrizzazione per lunghezza d'arco ed ottengo lo stesso risultato.
+
+A questo punto studiamo come misurare la variazione della retta tangente. L'idea, come nei corsi di analisi resta quella di andare ad operare una derivazione, ma come faccio la derivata di una retta?
+Partiamo dall'osservazione che ogni retta $l(t)$ non è altro che uno spazio undimensionale, possiamo dunque andare ad identificarlo con un versore $V(t)$ con $|V|=1$.
+Andiamo ora a lavorare con la lunghezza d'arco. Alla curva $C$ associamo la parametrizzazione $\alpha(s)$. A questo punto, possiamo andare ad identificare la retta tangente in ogni punto tramite il vettore tangente così definito:
+$$
+	\vec{t}(s):=\dot{\alpha}(s)
+$$
+Facciamo ora alcune osservazioni:
+- **Oss. 1:** 
+$$
+	|\dot{\alpha}|^2\equiv1 \Rightarrow \dot{\alpha}\cdot \dot{\alpha}=1
+$$
+per ogni valore di $s$. Andandolo a derivare otteniamo dunque:
+$$
+	\frac{d}{ds}(\dot{\alpha}\cdot \dot{\alpha})=0=\dot{\alpha}\cdot \ddot{\alpha}+\ddot{\alpha}\cdot \dot{\alpha}=2\dot{\alpha}\cdot \ddot{\alpha}
+$$
+Con la parametrizzazione per lunghezza d'arco accelerazione e velocità sono tra loro normali, questo da un punto di vista fisico non ci stupisce granchè.
+
+- **Oss. 2:** Posso andare a definire i versori normali a una curva, $\vec{n}(s)$, in maniera univoca e indipendente dall'accelerazione, tramite delle rotazioni antiorarie.
+
+![[Pasted image 20260928143515.png]]
+
+Unendo le due osservazioni possiamo andare a scrivere:
+
+$$
+	\ddot{\alpha} = k(s)\vec{n}(s)
+$$
+con:
+$$
+	k(s)=\vec{t}'\cdot \vec{n}(s) = \ddot{\alpha}(s)\cdot \vec{n}(s)
+$$
+
+$k(s)$ è una funzione $C^\infty$ di segno variabile che va a misurare le variazioni della retta tangente alla curva. Chiamiamo questa funzione **curvatura** di $C$.
+
+Si dimostra facilmente che laddove $k(s)\equiv 0$ troviamo che $C$ è un segmento.
+
+Facciamo ora un'osservazione di natura grafica, da un disegno è possibile capire intuitivamente il verso di $\ddot{\alpha}$ e con esso il segno di $k$. Da qui capiamo che il segno di $k$ mi da un'indicazione sulla concavità della curva.
+
+![[Pasted image 20260928144217.png]]
+
+Andiamo ora a studiare una curva in $\mathbb{R}^3$.
+Aggiungendo una dimensione siamo andati ad aggiungere un ulteriore dimensione in cui la curva potrebbe andare a piegarsi. Provando ad andare ad adattare lo stesso approccio usato fin'ora ci accorgiamo che la definizione di un vettore normale smette di essere semplice come in $\mathbb{R}^2$. In questo caso abbiamo infiniti vettori normali, che giacciono su di un piano.
+
+![[Pasted image 20260928144546.png]]
+
+Dobbiamo scegliere quale versore normale utilizzare.
+Dai calcoli di prima otteniamo ancora $\dot{\alpha} \perp \ddot{\alpha}$. Andiamo dunque a definire una normale *canonica* nel seguente modo:
+$$
+	\vec{n}(s):=\frac{\ddot{\alpha}(s)}{|\ddot{\alpha}(s)|}
+$$
+Questa scelta è ovviamente più limitante rispetto a quella che abbiamo fatto in precedenza perchè ci restringe a curve tali che $|\ddot{\alpha}|\neq {0} \, \forall  \, s$. Dunque non posso definire la normale canonica a dei segmenti nello spazio.
+
+A questo punto otteniamo che il vettore accelerazione è:
+$$
+	\ddot{\alpha}(s)=|\ddot{\alpha}|\vec{n}
+$$
+e possiamo dedurre che la curvatura sia: $k(s):=|\ddot{\alpha}(s)|$.
+Come prima $k(s)$ misura la variazione della retta tangente, ma questa volta può assumere soltanto valori positivi.
+
+#### Torsione
+
+Come accennavamo prima, una curva in $\mathbb{R}^3$ si "contorce" in più direzioni, possiamo dunque andare a definire "una seconda curvatura", che misura come la curva si avvita su stessa.
+Per fare ciò andiamo a misurare la variazione della direzione normale al piano formato da $\vec{t} \text{ e } \vec{n}$. 
+![[Pasted image 20260928150839.png]]
+Lo facciamo tramite il versore normale al piano, che possiamo scrivere come:
+$$
+	\vec{b}(s) = \vec{t}(s) \times \vec{n}(s)
+$$
+e lo chiamiamo vettore binormale; $\vec{b} \, , \,  \vec{t} \text{ e }\vec{n}$ formano una base ortonormale di $\mathbb{R}^3$.
+Facciamo un paio di osservazioni:
+$$
+	\begin{aligned}
+	\vec{b}\cdot \vec{t}=0=\vec{b}\cdot \vec{n} \quad \text{e} \quad |\vec{b}|^2=1
+	\end{aligned}
+$$
+Andando a derivare troviamo che:
+$$
+	\dot{b}\cdot \vec{t}+\vec{b}\cdot \dot{t}\equiv 0
+$$
+ma:
+$$
+	\vec{b}\cdot \dot{t}=\vec{b}\cdot k(s)\vec{n}(s)=0
+$$
+dunque:
+$$
+	\dot{b}\cdot \vec{t}=0 \quad \text{e} \quad \dot{b} \perp \vec{t}
+$$
+Derivando $|\vec{b}|^2$ otteniamo, come nel caso precedente, $\dot{b} \perp \vec{b}$.
+Dunque:
+$$
+	\dot{b} \perp \vec{b} \quad \text{e} \quad \dot{b}\perp \vec{t} \quad \Rightarrow \quad \dot{b} \parallel \vec{n}
+$$
+Posso quindi riscrivere, nella base $\{ \vec{b},\vec{t},\vec{n} \}$:
+$$
+	\dot{b}=\tau(s)\vec{n}(s)
+$$
+la funzione $\tau(s)$ prende il nome di **torsione** e misura l'oscillazione del piano definito dallo $span(\vec{t},\vec{n})$.
+
+La base che abbiamo usato fino ad adesso, $\{ \vec{b},\vec{t},\vec{n} \}$ ortonormale su ogni punto della curva, prende il nome di **base di Frenel**.
+
 ## Domande per revisione
 - [ ] 
 

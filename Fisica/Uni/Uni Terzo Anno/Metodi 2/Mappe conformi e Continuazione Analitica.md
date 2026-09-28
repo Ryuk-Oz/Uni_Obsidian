@@ -22,7 +22,7 @@ In seguito abbiampo studiato come nei punti in cui la derivata prima si annulla 
 
 A questo punto ci siamo concentrati sullo studio di alcune funzioni analitiche come esponenziali e potenze e abbiamo trovato che spesso il paino di partenza viene mappato nel prodotto cartesiano di più piani, rendendo queste funzioni non invertibili globalemente. Abbiamo però mostrato come sfruttando l'analiticità si possa definire un inversa locale.
 
-Infine abbiamp introdotto un teorema utile allo studio della continuazione analitica: una funzione analitica definita su un dominio connesso $D$ in cui sia presente un punto di accumulazione di 0 è ugualmente nulla su tutto il dominio $D$.
+Infine abbiamo introdotto un teorema utile allo studio della continuazione analitica: una funzione analitica definita su un dominio connesso $D$ in cui sia presente un punto di accumulazione di 0 è ugualmente nulla su tutto il dominio $D$. Tramitre questo teorema abbiamo discusso l'unicità della continuazione analitica di una funzione per poi guardare nello specifico l'approccio alla Weierstrass, per sviluppi successivi. Infine abbiamo guardato quali sono i problemi legati a funzioni con sostegno su domini non connessi.
 
 ## Appunti
 
@@ -220,7 +220,7 @@ che converge in $|z|<1$.
 $f_{2}(z)=\frac{1}{1-z}$ è la continuazione analitica di $f_{1}$ in $\mathbb{C}-\{ z=1 \}$.
 
 Tra le altre cose, la continuazione analitica è anche il motivo per cui posso sempre estendere una funzione da $\mathbb{R}$ in $\mathbb{C}$.
-![[Pasted image 20260925115959.png]]
+![[Pasted image 20260925115959.png|404]]
 
 infatti, $E\equiv\mathbb{R}$ ha infiniti punti di accumulazione in $\mathbb{C}$.
 All'atto pratico compio questa continuazione analitica sfruttando gli sviluppi di Taylor.
@@ -279,13 +279,24 @@ $$
 $$
 ![[Pasted image 20260925124319.png]]
 
-In questo caso conosco direttamente la somma, che potrei usare per trovare il più grande dominio che posso coprire con l'approccio di Weierstrass, ma non sempre è detto che sia così
+In questo caso conosco direttamente la somma ($f(z)=\frac{1}{1-z}$), che potrei usare per trovare il più grande dominio che posso coprire con l'approccio di Weierstrass, ma non sempre è detto che sia così.
 
+Consideriamo adesso il caso di una funzione definita su di un dominio non connesso.
+Per arrivare a $z_{n}$ partendo da $z_{0}$, per sviluppi successivi, posso aggirare la zona "bucata" del dominio e ho più di un cammino possibile.
+
+![[Pasted image 20260928225247.png|527]]
+
+Come posso confrontare i risultati ottenuti passando per 2 percorsi diversi?
+L'unicità discussa precedentemente vale solo quando le 2 possibili continuazioni condividono parte del dominio, ma in questo caso ciò chiaramente non succede.
+Se non avessi singolarità e andassi a prendere 2 cammini separati, potrei sempre estendere il dominio utilizzato per un cammino sul dominio utilizzato per il secondo cammino (per ottenere $D_{1} \cap D_{2} \neq \emptyset$), usando il teorema di Cauchy. Questo ovviamente non è possibile in presenza di singolarità.
+
+Più avanti nel corso vedremo come nel caso di singolarità isolate riusciremo ad andare a ristabilire l'unicità della continuazione analitica. Per singolarità non isolate, questa sarà invece destinata a cadere.
 
 ## Domande per revisione
 - [ ] Come emerge il concetto di mappa conforme dalle funzioni analitiche?
 - [ ] Quando una funzione analitica smette di descrivere mappe conformi?
 - [ ] Qual è il problema di molte funzioni analitiche quando vado a cercarne l'inversa?
+- [ ] Quali sono le condizioni affinchè la continuazione analitica sia unica? Qualora non lo sia, qual è il problema?
 
 ## Collegamenti
 - Lezione precedente: [[]]
