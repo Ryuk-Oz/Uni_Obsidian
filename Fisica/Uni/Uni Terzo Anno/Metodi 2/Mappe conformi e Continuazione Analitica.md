@@ -3,7 +3,8 @@ corso: Metodi 2
 data: 2026-09-21
 tags:
   - lezione
-argomenti: []
+argomenti:
+  - Analisi Complessa
 lezione-precedente:
 source:
 ---
@@ -200,11 +201,12 @@ Siano $f_{1}(z) \text{ e } f_{2}(z)$ regolari in $D \subset C$, con $D$ connesso
 Se l'insieme $I=\{ z \in D \, / \, f_{1}(z)=f_{2}(z) \}$ ha un punto di accumulazione in $D$,
 allora $f_{1}(z)=f_{2}(z) \, \forall z \in D$.
 
-Il corollario si dimostra come il teorema scegliendo $f(z)=f_{2}(z)-f_{1}(z)$.
+Il corollario si dimostra come il teorema precedente, scegliendo $f(z)=f_{2}(z)-f_{1}(z)$.
 
 Posso anche fornire una formulazione alternativa del corollario, prendendo $f_{1}(z)$ regolare in $D_{1}$ e $f_{2}(z)$ regolare in $D_{2}$ e scegliendo l'insieme $I=\{ z \in D_{1} \cap D_{2} \, / \, f_{1}(z)=f_{2}(z) \}$. Se $I$ ha un punto di accumulazione in $D_{1} \cap D_{2}$ $\Rightarrow$ $f_{1}(z)=f_{2}(z) \, \forall z \in D_{1} \cap D_{2}$.
 ___
-L'utilità di questo corollario sta nel fatto che mi da un modo univoco di estendere il dominio di $f_{1}(z)$ al di fuori del proprio dominio, tramite una funzione diversa $f_{2}(z)$ che è definita anche altrove. Cioè ho un solo modo di definire una nuova funzione $f_{2}$ partendo da $f_{1}$, al di fuori del proprio dominio. Chiamiamo questa nuova funzione $f_{2}$ la continuazione analitica di $f_{1}$.
+L'utilità di questo corollario sta nel fatto che mi da un modo univoco di estendere il dominio di $f_{1}(z)$ al di fuori del proprio, tramite una funzione diversa $f_{2}(z)$ che è definita anche altrove. Chiamiamo questa nuova funzione $f_{2}$ la continuazione analitica di $f_{1}$.
+Questo ci garantisce che presa una certa rappresentazione locale di $f$ (con Laurant o Taylor ad esempio), analitica in un dominio ristretto rispetto a quello di $f$, il modo in cui possiamo ricostruire la funzione di partenza sia univoco.
 
 - **DEF:**
 considero $f_{1}(z)$ definita in $E \subset\mathbb{C}$ (anche il piano esteso è ok) e $f_{2}(z)$ analitica in $D \subset \mathbb{C}$.
@@ -228,7 +230,8 @@ Consideriamo ad esempio la funzione coseno, in $\mathbb{R}$ posso andare a defin
 $$
 	\cos x=\sum^\infty_{k=0} \frac{(-1)^k}{2k!}x^{2k} \to \cos z\equiv \sum^\infty_{k=0} \frac{(-1)^k}{2k!}z^{2k}
 $$
-Facciamo ora un ulteriore verifica dell'unicità della continuazione di $f_{1}(z)$, definita su $E$.
+
+Verifichiamo ulteriormente l'unicità della continuazione di $f_{1}(z)$, definita su $E$.
 Supponiamo di avere 2 diversi modi di continuarla:
 $f_{2}(z)$ in $D$ e $f_{3}(z)$ in $D$, entrambe continuazioni analitiche di $f_{1}(z)$.
 Con queste ipotesi otteniamo:
@@ -269,7 +272,7 @@ $$
 	\quad \text{definita in} \quad I_{\delta_{0}}(z_{0})\cup I_{\delta_{1}}(z_{1})
 $$
 
-alla fine ottengo che $f(z)=f_{i}(z)$ per $z \in I_{\delta_{1}}(z_{1})$.
+alla fine di tutto ottengo che $f(z)=f_{i}(z)$ per $z \in I_{\delta_{1}}(z_{1})$. Procedendo in questo modo è sempre possibile andare ad aggirare eventuali poli della nostra funzione.
 
 Facciamo un esempio di questo approccio.
 Considero $f_{0}(z)=\sum^\infty_{k=0} z^k$ in $I_{1}(0)$.

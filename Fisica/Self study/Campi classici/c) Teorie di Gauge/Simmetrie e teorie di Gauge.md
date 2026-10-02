@@ -5,6 +5,7 @@ tags:
   - lezione
 argomenti:
   - Campi_classici
+  - Geometria differenziale
 lezione-precedente: "[[Quantità conservate in teorie di campo]]"
 source:
 ---
@@ -295,5 +296,5 @@ Quando avrai delle basi di relatività vedi come $F_{\mu \nu}$ è la curvatura d
 
 ## Collegamenti
 - Lezione precedente: [[Quantità conservate in teorie di campo]]
-- Concetti collegati: [[Quantità conservate in teorie di campo]] 
+- Concetti collegati: [[Quantità conservate in teorie di campo]] [[Esempi di teoria di campo, campi elettromagnetici]]
 

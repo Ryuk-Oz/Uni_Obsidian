@@ -3,7 +3,8 @@ corso: GAL 2
 data: 2026-09-24
 tags:
   - lezione
-argomenti: []
+argomenti:
+  - Geometria differenziale
 lezione-precedente:
 source:
 ---
@@ -11,7 +12,7 @@ source:
 
 > [!info] Contesto
 > Corso: GAL 2
-> Argomenti previsti: Curve e superfici nello spazio
+> Argomenti previsti: Teoria delle curve nello spazio, definizioni e caratterizzazione: lunghezza di una curva, parametrizzazione per lunghezza d'arco, curvatura e torsione. Base di Frenet, equazione di Frenet, Teorema di Frenet
 
 ## Riassunto veloce
 
@@ -286,7 +287,85 @@ $$
 $$
 la funzione $\tau(s)$ prende il nome di **torsione** e misura l'oscillazione del piano definito dallo $span(\vec{t},\vec{n})$.
 
-La base che abbiamo usato fino ad adesso, $\{ \vec{b},\vec{t},\vec{n} \}$ ortonormale su ogni punto della curva, prende il nome di **base di Frenel**.
+La base che abbiamo usato fino ad adesso, $\{ \vec{b},\vec{t},\vec{n} \}$ ortonormale su ogni punto della curva, prende il nome di **base di Frenet**.
+
+A questo punto emergono alcune domande che ha senso porsi e a cui ha senso andare a rispondere.
+
+- **Q1)** Ha senso continuare a derivare cose per ottenere ulteriori "curvature"?
+- **Q2)** Da quanti parametri dipende $C \subseteq \mathbb{R}$? Quanti sono i gradi di libertà di una curva?
+- **Q3**) Da quanti parametri dipende la posizione di un punto su una curva (nota)?
+
+##### Risposta a (Q1)
+
+Fin'ora ci siamo occupati dello studio di $\dot{t} \text{ e } \dot{b}$. Proviamo a calcolare $\dot{n}$.
+$$
+	\vec{n}=\vec{b}\times \vec{t}
+$$
+$$
+	\implies \dot{n}=\dot{b}\times \vec{t}+b\times \dot{t}=\tau(s)\vec{n}\times \vec{t} +k(s)\vec{b}\times \vec{n}=-\tau \vec{b}-k\vec{t}
+$$
+cioè $\dot{n}$ ricicle le stesse funzioni di prima, derivando l'ultimo versore non ottengo nuove informazioni. Ogni altro vettore può essere scritto come combinazione lineare degli elementi della base di Frenet, dunque non mi darà nuove informazioni.
+
+##### Risposta a (Q2)
+
+La risposta al secondo quesito ci viene data dal Teorema di Frenet, un teorema che si occupa del seguente sistema di equazioni differenziali, le cui incognite sono i vettori della base di Frenet.
+$$
+	\begin{cases}
+	\dot{t}=k\vec{n} \\
+	\dot{n}=-k\vec{t}-\tau \vec{b} \\
+	\dot{b}=\tau \vec{b}
+	\end{cases}
+$$
+Le uniche informazioni note del sistema sono le funzioni curvatura e torsione.
+Possiamo riscrivere il sistema in forma matriciale.
+Poichè $\vec{t},\vec{n},\vec{b}$ formano una base $ON$, posso rappresentarla tramite una matrice $M(s)\in SO^3$
+$$
+	M(s):=\begin{pmatrix}
+	\vec{t}&\vec{n} &\vec{b}
+	\end{pmatrix}
+$$
+E il sistema diventa:
+$$
+	\dot{M}(s)=M(s)\cdot \begin{pmatrix}
+	0 & -k(s) & 0  \\
+	k(s) & 0 & \tau(s) \\
+	0 & -\tau(s) & 0
+	\end{pmatrix}
+$$
+Questa forma diventerà molto interessante quando parleremo di algebre di Lie.
+
+>[!Example] Teorema di Frenet
+>Siano date $k(s)$, $\tau(s):\,(a,b)\to \mathbb{R} \, \in C^\infty$
+>tali che $0\in(a,b), \,k(s)>0$.
+>Scegliamo $p\in \mathbb{R}^3$ e una base $ON$ positiva (in $p$) $(t,n,b)\equiv M(0)\in SO^3$
+>$\implies \exists$ un'unica curva $C$ passante per $p$ e avente $k$ e $\tau$ come propria curvatura e torsione.
+>Il parametro $s\in(a,b)$ è la sua lunghezza d'arco.
+>
+>**Corollario:** 2 curve con stessa curvatura e torsione coincidono a meno di movimenti rigidi (che siano rotazioni o traslazioni).
+
+Dunque la risposta a **(Q2)** è che ci bastano 2 parametri per costruire una curva.
+
+**OSS:** ad un fisico per costruire la legge oraria (cioè la curva) servono tre parametri (le tre componenti della forza). La ragione è che in questo caso (e nella maggior parte dei casi di interesse fisico) non ci interessa la curva parametrizzabile (che interessa invece un geometra) ma la curva parametrizzata. Il parametro aggiuntivo ci fornisce un informazione aggiuntiva, la parametrizzazione della curva.
+
+##### **Risposta a (Q3)**
+
+La risposta al quesito 3 è più semplice. Per descrivere la posizione di un punto su una curva nota ci basta un solo parametro reale, infatti sappiamo che tra una curva e una retta sussiste una corrispondenza biunivoca, resa esplicita dalla parametrizzazione per lunghezza d'arco. Quell'unico parametro sarà dunque $s$.
+Questo ci permette di concludere che $Dim(C)=1$.
+
+#### Bozza di dimostrazione del Teorema di Frenet
+
+Analizziamo la dimostrazione al teorema per step.
+1. usiamo $k, \tau$ per impostare l'equazione di Frenet e la risolviamo (o meglio, verifichiamo l'esistenza di un unica soluzione $M(s)$). A questo punto abbiamo trovato una candidata per la base di Frenet.
+**OSS:** per poter risolvere l'equazione ho bisogno di una condizione iniziale $M(0)$ per risolvere l'equazione, ma questa è fornita dalle ipotesi del teorema.
+2. sfruttiamo il fatto che $\vec{t}(s)$ è la prima colonna della matrice $M(s)$ appena ottenuta. Risolviamo $\dot{\alpha}=\vec{t}(s)$ per ottenere la parametrizzazione per lunghezza d'arco $\alpha(s)$. Abbiamo così ottenuto una curva che per costruzione ha curvatura e torsione $k,\tau$. Anche qua per risolvere l'equazione abbiamo sfruttato la condizione iniziale fornita dalle ipotesi: $\alpha(0)=p$.
+
+>[!Attention] Achtung!
+>Manca in quanto fatto una dimostrazione formale che $M(s)\in$ sempre a $SO^3$, come abbiamo ipotizzato nel passaggio in cui diciamo che $\vec{t}(s)$ è la prima colonna di $M(s)$. 
+>Per verificare che questo succeda possiamo fare molti conti per vedere come variano le norme e gli angoli dei vettori della matrice (che schifo). Alternativamente possiamo sviluppare anuovi strumenti teorici. 
+>Scegliamo la seconda opzione e torniamo sullo studio di questo problema dopo aver studiate la teoria dei gruppi e delle algebre di Lie.
+
+
+
 
 ## Domande per revisione
 - [ ] 

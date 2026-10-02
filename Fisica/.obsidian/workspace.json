@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "278bdebd2e750559",
+        "id": "f1da5ab007e38db0",
         "type": "tabs",
         "children": [
           {
-            "id": "42701f132595ae3a",
+            "id": "739af59f79f7297d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Uni/Uni Terzo Anno/Metodi 2/Mappe conformi e Continuazione Analitica.md",
+                "file": "Uni/Uni Terzo Anno/GAL 2/Superfici nello spazio.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Mappe conformi e Continuazione Analitica"
+              "title": "Superfici nello spazio"
             }
           }
         ]
@@ -80,7 +80,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 294.359375
+    "width": 294.359375,
+    "collapsed": true
   },
   "right": {
     "id": "aef97c1a65414800",
@@ -186,41 +187,44 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "42701f132595ae3a",
+  "active": "739af59f79f7297d",
   "lastOpenFiles": [
+    "Pasted image 20261001225620.png",
+    "Pasted image 20261001223605.png",
+    "Uni/Uni Terzo Anno/MQ 1/Introduzione storica alla meccanica quantistica.md",
+    "Uni/Uni Terzo Anno/GAL 2/Superfici nello spazio.md",
+    "Uni/Uni Terzo Anno/GAL 2/Curve nello spazio.md",
+    "Self study/Campi classici/c) Teorie di Gauge/Simmetrie e teorie di Gauge.md",
+    "Uni/Uni Terzo Anno/Intro alla Probabilità/Probabilità condizionata.md",
     "Uni/Uni Terzo Anno/Metodi 2/Funzioni polidrome.md",
     "Uni/Uni Terzo Anno/Metodi 2/Mappe conformi e Continuazione Analitica.md",
-    "immagini/Immagini_metodi_2/Funzioni Polidrome/Pasted image 20260929000847.png",
-    "immagini/Immagini_metodi_2/Funzioni Polidrome/Pasted image 20260928225247.png",
+    "Uni/Uni Terzo Anno/MQ 1/Equazione di Shrödinger.md",
+    "Uni/Uni Terzo Anno/Intro alla Probabilità/Introduzione e concetti base di teoria della probabilità.md",
+    "Untitled",
+    "immagini/Probabilità/Pasted image 20260930221721.png",
+    "immagini/Probabilità/Pasted image 20260930221725.png",
+    "immagini/Probabilità/Pasted image 20260930225935.png",
+    "immagini/Immagini_metodi_2/Funzioni Polidrome/Pasted image 20260930145524.png",
+    "immagini/immagini_mq1/Untitled",
+    "immagini/immagini_mq1/Untitled/Pasted image 20260929231216.png",
+    "immagini/Immagini_metodi_2/Funzioni Polidrome/Pasted image 20260930173923.png",
+    "immagini/Immagini_metodi_2/Funzioni Polidrome/Pasted image 20260930173329.png",
+    "immagini/Immagini_metodi_2/Funzioni Polidrome/Pasted image 20260930173034.png",
+    "immagini/Immagini_metodi_2/Funzioni Polidrome/Pasted image 20260930172722.png",
     "immagini/Immagini_metodi_2/Funzioni Polidrome",
-    "immagini/Immagini_metodi_2/Funzioni Polidrome/Pasted image 20260929000055.png",
-    "immagini/Immagini_metodi_2/Funzioni Polidrome/Pasted image 20260928231002.png",
-    "Uni/Uni Terzo Anno/GAL 2/Curve e superfici nello spazio.md",
-    "immagini/Immagini GAL2/Curve e Superfici/Pasted image 20260928135110.png",
-    "immagini/Immagini GAL2/Curve e Superfici/Pasted image 20260928141009.png",
-    "immagini/Immagini GAL2/Curve e Superfici/Pasted image 20260928141802.png",
-    "immagini/Immagini GAL2/Curve e Superfici/Pasted image 20260928141552.png",
-    "immagini/Immagini GAL2/Curve e Superfici/Pasted image 20260928135310.png",
-    "immagini/Immagini GAL2/Curve e Superfici/Pasted image 20260928150839.png",
-    "Uni/Uni Terzo Anno/MQ 1/Introduzione storica alla meccanica quantistica.md",
     "immagini/Immagini_metodi_2/Continuazione analitica e mappe conformi",
     "immagini/Probabilità",
-    "Uni/Uni Terzo Anno/Intro alla Probabilità/Introduzione e concetti base di teoria della probabilità.md",
     "Uni/Uni Terzo Anno/Intro alla Probabilità",
     "immagini/Immagini GAL2/Curve e Superfici",
     "immagini/Immagini GAL2",
     "Uni/Uni Terzo Anno/GAL 2",
     "Self study/Meccanica statistica (delle particelle)/Ripasso di Termodinamica/Termodinamica (lezione 2).md",
     "immagini/Campi Classici",
-    "immagini/Meccanica Stat",
-    "Uni/Uni Terzo Anno/MQ 1/Untitled.md",
-    "immagini/immagini_mq1/Lezioni Turistiche",
     "Templates/template-lezione.md",
     "Self study/Campi classici/a) Generalità delle teorie di campo/Quantità conservate in teorie di campo.md",
     "Self study/Campi classici/a) Generalità delle teorie di campo/Formulazione di una teoria di campo (classica) col formalismo lagrangiano.md",
     "Self study/Meccanica statistica (delle particelle)/Ripasso di Termodinamica/Termodinamica (lezione 1).md",
     "Self study/Campi classici/b) Esempi di teoria di campo/Esempi di teoria di campo, campi elettromagnetici.md",
-    "Self study/Campi classici/c) Teorie di Gauge/Simmetrie e teorie di Gauge.md",
     "Self study/Campi classici/c) Teorie di Gauge/Untitled.md",
     "Self study/Campi classici/Untitled.md",
     "2026-07-30.md",

@@ -1,0 +1,13 @@
+.callout[data-callout="col"] {
+  background: none;
+  border: none;
+  padding: 0;
+}
+.callout[data-callout="col"] .callout-title {
+  display: none;
+}
+.callout[data-callout="col"] .callout-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5em;
+}

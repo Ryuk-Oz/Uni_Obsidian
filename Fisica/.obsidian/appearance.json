@@ -3,5 +3,6 @@
   "textFontFamily": "NewComputerModern Math,NewComputerModern",
   "interfaceFontFamily": "NewComputerModern",
   "accentColor": "",
-  "cssTheme": ""
+  "cssTheme": "",
+  "enabledCssSnippets": []
 }

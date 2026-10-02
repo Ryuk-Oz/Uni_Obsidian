@@ -3,7 +3,8 @@ corso: Meccanica Quantistica 1
 data: 2026-09-21
 tags:
   - lezione
-argomenti: []
+argomenti:
+  - Meccanica Quantistica
 lezione-precedente:
 source:
 ---
@@ -20,7 +21,10 @@ Per farlo studiamo una serie di osservazioni sperimentali e problemi inspiegabil
 Stephan-Boltzmann -> Wien -> Rydberg-Wien -> Planck.
 Subito dopo abbiamo analizzato l'effetto fotoelettrico e la soluzione proposta da Einstein, che abbandona l'assolutezza delle equazioni di Maxwell.
 Abbiamo poi visto l'effetto Compton e come questo venga risolto andando a quantizzare la luce in pacchetti di onde che chiamiamo fotoni e che trattiamo come particelle prive di massa.
-Infine siamo andati a studiare il ramo della spettroscopia degli atomi vedendo la nascita dei primi modelli atomici. Per primo il modello a panettone di Thomson, confutato da Rutherford che scopre che la materia è prevalentemente vuota e poi il modello planetario di Bohr che risolve il problema della decaduta dell'$e^-$ andando a "bloccarlo" su orbite privilegiate, di energia quantizzata, sulle quali l'elettrone non emette radiazione.
+Infine siamo andati a studiare il ramo della spettroscopia degli atomi vedendo la nascita dei primi modelli atomici. Per primo il modello a panettone di Thomson, confutato da Rutherford che scopre che la materia è prevalentemente vuota e poi il modello planetario di Bohr che risolve il problema della decaduta dell'$e^-$ andando a "bloccarlo" su orbite privilegiate, di energia quantizzata, sulle quali l'elettrone non emette radiazione. Abbiamo anche visto come da questo emerga la conservazione di una componenete del momento angolare e le problematiche che ne conseguono, nonchè la verifica sperimentale di Stern.Gerlach.
+Successivamente abbiamo visto come l'ipotesi sulla doppia natura della materia di De Broglie vada a dare un'ulteriore spiegazione delle orbite stazionarie di Bohr.
+Come ultima cosa abbiamo visto la verifica sperimentale dell'ipotesi di De Broglie, l'esperimento della doppia fenditura, e i problemi interpretativi che ne conseguono.
+
 ## Appunti
 
 Lo sviluppo della meccanica quantistica inizia nel '900, secolo in cui avvengono due rivoluzioni scientifiche:
@@ -609,7 +613,7 @@ Negli anni ci sono stati diversi tentativi di spiegazioni fallimentari, ad esemp
 
 A questo punto viene naturale chiederci cosa succeda all'elettrone durante il passaggio attraverso la fenditura.
 
-![[Pasted image 20260928004118.png]]
+![[Pasted image 20260928004118.png|538]]
 
 Vado a mettermi molto vicino alla fenditura con una luce e studio la presenza dell'elettrone studiando come vengono deviati i fotoni per effetto Compton.
 Quello che osserviamo è che se riesco a vedere il passaggio dell'$e^{-}$, allora quel singolo elettrone non contribuisce alla figura d'interferenza, cioè, per ogni elettrone che riesco a ossevrare alla fenditura, sullo schermo **vale** $P_{tot}=P_{1}+P_{2}$, come se fosse una particella classica.
@@ -619,6 +623,12 @@ Pensandoci meglio, non ci stupisce che il processo di misura vada a influenzare 
 In poche parole, non esistono esperimenti che mi permettino di vedere dove passa l'elettrone conservando la figura di interferenza.
 
 Nel caso dei proiettili classici, la lunghezza d'onda è così bassa che le oscillazioni di $P_{T}(z)$ sono invisibili e se ne osserva la media su un numero di cicli elevatissimo.
+
+Sarebbe possibile evitare il problema dell'influenza della misura in qualche modo?
+Proviamo a fare due ipotesi ragionevoli e vediamo il motivo per cui non funzionano.
+- fissiamo $\lambda$ ma diminuiamo l'intensità della luce. Questo non va bene in quanto si tratta di un ragionamento puramente classico, l'intensità misura il numero di fotoni, non l'energia che ciascuno trasporta.
+- Diminuiamo la frequenza $\nu$ della luce. In questo caso il ragionamento non è più classico e funzionerebbe anche, se non fosse che così facendo vado a diminuire l'accuratezza della misura e il risultato smette di essere affidabile.
+
 ## Domande per revisione
 - [ ] Quali sono i tentativi classici di soluzione al problema della radiazione del corpo nero?
 - [ ] Quali sono i problemi della legge di Wien e di quella di Rayleigh-Jeans? Come risolve il problema Planck?
@@ -626,10 +636,10 @@ Nel caso dei proiettili classici, la lunghezza d'onda è così bassa che le osci
 - [ ] Come posso applicare la stessa ipotesi all'effetto Compton?
 - [ ] Come Bohr riesce a spiegare gli spettri di emissione dell'idrogeno e la formula di Rydberg?
 - [ ] Quanto valgono il raggio di Bohr, la costante di struttura fine, l'equivalente energetico della massa dell'elettrone e l'energia del primo orbitale dell'idrogeno?
-
-### Domande per Magnea
-- [ ] Come funziona davvero l'esperimento della doppia fenditura per la luce? Sto sempre misurando una probabilità? Più fotoni = più energia?
-
+- [ ] Quale esperimento verifica la quantizzazione del momento angolare?
+- [ ] Qual è l'ipotesi di De Broglie? Come va a spiegare le orbite stazionarie di Bohr?
+- [ ] Quali sono le problematiche interpretative legate all'esperimento della doppia fenditura? Come mai non notiamo il dualismo nel caso di particelle classiche?
+- [ ] Come la misura del fotone va a "rompere" la figura di interferenza?
 
 ## Collegamenti
 - Lezione precedente: [[]]
