@@ -1,0 +1,149 @@
+---
+corso: Probabilià
+data: 2026-10-03
+tags:
+  - lezione
+argomenti:
+  - Probabilità
+  - Processi Stocastici
+lezione-precedente:
+source:
+---
+
+
+> [!info] Contesto
+> Corso: undefined
+> Argomenti previsti: 
+
+## Riassunto veloce
+
+
+
+## Appunti
+
+Occupiamoci della discussione dei processi di ramificazione (o branching processes), che ci torneranno più utili avanti, nello studio delle catene di Markov.
+Un **processo di ramificazione** è un processo stocastico che modella una popolazione nella quale ogni generazione si riproduce indipendentemente, seguendo una legge di probabilità comune.
+
+Per lo studio dei processi di ramificazione è tuttavia necessario introdurre prima un paio di nozioni di funzioni generatrici.
+### Funzioni generatrici
+
+Consideriamo una variabile aleatoria $x$ che assume valori interi $0,1,\dots k$ con probabilità $P_{0},P_{1},\dots P_{k}$, la funzione generatrice $G(s)$ di $x$ è definita nel seguente modo.
+$$
+	G(s)\equiv \sum^\infty_{k=0}s^kP_{k}
+$$
+riprendendo la definizione di valore medio: 
+$$
+	E(F(k))\equiv \sum^\infty_{k=0}F(k)P_{k}
+$$
+Possiamo concludere che $G(s)=E(s^k)$.
+
+Uteriormente avendo definito $G(s)$ tramite una somma di probabilità è evidente che $G(1)=1$ per le proprietà di normalizzazione.
+Per le proprietà delle potenze otteniamo invece $G(0)=P_{0}$.
+Possiamo anche sfruttare la funzione generatrice per inferire la probabilità di ogni evento.
+$$
+	\begin{aligned}
+	G'(0)&=\frac{dG}{ds}|_{s=0}=\sum ks^{k-1}P_{k}{|_{s=0}}=P_{1}\\
+	\implies P_{n}&=\frac{1}{n!} \frac{d^nG}{ds^n}|_{s=0}
+	\end{aligned}
+$$
+
+Infine osserviamo che $G'(1)=\sum_{k}kP_{k}= <k> =E(k)$
+
+Proviamo ora a considerare $x_{1},x_{2},x_{2},\dots,x_{n}$, $n$ variabili aleatorie **indipendenti** con funzioni generatrici $G_{1}(s),G_{2}(s),\dots,G_{n}(s)$. Allora possiamo calcolare la funzione generatrice di $y=x_{1}+x_{2}+\dots x_{n}$ come:
+$$
+	G_{y}(S)=\prod^n_{i=1}G_{i}(s)
+$$
+Il risultato si dimostra per $n=2$ e poi si procede per induzione.
+
+### Funzioni Generatrici per studiare processi di Ramificazione
+
+Come già precedentemente discusso, un processo di ramificazione è un processo in cui in individuo genera $k$ individui con probabilità $P_{k}$ e ogni generazione successiva fa lo stesso. Si tratta dunque di una formalizzazione di processi a catena.
+
+![[Pasted image 20261004122603.png]]
+
+La domanda che viene spontaneo porsi è: se a $t=0$ ho un individuo e le $\{ P_{k} \}$ sono note, qual è la probabilità di avere $m$ individui dopo $n$ generazioni? Per $n$ piccolo si può procedere a contare con la orza bruta, se $n$ è grande la situazione si fa di gran lunga più complessa.
+Esiste però un modo per calcolare $G_{2}(s)$ cioè la funzione generatrice dopo 2 generazioni, e poi $G_{3}(s)$ e così via fino a $G_{n}(s)$. La probabilità di avere $m$ individui dopo $n$ generazioni sarà il coefficiente davanti a $s^m$ nella serie $G_{n}(s)$.
+
+Per arrivare a ciò andiamo ad esporre ancora un risultato molto utile.
+Siano $x_{1},x_{2},\dots$ variabili **indipendenti e identicamente distribuite** con funzioni generatrici $G(s)$, e sia $N$ una variabile, indipendente dalle $\{ x_{i} \}$, con funzione generatrice $F(s)$. La funzione generatrice $G_{y}(s)$ della variabile $y=x_{1}+x_{2}+\dots+x_{N}$ vale:
+$$
+	G_{y}(s)=F(G(s))
+$$
+
+La dimostrazione è semplice e segue dai risultati precedenti:
+___
+Sia $P_{N}$ la probabilità di $N$. Fissato $N$ ho che $G_{y}^{(N)}=\prod^N_{i=1}G(s)=G^N(s)$.
+Per $N$ non fissato trovo:
+$$
+	G_{y}(s)=\sum^\infty_{N=0}P_{N}G_{y}^{(N)}(s)=\sum^\infty_{N=0}P_{N}G^N(s)=F(G(s))
+$$
+$\blacksquare$
+___
+
+Usando questo risultato possiamo calcolare $G_{n}$ del problema di un processo di ramificazione.
+Sia $N_{n-1}$ il numero di individui all'$(n-1)$-esima generazione. Chiamiamo $x_{1}$ il numero di individui generati dal primo individuo, $x_{2}$ il numero di individui generati dal secondo individuo (della stessa generazione) e così via. All'$n$-esima generazione avremo:
+$$
+	N_{n}=x_{1}+x_{2}+\dots+x_{N_{n-1}}
+$$
+Usando il risultato appena dimostrato si ha che:
+$$
+	G_{n}(s)=G_{n-1}(G(s))
+$$
+dunque:
+$$
+	G_{2}(s)=G(G(s)),\quad G_{3}(s)=G_{2}(G(s))=G(G(G(s))),\quad \dots
+$$
+Questo calcolo è matematicamente semplice ma può velocemente portare a espressioni scomode da maneggiare.
+
+**ESEMPIO:** Calcoli di A.Lotka, 1920
+
+Sfruttando i dati demografici, Lotka mostrò che negli Stati Uniti all'inizio del 1900 un maschio generava $k$ maschi con probabilità date da:
+$$
+	P_{0}=\frac{1-(\alpha+\beta)}{1-\beta},\quad P_{k}=\alpha \beta^{k-1}
+$$
+con $\alpha \simeq{0}.2126$ e $\beta \simeq{0}.5892$. La funzione generatrice risulta pertanto:
+$$
+	G(S)=P_{0}+\alpha \sum^\infty_{k=1}\frac{(s\beta)^k}{\beta}=P_{0}+\frac{\alpha s}{1-\beta s}
+$$
+Cioè un'iperbole. Si può ulteriormente dimostrare che:
+$$
+	G_{n}(s)=\frac{A_{n}-B_{n}s}{C_{n}-D_{n}s}
+$$
+resta sempre un'iperbole, i coefficienti $A_{n}, \dots$ si ottengono in maniera ricorsiva.
+
+### Probabilità di estinzione
+
+Nonostante la forma delle funzioni generatrici possa diventare progressivamente sempre più complessa, il loro utilizzo ci permette di ricavare molto facilmente informazioni sulla probabilità di estinzione, cioè la probabilità che dopo molte generazioni non ci siano più discendenti.
+Il motivo è che questo calcolo si può ricondurre a $G_{n}(0)$ per $n$ grandi e non è dunque necessario ricavare la forma esplicita di $G_{n}(s)$.
+Chiamiamo la probabità di estinzione dopo $n$ generazioni $e_{n}=P_{0}^{(n)}=G_{n}(0)$, allora:
+$$
+	e_{1}=G_{1}(0)=G_{0}, \, e_{2}=G_{2}(0)=G(G(0))=G(e_{1}), \, e_{n}=G_{n}(0)=\dots=G(e_{n-1})
+$$
+Facciamo alcune osservazioni su $G(s)$ che ci permettono di scoprire di più su $e_{n}$.
+Notiamo che $G(1)=1$, $G'(s)\geq 0$, $G''(s) P_{2}\geq 0$ e $G'(1)=E(k)$, dunque $G(s)$ è una funzione concava, monotona, non decrescente.
+Studiamo il caso in cui $G'(1)\leq 1$ in maniera grafica. Iterando graficamente la regola $e_{n+1}=G(e_{n})$ osserviamo che $e_{n}$ tende a $1$, dunque l'estinzione è certa.
+![[Pasted image 20261004161557.png]]
+
+Considero ora il caso $G'(1)>1$ e procedo analogamente. $G(s)$ interseca necessariamente la bisettrice in un punto $s^*$, il valore di $e_{n}$ tende a questo $s^*$, detto punto fisso e l'estinzione non è più certa.
+![[Pasted image 20261004161806.png]]
+
+Abbiamo visto che quando $E(k)<1$ l'estinzione è certa. Nei modelli epidemiologici di tipo SIR (suscettibile, infettato, recovery), $<k> =R$ indica il numero medio di infetti per individuo ed è un parametro essenziale nello studio della probabilità di estinzione della malattia.
+**Attenzione!** Avere $R>1$ non significa che la malattia non si possa estinguere, significa solo che l'estinzione non è certa.
+
+**ESEMPIO**: "processo di ramificazione" familiare
+Ogni individuo può avere $0$ o $1$ figlio. Cioè:
+$$
+	P_{0},\,P_{1},\,P_{k}=0 \,\forall k\geq_{2}
+$$
+$$
+	P_{0}+P_{1}=1 \quad G(s)=\sum S^kP_{k}=P_{0}+sP_{1}\to \text{ retta}$$
+Abbiamo che $G'(1)=P_{1}$. Se la probabilità di nascita di un figlio è minore del $100\%$, allora l'estinzione è certa. Questo risultato è estremamente intuitivo e potevamo ricavarlo anche senza questo formalismo. Di fatto il processo non era neanche un processo di ramificazione.
+
+
+## Domande per revisione
+- [ ] 
+
+## Collegamenti
+- Lezione precedente: [[Probabilità condizionata]]
+- Concetti collegati: [[Probabilità condizionata]], [[Introduzione e concetti base di teoria della probabilità]]
+

@@ -16,7 +16,8 @@ source:
 
 ## Riassunto veloce
 
-
+Dopo una breve parentesi sulle definizioni storiche della probabilità e le loro applicazioni, ci siamo occupati dello studio della formulazione moderna della probabilità, la probabilità assiomatica.
+A questo punto abbiamo introdutto le fondamenta utili più avanti, di probabilità classica e calcolo combinatorio.
 
 ## Appunti
 
@@ -161,7 +162,9 @@ $$
 e così via per il triplo, il quarto e il quinto estratto.
 
 ## Domande per revisione
-- [ ] 
+- [ ] Come viene storicamente definita la probabilià, quale formulazione ha interesse fisico?
+- [ ] Quali sono gli assiomi della probabilità? 
+- [ ] Enuncia 2 importanti teoremi della probabilità classica.
 
 ## Collegamenti
 - Lezione precedente: [[]]
