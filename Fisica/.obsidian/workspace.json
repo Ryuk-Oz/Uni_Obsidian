@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Uni/Uni Terzo Anno/Metodi 2/Funzioni polidrome.md",
+                "file": "Uni/Uni Terzo Anno/Intro alla Probabilità/Distribuzioni di Probabilità continue (di variabili aleatorie).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Funzioni polidrome"
+              "title": "Distribuzioni di Probabilità continue (di variabili aleatorie)"
             }
           }
         ]
@@ -80,8 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 294.359375,
-    "collapsed": true
+    "width": 294.359375
   },
   "right": {
     "id": "aef97c1a65414800",
@@ -189,27 +188,26 @@
   },
   "active": "78b55add6d657181",
   "lastOpenFiles": [
-    "Pasted image 20261004193733.png",
-    "Pasted image 20261004173203.png",
-    "Pasted image 20261004172425.png",
-    "Pasted image 20261004172213.png",
-    "Pasted image 20261004171556.png",
-    "Uni/Uni Terzo Anno/Intro alla Probabilità/Distribuzioni di Probabilità continue.md",
-    "immagini/Probabilità/Pasted image 20261004122603.png",
-    "immagini/Probabilità/Pasted image 20261004161557.png",
-    "immagini/Probabilità/Pasted image 20261004161806.png",
-    "immagini/immagini_mq1/Shrodinger/Pasted image 20261003125732.png",
-    "immagini/immagini_mq1/Shrodinger/Pasted image 20261002110437.png",
-    "immagini/Immagini GAL2/Curve e Superfici/Pasted image 20261001225620.png",
-    "Uni/Uni Terzo Anno/Intro alla Probabilità/Processi di ramificazione.md",
+    "immagini/Probabilità/Pasted image 20261007152600.png",
+    "immagini/Probabilità/Pasted image 20261007153305.png",
+    "immagini/Probabilità/Pasted image 20261007155122.png",
+    "Uni/Uni Terzo Anno/Intro alla Probabilità/Distribuzioni di Probabilità continue (di variabili aleatorie).md",
+    "immagini/Probabilità/Pasted image 20261008092344.png",
     "Uni/Uni Terzo Anno/Intro alla Probabilità/Probabilità condizionata.md",
+    "immagini/Probabilità/Pasted image 20261008085649.png",
+    "Uni/Uni Terzo Anno/Intro alla Probabilità/Processi di ramificazione.md",
     "Uni/Uni Terzo Anno/Intro alla Probabilità/Introduzione e concetti base di teoria della probabilità.md",
-    "Uni/Uni Terzo Anno/MQ 1/Equazione di Shrödinger.md",
+    "immagini/Immagini GAL2/Curve e Superfici/Pasted image 20261004234735.png",
+    "immagini/Immagini GAL2/Curve e Superfici/Pasted image 20261007000222.png",
+    "immagini/Immagini GAL2/Curve e Superfici/Pasted image 20261006233458.png",
+    "immagini/Immagini GAL2/Curve e Superfici/Pasted image 20261006232155.png",
+    "immagini/Immagini GAL2/Curve e Superfici/Pasted image 20261006222658.png",
     "Uni/Uni Terzo Anno/GAL 2/Superfici nello spazio.md",
-    "Uni/Uni Terzo Anno/MQ 1/Introduzione storica alla meccanica quantistica.md",
     "Uni/Uni Terzo Anno/GAL 2/Curve nello spazio.md",
-    "Self study/Campi classici/c) Teorie di Gauge/Simmetrie e teorie di Gauge.md",
+    "Uni/Uni Terzo Anno/MQ 1/Equazione di Shrödinger.md",
+    "Uni/Uni Terzo Anno/MQ 1/Introduzione storica alla meccanica quantistica.md",
     "Uni/Uni Terzo Anno/Metodi 2/Funzioni polidrome.md",
+    "Self study/Campi classici/c) Teorie di Gauge/Simmetrie e teorie di Gauge.md",
     "Uni/Uni Terzo Anno/Metodi 2/Mappe conformi e Continuazione Analitica.md",
     "Untitled",
     "immagini/immagini_mq1/Shrodinger",

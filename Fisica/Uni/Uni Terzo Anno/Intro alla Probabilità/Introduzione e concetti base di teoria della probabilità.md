@@ -8,7 +8,7 @@ argomenti:
 lezione-precedente:
 source:
 ---
-
+**NOTA sul corso:** In queste note non sono riportati tutti gli esempi in maniera completa, per quelli fai riferimento agli appunti presi a lezione
 
 > [!info] Contesto
 > Corso: Intro Probabilità

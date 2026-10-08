@@ -12,12 +12,13 @@ source:
 
 
 > [!info] Contesto
-> Corso: undefined
-> Argomenti previsti: 
+> Corso: Probabilità
+> Argomenti previsti: Funzioni generatrici e processi di ramificazione e probabilità di estinzione
 
 ## Riassunto veloce
 
-
+L'obiettivo di questa sezione è porre le basi per quelli che saranno i processi stocastici e le catene di Markov, sottoforma di processi di ramificazione, ovvero processi usati per descrivere l'evoluzione di popolazioni che di generazione in generazione generano una prole con probabilità uguale a quella della generazione precedenze. In particolare ci siamo concentrati sullo studio della probabilità di estinzione, che è ben più semplice di un caso generale di altro tipo.
+Per poter studiare questi processi è stato necessario introdurre il concetto di funzione generatrice.
 
 ## Appunti
 
@@ -139,6 +140,40 @@ $$
 	P_{0}+P_{1}=1 \quad G(s)=\sum S^kP_{k}=P_{0}+sP_{1}\to \text{ retta}$$
 Abbiamo che $G'(1)=P_{1}$. Se la probabilità di nascita di un figlio è minore del $100\%$, allora l'estinzione è certa. Questo risultato è estremamente intuitivo e potevamo ricavarlo anche senza questo formalismo. Di fatto il processo non era neanche un processo di ramificazione.
 
+Forniamo in fine un esmpio carino preso sempre dallo studio di infezioni virali, per quanto non sia strettamente correlato ai processi di ramificazione.
+
+**ESEMPIO:** Simple Pooling
+Partiamo dall'idea di voler risparmiare sul numero di test usati per una certa malattia. L'idea per fare questo è di analizzare un gruppo di individui tutti insieme. Se il batch risultasse negativo significherebbe che all'interno sono tutti negativi e siamo a posto così. In caso positivo, avremmo almeno un individuo positivo e dovremmo testare separatamente tutto il batch.
+Immaginiamo di dividere $N$ individui in batch di dimensione $b$. Sia $p$ la probabilità di trovare un positivo.
+
+![[Pasted image 20261007155122.png]]
+
+Andiamo a caloclare il numero medio di test per individuo e vediamo se risulta minore rispetto a compiere il test senza pooling (senza pooling il valore medio è ovviamente $1$).
+Calcoliamo la probabilità che un batch sia positivo o negativo e il numero di test che andremmo a fare in ciascun caso.
+$$
+	\begin{aligned}
+	\text{negativo}\implies N_{t}=1 \quad &P_{1}=(1-p)^b\\
+	\text{positivo}\implies N_{t}=1+b \quad &P_{1+b}=1-P_{1}
+	\end{aligned}
+$$
+a questo punto possiamo calcolare il numero medio di test.
+$$
+	<N_{t}> = (1-p)^b+(1+b)[1-(1-p)^b] =(1+b)-b(1-p)^b
+$$
+E il numero medio per individuo:
+$$
+	\frac{<N_{t}>}{b}=\frac{1}{b}+1-(1-p)^b
+$$
+Il simple pooling è efficace solo se questo numero è compreso tra 0 e 1.
+Nel caso in cui la malattia sia rara, $p\ll 1$ possiamo approssimare il risultato $(1-p)^b \sim 1-bp+\dots$
+$$
+	\implies \frac{<N>}{b} \sim \frac{1}{b}+bp
+$$
+Studiamone il minimo in funzione del batch per trovarne la dimensione ottimale: 
+$$
+	\frac{d}{db}\left( \frac{<N>}{b} \right)=-\frac{1}{b^2}+p=0 \implies b^*=\frac{1}{\sqrt{ p }}
+$$
+e $\frac{<N>}{b}=2\sqrt{ p }$. Che è sempre minore di $1$ per $\sqrt{ p }< \frac{1}{2}$.
 
 ## Domande per revisione
 - [ ] 

@@ -16,7 +16,8 @@ source:
 
 ## Riassunto veloce
 
-
+In questa parte ci occupiamo dello studio di curve in maniera molto simile a quanto già affrontato in analisi 3. Ci concentriamo in particolare sulla differenza tra curve in fisica (parametrizzate) e in geometria (parametrizzabili), andando a definire varie proprietà delle curve: lunghezza, curvatura e torsione per poi concludere con alcune osservazioni sulle dimensioni e i gradi di libertà di una curva; con l'ausilio del teorema di Frenet.
+In particolare, nello studio di tutte le proprietà, sfruttiamo la proprietà delle curve di avere una a parametrizzazione "privilegiata" che sfruttiamo in tutte le definizioni, anzichè andare a considerare una parametrizzazione generica per poi mostrare che le proprietà delle curve non dipendono dalla parametrizzazione. In particolare questa parametrizzazione prende il nome di parametrizzazione per lunghezza d'arco ed è quella che mette la curva in corrispondenza biunivoca con la retta.
 
 ## Appunti
 
@@ -368,7 +369,12 @@ Analizziamo la dimostrazione al teorema per step.
 
 
 ## Domande per revisione
-- [ ] 
+- [ ] Qual è la definizione di curva in geometria? In cosa differisce dalla definizione di curva in fisica?
+- [ ] Qual è la differenza tra curva parametrizzata e parametrizzabile?
+- [ ] Cos'è la parametrizzazione per lunghezza d'arco? In cosa mi è utile rispetto a una parametrizzazione standard?
+- [ ] Definisci lunghezza di una curva in tutti i modi che conosci.
+- [ ] Cosa sono la curvatura e la torsione di una curva?
+- [ ] Come curvatura e torsione entrano in gioco nella determinazione dei gradi di libertà di una curva? Che dimensioni ha una curva?
 
 ## Collegamenti
 - Lezione precedente: [[]]
