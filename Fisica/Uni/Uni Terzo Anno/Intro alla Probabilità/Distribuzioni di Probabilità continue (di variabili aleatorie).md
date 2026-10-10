@@ -126,5 +126,5 @@ Il modo di trattare questo paradosso è molto complesso e difficilmente in scena
 
 ## Collegamenti
 - Lezione precedente: [[Processi di ramificazione]]
-- Concetti collegati: [[]]
+- Concetti collegati: [[Introduzione e concetti base di teoria della probabilità]], [[Probabilità condizionata]]
 

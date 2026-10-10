@@ -4,21 +4,49 @@
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": false,
-  "showOrphans": true,
+  "showOrphans": false,
   "collapse-color-groups": false,
   "colorGroups": [
     {
-      "query": "path:\"Self study/Campi classici\"  ",
+      "query": "[\"corso\":\"Metodi 2\"",
       "color": {
         "a": 1,
-        "rgb": 496591
+        "rgb": 7488964
       }
     },
     {
-      "query": "path:\"Self study/Meccanica statistica (delle particelle)\"  ",
+      "query": "[\"corso\":\"Meccanica Statistica\"",
       "color": {
         "a": 1,
-        "rgb": 8983752
+        "rgb": 13725696
+      }
+    },
+    {
+      "query": "[\"corso\":\"Teoria dei campi classica\"",
+      "color": {
+        "a": 1,
+        "rgb": 49151
+      }
+    },
+    {
+      "query": "[\"corso\":\"probabilità\"",
+      "color": {
+        "a": 1,
+        "rgb": 13179075
+      }
+    },
+    {
+      "query": "[\"corso\":\"GAL 2\"",
+      "color": {
+        "a": 1,
+        "rgb": 3375104
+      }
+    },
+    {
+      "query": "[\"corso\":\"Meccanica Quantistica 1\"",
+      "color": {
+        "a": 1,
+        "rgb": 16711680
       }
     }
   ],
@@ -32,6 +60,6 @@
   "repelStrength": 14.0623065813906,
   "linkStrength": 1,
   "linkDistance": 353,
-  "scale": 0.23469161170435374,
+  "scale": 0.30440783698063895,
   "close": true
 }

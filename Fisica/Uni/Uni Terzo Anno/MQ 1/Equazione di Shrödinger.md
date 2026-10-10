@@ -439,7 +439,7 @@ $$
 	\hat{x}\equiv+i\frac{ \partial  }{ \partial k } 
 $$
 
-#### Equazione di Shrödinger in 3 dimensioni
+#### 3. Equazione di Shrödinger in 3 dimensioni
 
 Occupiamoci ora dello studio dell'equazione completa, in 3 dimensioni ed in presenza di un potenziale.
 $$
@@ -622,8 +622,74 @@ $$
 Anche in questo caso vado a ritrovare le leggi classiche.
 Eleviamo questi risultati a postulati e diciamo che i valori medi delle osservabili fisiche evolvono nel tempo secondo leggi classiche. (Teorema di Ehrenfest).
 
+#### 4. Soluzione per potenziali conservativi
 
+Spostiamoci nuovamente su un problema semplificato per provare a trovare una soluzione dell'equazione. Consideriamo sistemi conservativi, cioè sistemi per i quali il potenziale è indipendente dal tempo. Per sistemi di questo tipo l'Hamiltoniana si conserva ed è:
+$$
+	H=\frac{|\vec{p}|^2}{2m}+V(\vec{r})\quad \text{(per una particella)}
+$$
+Nel caso in cui il sistema fosse fatto da più particelle avremmo:
+$$
+	H=\sum_{i=1}^n \frac{|\vec{p}_{i}|^2}{2m_{i}}+V(\vec{r}_{1},\vec{r}_{2},\dots,\vec{r}_{n})
+$$
+Essendo il sistema conservativo abbiamo $H(\vec{p},\vec{r})=E=\text{cost}$ 
+**Achtung!** Non ho completamente rimosso la dipendenza dal tempo. Resta una dipendenza temporale implicita contenuta in $\vec{p}=\vec{p}(t)$ e $\vec{r}=\vec{r}(t)$.
 
+Proviamo a risolvere l'equazione in queste condizioni.
+$$
+	i\hbar \frac{ \partial \psi }{ \partial x } =-\frac{\hbar^2}{2m}\Delta \psi+V(\vec{r})\psi
+$$
+L'equazione così scritta (senza dipendenza temporale esplicita) è invariante per traslazioni temporali, per questo possiamo risolverla per separazione di variabili, andando a cercare una soluzione in forma fattorizzata.
+$$
+	\psi(\vec{r},t)=u(\vec{r})f(t)
+$$
+Se riesco ulteriormente a dimostrare che soluzioni di questo tipo formano una base di $L^2(\mathbb{R}^3)$, ho trovato tutte le soluzioni possibili.
+Sostituiamo il nostro Ansatz nell'equazione.
+$$
+	\frac{ \partial \psi }{ \partial t } =u(\vec{r})\frac{ d f }{ d t } \qquad \Delta \psi=f(t)\Delta u(\vec{r}) 
+$$
+$$
+	\longrightarrow \, i\hbar u(\vec{r})\frac{df}{dt}=-\frac{\hbar^2}{2m}f(t)\Delta u(\vec{r})+V(\vec{r})u(\vec{r})f(t)
+$$
+Spostiamo la tutte le dipendenze da $\vec{r}$ da un lato e quelle da $t$ da un'altro. 
+Per farlo dividiamo l'equazione per $\psi$. Questo potrebbe apparentemente causare problemi perchè in alcuni punti la funzione d'onda si annula. Per questo andiamo a fare quest'operazioni in tutti i punti dove $\psi\neq 0$ e dove si annula la estendiamo per continuità. Otteniamo:
+$$
+	\frac{i\hbar}{f(t)} \frac{df}{dt}=-\frac{\hbar^2}{2m} \frac{\Delta u(\vec{r})}{u(\vec{r})}+V(\vec{r})\overset{!}{=} E
+$$
+Spieghiamo quest'uguaglianza. I due membri devono essere tra loro uguali ma dipendono da variabili diverse tra loro scorrelate. Per questo motivo devono essere entrambe uguali ad una stessa costante. Inoltre entrambi i membri hanno dimensione di un'energia. Per questo motivo chiamiamo questa costante $E$.
+
+Risolviamo separatamente entrambi i membri dell'equazione.
+Il primo membro è banale: 
+$$
+	\frac{i\hbar}{f(t)}df=Edt \to \frac{df}{f}=-\frac{i}{\hbar}Edt\implies f=f(0)e^{ -\frac{i}{\hbar}Et }
+$$
+$f(0)$ è una costante fissata tramite la normalizzazione.
+Si tratta di un fattore universale, presente in tutte le soluzioni con potenziali conservativi, indipendentemente dalla forma funzionale del potenziale.
+
+Studiamo l'altro membro:
+
+>[!summary] Equazione di Shrödinger stazionaria
+>
+>$$
+>	-\frac{\hbar^2}{2m}\Delta u(\vec{r})+V(\vec{r})u(\vec{r})=Eu(\vec{r})
+>$$
+
+A differenza dell'altro membro, questo dipende dal potenziale $V$
+
+**OSS:** se scelgo $u(\vec{r})$ reale questa è un'equazione reale.
+**OSS:** non sempre tutti i valori di $E$ sono compatibili con quest'equazione, la condizione di normalizzabilità determina i valori di $E$ compatibili, che possono comparire in uno spettro discreto o continuo
+
+##### Studio delle soluzioni fattorizzate
+
+Presa una soluzione $u_{E}(\vec{r})$ dell'equazione stazionaria, la soluzione dell'equazione completa è:
+$$
+	\psi_{E}(\vec{r},t)=u_{E}(\vec{r})e^{ -(i/\hbar)Et }
+$$
+Soluzioni di questo tipo prendono il nome di funzioni d'onda degli **stati stazionari**. Occupiamoci di alcune proprietà di questa classe di soluzioni.
+1. a
+2. a
+3. a
+4. 
 ## Domande per revisione
 - [ ] 
 

@@ -1,5 +1,5 @@
 ---
-corso: Probabilià
+corso: Probabilità
 data: 2026-10-03
 tags:
   - lezione
