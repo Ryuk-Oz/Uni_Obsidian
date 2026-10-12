@@ -686,10 +686,71 @@ $$
 	\psi_{E}(\vec{r},t)=u_{E}(\vec{r})e^{ -(i/\hbar)Et }
 $$
 Soluzioni di questo tipo prendono il nome di funzioni d'onda degli **stati stazionari**. Occupiamoci di alcune proprietà di questa classe di soluzioni.
-1. a
-2. a
-3. a
-4. 
+
+1. Sono soluzioni stazionarie, ovvero non variano nel tempo. Il motivo è che le uniche osservabili che andiamo a misurare non sono le funzioni d'onda, bensì le densità di probabilità di posizione. 
+$$
+   	\rho_{E}(\vec{r},t)=|u_{E}(\vec{r})e^{ -Ct }|=|u_{E}(\vec{r})|
+   $$
+   dipende solo dalla posizione e non dal tempo.
+   
+2. Possiamo interpretare gli stati stazionari come soluzioni di definita energia $E$. 
+   Iniziamo riscrivendo l'equazione tramite gli operatori
+$$
+   	\begin{aligned}
+	x&\to \hat{x}=x \cdot \\
+	p&\to \hat{p}=-i\hbar \frac{ \partial  }{ \partial x } \\
+	H&\to \hat{H}=\frac{|\hat{p}|^2}{2m}+V(\hat{\vec{r}})=-\frac{\hbar^2}{2m}\Delta + V(\vec{r})
+	\end{aligned}
+   $$
+   Dunque possiamo riscrivere l'equazione stazionaria come: 
+$$
+	\hat{H}u(\vec{r})=Eu(\vec{r})
+   $$
+   cioè $u(\vec{r})$ è autofunzione dell'operatore $\hat{H}$ agli autovalori $E$.
+   Se adesso andiamo a calcolare il valore medio $<H>_{\psi_{E}}$ troviamo:    
+$$
+	<H>_{\psi_{E}} \equiv \int d^3r \, \psi^*_{E}(\vec{r},t)\hat{H}\psi_{E}(\vec{r},t)=\int d^3r\, u^*_{E}\hat{H}u_{E}=E\int d^3r\,|u_{E}(\vec{r})|^2=E
+   $$
+   Nell'ultimo passaggio abbiamo sfruttato la normalizzazione.
+   Abbiamo trovato che il valore medio dell'energia non dipende dal tempo (conseguenza del teorema di Ehrenfest, il valore medio continua a seguire la legge classica di conservazione dell'energia).
+   Si dimostra molto rapidamente in modo analogo che $<H^2>_{\psi_{E}}=E^2$.
+   Dunque $\Delta H_{\psi_{E}}= <H^2>-<H>^2=0$ e NON ho INDETERMINAZIONE sull'energia. L'energia di ogni stato è dunque ben definita.
+   
+3. La soluzione generale dell'edS per sistemi conservativi è la combinazione lineare degli stati stazionari. La soluzione dell'equazione stazionaria ci da lo spettro delle possibili energie, che può essere discreto o continuo. 
+   Nel caso discreto oteniamo la soluzione generale come:
+$$
+	\psi(\vec{r},t)\equiv \sum_{n}c_{n}u_{n}(\vec{r})e^{ -\frac{i}{\hbar}E_{n}t }
+$$
+   Nel caso continuo:
+   $$
+	\psi(\vec{r},t)\equiv \int dE \, c(E) u_{E}(\vec{r})e^{ -\frac{i}{\hbar}Et }
+   $$
+4. Le soluzioni suggeriscono un'interpretazione probabilistica anche per l'equazione in presenza di potenziale. Sostituendo $E=\hbar \omega$ (energia della particella libera) nella soluzione continua otteniamo $\int\dots e^{ -i\omega t }$ che posso riscrivere come TF e trovare l'interpretazione probabilistica.
+   Dunque possiamo concludere che questo caso sia una "generalizzazione" della particella libera.
+   Nel caso discreto andiamo ad interpretare $|C_{n}|^2$ come la probabilità di trovare il livello energetico $E_{n}$ facendo una misura di $E$ sul sistema descritto da $\psi$. Analogamente nel caso continuo possiamo interpretare $|c(E)|^2$ come la densità di probabilità dell'osservabile energetica $E$.
+   In accordo con questa interpretazione, devono valere alcune relazioni di consistenza:
+$$
+	\begin{aligned}
+	\text{se } ||\psi||&=1 \implies \sum_{n}|c_{n}|^2=1;\quad \text{"simil-equazione di Parseval"}\\
+	<H>_{\psi} &\equiv \int d^3r\,\psi^*\hat{H}\psi = \sum |c_{n}|E_{n}
+	\end{aligned}
+$$
+
+5. La combinazione lineare di stati stazionari non è stazionaria.
+$$
+\begin{aligned}
+\psi(\vec{r},t)&=c_{1}u_{1}(\vec{r})\exp\left[ -\frac{i}{\hbar}E_{1}t \right]+c_{2}u_{2}(\vec{r})\exp\left[ -\frac{i}{\hbar}E_{2}t \right]\\
+\implies \rho(\vec{r},t)&=|\psi(\vec{r},t)|^2 =|c_{1}|^2|u_{1}(\vec{r})|^2+|c_{2}|^2|u_{2}(\vec{r})|^2+2\mathrm{Re}\left[ c_{1}^*c_{2}u_{1}^*u_{2}\exp\left( -\frac{i}{\hbar}(E_{2}-E_{1})t \right) \right]
+\end{aligned}
+$$
+   La densità di probabilità di posizione oscilla con frequenza angolare $\omega_{ij}=\frac{E_{i}-E_{j}}{\hbar}$. Da qua si ritrova la formula di Rydberg.
+
+6. L'interpretazione fisica di $E$ come energia, richiede $E\in \mathbb{R}$. Siccome $E$ è autovalore di $\hat{H}$, questo va ad imporre una condizione su $\hat{H}$ (che vedremo essere l'ermeticità). Se $E$ fosse complessa, comparirebbe un termine esponenziale reale che non scompare nella densità di probabilità di posizione. La probabilità andrebbe a diminuire nel tempo e la soluzione non risulterebbe essere stazionaria.
+
+#### 5. Studio di semplici potenziali in d=1
+
+FINIRE LEZIONE 8+9
+   
 ## Domande per revisione
 - [ ] 
 

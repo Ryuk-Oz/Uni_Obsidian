@@ -256,7 +256,7 @@ $$
 $$
 	\implies H''_{n}-2\xi H'_{n}+2nH_{n}=0
 $$
-   Che è esattamente l'equazione che abbiamo risolto, per $\varepsilon-1=n$
+   Che è esattamente l'equazione che abbiamo risolto, per $\varepsilon-1=n$. Dunque la funzione generatrice $S$ mi genera effettivamente le soluzioni all'equazione differenziale.
 5. Per trovare i polinomi di Hermite vale la seguente formula, detta formula di Rodriguez:
 $$
 \begin{aligned}

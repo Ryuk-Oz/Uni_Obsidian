@@ -231,6 +231,7 @@ Cioè $v$ è un vettore tangente a $S$ solo se e solo se è la velocità di una 
   $$
   $\blacksquare$
 
+FINIRE LEZIONE 4+5
 
 ## Domande per revisione
 - [ ] 
