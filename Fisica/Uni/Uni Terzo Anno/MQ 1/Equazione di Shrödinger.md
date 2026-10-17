@@ -747,9 +747,6 @@ $$
 
 6. L'interpretazione fisica di $E$ come energia, richiede $E\in \mathbb{R}$. Siccome $E$ è autovalore di $\hat{H}$, questo va ad imporre una condizione su $\hat{H}$ (che vedremo essere l'ermeticità). Se $E$ fosse complessa, comparirebbe un termine esponenziale reale che non scompare nella densità di probabilità di posizione. La probabilità andrebbe a diminuire nel tempo e la soluzione non risulterebbe essere stazionaria.
 
-#### 5. Studio di semplici potenziali in d=1
-
-FINIRE LEZIONE 8+9
    
 ## Domande per revisione
 - [ ] 
