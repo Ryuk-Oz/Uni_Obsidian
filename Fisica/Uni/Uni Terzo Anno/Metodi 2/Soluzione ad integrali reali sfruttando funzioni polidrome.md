@@ -21,7 +21,7 @@ source:
 ## Appunti
 
 In questa parte del corso occupiamoci dello studio di integrali complessi da risolvere ma che diventano notevolmente più semplici passando al piano complesso e sfruttando le proprietà di funzioni polidrome
-#### Integrale di una potenza moltiplicata per una funzione razionale 
+### Integrale di una potenza moltiplicata per una funzione razionale (tra 0 e $\infty$) 
 
 Iniziamo dallo studio di una classe di integrali in particolare:
 $$
@@ -71,8 +71,8 @@ $$
 	&=I(\alpha)(1-e^{ i 2\pi \alpha })
 	\end{aligned}
    $$
-  alla fine abbiamo considerato solo il foglio 0 perchè le funzioni in campo reale vivono sul foglio zero (?) 
-   $$
+  alla fine abbiamo considerato solo il foglio 0 perchè le funzioni in campo reale vivono sul foglio zero.
+$$
 	I(\alpha)=\frac{J(\alpha)}{1-e^{ i 2\pi \alpha }}
    $$
    se $J(\alpha)$ lo sappiamo calcolare coi residui.
@@ -100,7 +100,180 @@ $$
 	I(\alpha)= \frac{1}{1-e^{ i 2\pi \alpha }}\sum_{\text{al finito}} \text{Res}[z^\alpha R(z)|_{0}]
 $$
 
-   
+### Integrale di una potenza moltiplicata per una funzione razionale (tra $a$ e $b$)
+
+Occupiamoci adesso di un integrale dello stesso tipo, ma con estremi di integrazione finiti (coi punti di diramazione negli estremi di integrazione).
+$$
+	I(\alpha)=\int^b_{a} \left( \frac{x-a}{b-x} \right)^\alpha R(x)\,dx
+$$
+con $a,b \in \mathbb{R}$.
+Come prima studiamo prima un esempio, per poi occuparci del caso generale.
+$$
+	I(\alpha)=\int^1_{0}dx\, \frac{1}{x}\left( \frac{x}{1-x} \right)^\alpha
+$$
+Per prima cosa vado a verificare l'esistenza dell'integrale:
+- vicino a 0 devo avere: $\mathrm{Re}(\alpha)-1>-1$
+- vicino a $1$ devo avere: $-\mathrm{Re}(\alpha)>-1$
+cioè: $0<\mathrm{Re}(\alpha)<1$.
+Definiamo a questo punto un integrale ausiliario sul piano complesso:
+$$
+	J(\alpha)=\oint_{\Gamma}dz \, \frac{1}{z}\left( \frac{z}{1-z} \right)^\alpha
+$$
+Scelgo il taglio della funzione polidroma in modo che vada a coincidere sul cammino di integrazione reale. Inoltre mi metto sul foglio "0" così che l'argomento dell'integrale complesso sia la continuazione analitica dell'argomento dell'integrale reale.
+
+![[Pasted image 20261018165221.png]]
+
+Disegno la curva $\Gamma_{\varepsilon}$ tale che $\Gamma=\lim_{ \varepsilon \to 0 }\Gamma_{\varepsilon}$ coincida con il cammino di integrazione reale. Questo porta alla forma "ad osso di cane".
+
+![[Pasted image 20261018165400.png]]
+
+**OSS:** nel limite in cui $\varepsilon\to 0$ all'interno della curva non ci sono singolarità, ma la curva gira in senso orario, pertanto posso calcolare l'integrale come la somma dei residui al di fuori della curva, che corrisponde alla somma di tutti i residui. Nel nostro caso abbiamo solo il residuo all'infinito.
+$$
+	\implies J(\alpha)=2\pi i \underset{z=\infty}{\text{Res}}[f(z)]
+$$
+Come nel caso precedente questo non è l'unico modo di calcolare $J(\alpha)$.
+$$
+	\begin{aligned}
+	J(\alpha)&=\lim_{ \varepsilon \to 0 } \left( \int^{1-\varepsilon}_{\varepsilon} f_{+}(z)dz-\int_{C^0_{z}}f(z) dz + \int_{C^1_{z}}f(z)dz+\int^\varepsilon_{1-\varepsilon}f_{-}(z)dz \right)=\\ 
+	&=\int^1_{0}(f_{+}(z)-f_{-}(z))\,dz=\int_{0}^1	dx\, f_{+}(x)(1-e^{ i2\pi \alpha })=I(\alpha)(1-e^{ i2\pi \alpha })\end{aligned}
+$$
+Dove gli integrali sui cerchi si annullano sempre per i valori di $\alpha$ in cui l'integrale esiste.
+Le funzioni $f_{+}$ e $f_{-}$ prese sul foglio 0 nel limite in cui mi trovo sul cammino di integrazione $(0,1)$, assumono valori:
+$$
+	\begin{cases}
+	f_{+}=| \frac{z}{1-z}|^\alpha \\
+	f_{-}= | \frac{z}{1-z}|^\alpha e^{ i\alpha 2\pi }
+	\end{cases}
+$$
+e troviamo la formula scritta sopra.
+Dunque possiamo calcolare:
+$$
+	I(\alpha)=\frac{2\pi i}{1-e^{ i 2\pi \alpha }}\underset{z=\infty}{\text{Res}}[f(z)]
+$$
+Ci resta da calcolare il residuo. Per farlo andiamo a sviluppare la funzione all'infinito.
+Poichè $f(z)$ ha uno zero semplice all'infinito, possiamo svilupparla con taylor. Scriviamola prima in modo più semplice.
+$$
+	f(z)=\frac{1}{z}\left( \frac{z}{1-z} \right)^\alpha=\frac{1}{z}\left( \frac{1}{\frac{1}{z}-1} \right)^\alpha=\frac{1}{z}\left[ \frac{(-1)^\alpha}{\left( 1-\frac{1}{z} \right)^\alpha} \right]
+$$
+Parte di questo lo sappiamo sviluppare:
+$$
+	\left( 1-\frac{1}{z} \right)^{-\alpha} =\sum_{k=0}^\infty \binom{-\alpha}{k}\left( -\frac{1}{z} \right)^k \sim 1+\frac{\alpha}{z}+\dots
+$$
+Dunque $\frac{1}{z} \left( 1-\frac{1}{z} \right)^\alpha \sim \frac{1}{z}+\frac{\alpha}{z^2}+\dots$.
+Sappiamo che il residuo all'infinito è pari a meno il coefficiente del termine $z^{-1}$ dello sviluppo. Ci resta da capire solo più a cosa corrsiponde di preciso $(-1)^\alpha$.
+Il termine $(-1)^\alpha$ esce dalla funzione polidroma e dipende da come varia la differenza tra gli angoli $\varphi_{0}$ e $\varphi_{1}$ andando all'infinito sul foglio zero.
+Per la nostra scelta di angoli (cioè per la nostra scelta di far corrispondere il taglio al cammino di integrazione) si ha $\varphi_{0}-\varphi_{1}=\pi \implies(-1)^\alpha=|-1|\cdot e^{ i\pi \alpha }=e^{ i\pi \alpha }$.
+Per cui:
+$$
+	f(z)\sim e^{ i\pi \alpha }\left( \frac{1}{z}+\frac{\alpha}{z^2}+\dots \right)
+$$
+$$
+	\implies\underset{z=\infty}{\text{Res}}[f(z)]=-e^{ i\pi \alpha }
+$$
+e troviamo:
+$$
+	I(\alpha)=-2\pi i \frac{e^{ i\pi \alpha }}{1-e^{i 2\pi \alpha }}=\frac{\pi}{\sin(\pi \alpha)}
+$$
+
+Occupiamoci ora del caso generale:
+
+$$
+	I(\alpha)=\int^b_{a} \left( \frac{x-a}{b-x} \right)^\alpha R(x) \, dx \quad a,b \in \mathbb{R};\, b>a
+$$
+Per prima cosa verifico l'esistenza dell'integrale, poi scrivo l'integrale ausiliario complesso:
+$$
+	J(\alpha)=\oint_{\Gamma} dz\, R(z) \left( \frac{z-a}{b-z} \right)^\alpha
+$$
+Come ho fatto prima scelgo il taglio della funzione polidroma sul cammino di integrazione reale e come curva $\Gamma$ scelgo quella a "osso di cane". In questo modo trovo che:
+$$
+	J(\alpha)=2\pi i \sum_{\text{tutti}}\text{Res}[f(z)]
+$$
+Inoltre continua a valere il fatto per cui:
+$$
+	J(\alpha)=\int^b_{a} dz\, (f_{+}(z)-f_{-}(z))=I(\alpha)(1-e^{ i 2\pi \alpha })
+$$
+Dunque otteniamo:
+$$
+	I(\alpha)=\frac{2\pi i}{1-e^{ i 2\pi \alpha }}\sum_{\text{tutti}}\text{Res}[f(z)]
+$$
+
+**OSS:** tramire un cambio di variabile "furbo", cioè tramite una trasformazione di Moebius, è sempre possibile ricondursi da questo caso a quello precedente.
+
+$$
+\int^b_{a}dx\, R(x)\left( \frac{x-a}{b-x} \right)^\alpha \underset{y=\frac{x-a}{b-x}}{=}\int^\infty_{0} dy\, \frac{b-a}{(1+y)^2}R\left( \frac{a+by}{1+y} \right)y^\alpha=\int^\infty_{0}dy\, R'(y)\,y^\alpha
+$$
+### Integrali di funzioni puramente razionali
+
+L'ultima classe di integrali che possiamo calcolare sfruttando le proprietà delle funzioni polidrome è quella degli integrali di funzioni puramente razionali (laddove non sia possibile calcolarli facendo uso di metodi tradizionali).
+$$
+	I=\int^b_{a} dx \, R(x)\quad a,b \in \mathbb{R}
+$$
+Come sempre studiamo per prima cosa l'esistenza dell'integrale. Perchè l'integrale esista la funzione $R(x)$ non deve avere poli $\in(a,b)$. Inoltre, per $x\to a$ dobbiamo avere $R(x)\sim A(x-a)^k$ con $k>-1$, e idem per $b$.
+
+A questo punto consideriamo la funzione ausiliaria in campo complesso:
+$$
+	J=\oint_{\Gamma}dz\, R(z)\log\left( \frac{z-a}{b-z} \right)
+$$
+Il logaritmo "perde" sempre contro la potenza, dunque l'integrale converge.
+Come al solito, scegliamo il taglio sul cammino di integrazione, e come abbiamo imparato per situazioni simili a questa, andiamo a scegliere come $\Gamma$ il cammino ad "osso di cane".
+
+![[Pasted image 20261018180059.png]]
+
+In questo modo possiamo calcolare $J$ come somma dei residui di $f(z)=R(z)\log\left( \frac{z-a}{b-z} \right)$.
+Inoltre, l'integrale converge abbastanza velocemente da annullarsi sui cerchi e restiamo con:
+$$
+	J=\int^b_{a} dz\,(f_{+}(z)-f_{-}(z))
+$$
+Occupiamoci di calcolare $f_{-}$ ed $f_{+}$
+$$
+	\begin{cases}
+	f_{+}=R(z)\left( \log | \frac{z-a}{b-z}|+i(\varphi_{a}-\varphi_{b})+i 2\pi n \right)\underset{z_{+}\to x}{\to} R(x)\left( \log\left( \frac{x-a}{b-x} \right)+i 2\pi n \right) \\
+	f_{-}=R(z)\left( \log | \frac{z-a}{b-z}|+i(\varphi_{a}-\varphi_{b})+i 2\pi n \right)\underset{z_{-}\to x}{\to}R(x)\left( \log\left( \frac{x-a}{b-x} \right)+i 2\pi+i 2\pi n \right)
+	\end{cases}
+$$
+Dunque:
+$$
+	J=\int^b_{a}(-i 2\pi)R(x)\, dx=-i2\pi \,I \implies I=-\sum_{\text{tutti}}\text{Res}\left[ R(z)\log\left( \frac{z-a}{b-z} \right) \right]
+$$
+Lo stesso trucco si può applicare al caso in cui gli estremi di integrazione sono $(0,\infty)$, semplicemente uso $\log z$ e la curva con 2 cerchi concentrici del primo caso preso in appello.
+
+In maniera molto simile possiamo anche andare a studiare integrali di natura notoriamente più complessa:
+$$
+	I=\int^\infty_{0} dx R(x)\log x
+$$
+Questa volta scegliamo come integrale complesso ausiliario:
+$$
+	J=\oint dz\,R(z)\log^2(z)
+$$
+Analogamente a prima, posso calcolare $J$ come somma dei residui, oppure come:
+$$
+	J=\int^\infty_{0} dz\, (f_{+}(z)-f_{-}(z))
+$$
+Questa volta troviamo:
+$$
+	\begin{cases}
+	f_{+}=R(x)(\log x+i\varphi )(\log x+i\varphi)\underset{z_{+}\to x}{\to}R(x)\log^2(x) \\
+	f_{-}\underset{z_{-}\to x}{\to}R(x)(\log(x)+i 2\pi)^2=R(x)(\log^2(x)+i 4\pi \log(x)-4\pi^2)
+	\end{cases}
+$$
+dunque:
+$$
+	f_{+}-f_{-}=R(x)(4\pi^2-i 4\pi \log(x))
+$$
+Chiamando $I^0=\int^\infty_{0}R(x)\,dx$ otteniamo:
+$$
+	J=4\pi^2I^0-i 4\pi I
+$$
+Da cui:
+$$
+	I=\frac{4\pi^2I^0-J}{4\pi i}=\frac{4\pi^2I_{0}-2\pi i\sum_{\text{tutti}}\text{Res}[R(z)\log^2(z)]}{4\pi i}
+$$
+In questo modo possiamo andare a calcolare iterativamente integrali della forma:
+$$
+	I=\int^\infty_{0}dx\,R(x)\log^n(x)
+$$
+**Osservazione finale utile per non sbagliare**:
+Per funzioni polidrome la somma di tutti i residui non è mai nulla (anche sommando su tutta la superficie di Riemann), perchè il mio cammino di integrazione dovrà necessariamente attraversare il taglio. Si può ugualmente definire una quantità che si annulla se sommatta su tutta la superficie, ma non ce ne occuperemo adesso.
 ## Domande per revisione
 - [ ] 
 

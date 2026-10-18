@@ -45,7 +45,7 @@ Prima del '900 avevamo fondamentalmente 2 teorie della fisica classica che copri
 Queste teorie funzionano così bene che nel 1894 Albert Michelson afferma che tutte le leggi fisiche importanti siano già state scoperte e che la materia possa spostarsi solo verso i calcoli di precisione da ora in avanti, e nel 1900 Lord Kelvin afferma che gli unici problemi rimasti fossero il teorema di equipartizione e quello del moto dei corpi attraverso l'etere. 
 Entrambi saranno smentiti da una serie di esperimenti che avverranno a cavallo di quegli anni.
 
-#### 1. Radiazione del corpo nero
+### 1. Radiazione del corpo nero
 
 Partiamo da un fatto empirico, scaldando un corpo questo cambia colore (passando dall'infrarosso all'ultravioletto, cioè aumentando la propria frequenza).
 Dunque la materia emette radiazione.
@@ -286,7 +286,7 @@ I primi 2 effetti sono ragionevoli anche da un punto di vista classico, gli altr
 - c'è emissione solo se $h\nu-V_{0}>0$, allora la frequenza $\nu_{0}=\frac{V_{0}}{h}$ non dipende dall'intensità.
 - l'energia cinetica massima è data $K_{max}=h\nu-V_{0}$ . Elettroni energeticamente più alti sono pressochè impossibili e prevedono che lo stesso elettrone venga colpito consecutivamente da più di un fotone.
 
-#### 3. Effetto Compton
+### 3. Effetto Compton
 
 L'effetto Compton descrive il processo d'urto tra un $e^-$ e della radiazione elettromagnetica (raggi x). Anche in questo caso sorgono dei problemi nella descrizione classica del fenomeno ed è necessario andare ad introdurre una quantizzazione.
 
@@ -355,7 +355,7 @@ $$
 che equivale alla lunghezza d'onda di un fotone che ha come energia l'energia a riposo dell'$e^-$.
 Analogamente posso definire la lunghezza d'onda Compton di varie particelle differenti.
 
-#### 4. Spettroscopia e modelli atomici.
+### 4. Spettroscopia e modelli atomici.
 
 Ancora una volta partiamo da osservazioni sperimentali difficili da spiegare con la fisica classica, in particolare osserviamo che:
 - una scarica elettrica in un gas produce radiazione elettromagnetica con uno **spettro discreto**, lo spettro di emissione
@@ -483,7 +483,7 @@ $$R_{H}=\frac{\alpha}{4\pi a_{0}}$$
 
 Vediamo adesso la verifica sperimentale della quantizzazione del momento angolare.
 
-#### 5. Esperimento di Stern-Gerlach (1922)
+### 5. Esperimento di Stern-Gerlach (1922)
 
 L'obiettivo è quello di andare a verificare sperimentalmente la quantizzazione del momento angolare. Per farlo, si utilizzano degli atomi neutri (Ag) che vengono fatti deviare da un campo magnetico, per via del momento magnetico degli atomi.
 
@@ -545,7 +545,7 @@ Nel caso in cui questa ipotesi fosse verificata sperimentalmente, ci mancherebbe
 - un interpretazione
 - un'equazione d'onda
 
-#### 6. Esperimento della doppia fenditura
+### 6. Esperimento della doppia fenditura
 
 Come fatto da Young per la luce, possiamo studiare il comportamento ondulatorio degli elettroni tramite l'esperimento della doppia fenditura.
 Per comprendere meglio i risultati di questo esperimento studiamo prima il caso di particelle puramente newtoniane e poi quello per onde  classiche.

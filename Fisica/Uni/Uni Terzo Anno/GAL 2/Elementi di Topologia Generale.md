@@ -96,7 +96,7 @@ Occupiamoci ora di una definizione molto importante, quella di continuità:
 >$$
 >Si dice CONTINUA se $\forall A\in \tau_{2}$, $f^{-1}(A)={ x\in X_{1}:f(x)=A } \in \tau_{1}$
 
-Con un abuso di formalismo possiamo dire che una funzione continua $f$ manda aperti in aperti (o chiusi in chiusi).
+Analogamente una funzione si può considerare continua se la controimmagine di un chiuso è sempre un chiuso.
 
 **OSS:** per dimostrare la continuità basta lavorare con la base di $\tau_{2}$.
 
@@ -109,7 +109,7 @@ Al di là della continuità, esiste una condizione ancora più forte:
 >Se esiste un omeomorfismo tra 2 spazi topologici, questi 2 spazi sono topologicamente indistinguibili.
 
 Per esplorare ulteriormente l'utilità della topologia, andiamo ad analizzare meglio alcuni concetti.
-### Precisazioni su sottoinsiemi chiusi
+### Precisazioni sui sottoinsiemi chiusi
 
 Per capire meglio il significato di chiuso andiamo a definire alcuni nuovi concetti
 **Def**: $Y\subseteq X, x \in X$. $x$ aderente a $Y$ se ogni intorno $U_{x}$ di $x$ ha intersezione non vuota con $Y$: 
@@ -167,18 +167,15 @@ Ultimo esempio (strano).
 La successione $x_{n}=\frac{1}{n}$ ha 2 limiti distinti, cioè *non vale l'unicità del limite*. Inutile dire che vorremmo ciò non succeda, andiamo pertanto ad introdurre una nuova definizione
 
 **Def:** uno spazio topologico si dice di Hausdorff se $\forall x_{1}\neq x_{2}\,\exists U_{x_{1}},U_{x_{2}}:U_{x_{1}}\cap U_{x_{2}}\neq \emptyset$
-Per ogni spazio topologico di Hausdorff il limite di una successione è unico. per questo motivo, le condizioni necessarie ad essre uno spazio di Hausdorff formano una "quarta" condizione, detta **secondo assioma di separabilità $T_{2}$**.
+Per ogni spazio topologico di Hausdorff il limite di una successione è unico. per questo motivo, le condizioni necessarie ad essre uno spazio di Hausdorff formano una "quarta" condizione, detta **secondo assioma di separabilità**.
 
-___
-## LEZIONE 8
-
-Occupiamoci dell'esistenza di limiti. Questo non si può garantire ma è possibile "facilitarlo".
-Per fare ciò è necessario fare una digressione, per arrivare ad un ulteriore assiome, sul''esistenza di successioni.
+Occupiamoci ora dell'esistenza di limiti. Questo non si può garantire ma è possibile "facilitarlo", sfruttando le proprietà di spazi Hausdorff e di alcuni nuovi assiomi.
+Introduciamo dunque un nuovo assioma, che ci porterà a garantire l'esistenza di successioni:
 
 **Primo assioma di numerabilità T1**:
 Sia $(X,\tau)$ uno spazio topologico, $\forall x \in X \,\exists$ una collezione numerabile di intorni di $U_{x}$ tale che ogni altro intorno contenga uno di essi.
 
-Questo non è sempre vero $\to$ assioma, ma i controesempi sono complicati.
+Questo non è sempre vero (indi per cui è un assioma), ma i controesempi sono complicati.
 
 A cosa ci serve? 
 1. Possiamo usarli per costruire una collezione di intorni $U_{x}^n$ tale che:
@@ -202,10 +199,11 @@ $$
 	\end{aligned}
    $$
 
-Il primo assioma di numerabilità garantisce l'esistenza di $U^n_{x}$.
+Il primo assioma di numerabilità garantisce l'esistenza di $U^n_{x}$, necessaria all'esistenza di una successione.
 
 **Secondo assioma di numerabilità:**
-$(X,\tau)$ ammette una base numerabile. Questa condizione implica il primo assioma, dunque è una condizione più forte.
+$(X,\tau)$ ammette una base numerabile. 
+Questa condizione implica il primo assioma, dunque è una condizione più forte.
 
 In geometria differenziale lavoriamo sempre nelle condizioni dell'assioma di Hausdorff e del secondo assioma di numerabilità.
 
@@ -232,6 +230,7 @@ Conclusioni: Una topologia con pochi aperti soddisfa molto facilmente $I$ e $II$
 
 Perchè è così importante costruire successioni?
 
+___
 1. Ci permette di studiare molti problemi usando il linguaggio delle successioni!
 Ad esempio sappiamo che essere sempre vero:
 $$
@@ -252,19 +251,29 @@ Il viceversa vale solo se $(X_{1},\tau_{1})$ soddisfa il $I$ assioma di separabi
 Con viceversa intendiamo:
 $$
 	\begin{aligned}
-	&\text{se } \forall x_{x}\to x \text{ si ha } f(x_{n})\to f(x)\\
+	&\text{se } \forall x_{x}\to x \text{ si ha che } f(x_{n})\to f(x)\\
 	&\text{allora } f \text{ è continua}
 	\end{aligned}
 $$
-
+___
 2. Posso trovare un'ulteriore modo per verificare che un insieme sia chiuso.
    Se $X$ soddisfa il $I$ assioma abbiamo che:
    preso $Y\subseteq X$, $x$ è aderente a $Y \iff \exists\, y_{n}\in Y: y_{n}\to x$ (da dimostrare).
    quindi, $C\subseteq X$ chiuso $\iff$ contiene tutti i limiti delle successioni, $x_{n}\in C$. 
 
-Sfruttando questo ulteriore risultato è possibile dimostrare ($*$), prova a casa!.
+Sfruttando questo ulteriore risultato è possibile dimostrare ($*$), prova a casa!
 
+- **Dim di ($*$)**:
+  Sia $f:X_{1}\to X_{2}$.
+  Considero $C_{2}\subseteq X_{2}$, voglio dimostrare che $f^{-1}(C_{2})=\{ x\in X_{1}:f(x)\in C_{2} \}$ sia un chiuso $C_{1}$.
+  Usiamo il fatto $C_{2}\subseteq X_{2}$ chiuso $\iff$ contiene tutti i limiti delle successioni, $f(x_{n})\in C_{2}$.
+  $f(x_{n})\to f(x)$ per ipotesi. Dunque $C_{2}$ deve contenere necessariamente $f(x)$, limite delle successioni $f(x_{n})$ appartenenti a $C_{2}$.
+  Sappiamo anche che $f^{-1}(f(x))=Id(x)=x\implies x\in f^{-1}(C_{2})$.
+  Ma, per ipotesi ho che $\forall x_{n}: \, x_{n}\to x$. Allora $f^{-1}(C_{2})$ contiene tutti i limiti delle successioni $f^{-1}(f(x_{n}))\equiv x_{n}\to x$, e per il risultato appena dimostrato devo avere che $f^{-1}(C_{2})$ dev'essere un chiuso. Dunque, $f$ è continua. $\blacksquare$  
+
+___
 Possiamo finalmente occuparci di "facilitare" l'esistenza del limite.
+
 **OSS generale:** non si può sperare che in $(X,\tau)$ + assiomi vari si garantisca l'esistenza di limiti per ogni successione.
 L'esempio classico in $\mathbb{R}$ è $x_{n}=(-1)^n$.
 Possiamo però studiare le sottosuccessioni: $x_{2n}\to{1}, \quad x_{2n+1}\to-1$ .
@@ -279,7 +288,7 @@ Nell'esempio precedente tale insieme sarebbe $\{ -1,1 \}$.
 
 **Esempio:** $\mathbb{R}$ non è compatto perchè $x_{n}=n$ non contiene sottosuccessioni convergenti.
 Ulteriormente $Y\subseteq \mathbb{R}$ è compatto $\iff$ è chiuso e limitato. (Come in analisi).
-La sfera è compatta perchè chiusa in quanto controimmagine di un unico punto (che è un insieme chiuso) di una funzione continua. Inoltre la sfera è ovviamente limitata.
+La sfera è compatta perchè chiusa in quanto controimmagine di un unico punto (che è un insieme chiuso) di una funzione continua. Inoltre la sfera è ovviamente limitata. (Questo stesso ragionamento si può estendere localmente su tutte le superfici)
 
 Per concludere possiamo dire che:
 - Spazi topologici compatti esistono in abbondanza
