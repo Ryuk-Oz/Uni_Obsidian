@@ -11,7 +11,7 @@
       "query": "[\"corso\":\"Metodi 2\"",
       "color": {
         "a": 1,
-        "rgb": 7488964
+        "rgb": 9221220
       }
     },
     {
@@ -60,6 +60,6 @@
   "repelStrength": 14.0623065813906,
   "linkStrength": 1,
   "linkDistance": 353,
-  "scale": 0.3820163439517161,
+  "scale": 0.38201634395171546,
   "close": true
 }
