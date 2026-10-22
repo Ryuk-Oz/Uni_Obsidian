@@ -3,5 +3,6 @@
   "templater-obsidian",
   "obsidian-minimal-settings",
   "better-export-pdf",
-  "preserve-blank-lines"
+  "preserve-blank-lines",
+  "node-factor"
 ]
