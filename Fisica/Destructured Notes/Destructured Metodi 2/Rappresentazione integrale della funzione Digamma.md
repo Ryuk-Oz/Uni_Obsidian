@@ -9,7 +9,7 @@ $$
 $$
 	\Gamma'(z)=\int^\infty_{0} e^{ ^-t } t^{z-1} \log t\, dt
 $$
-Per prima cosa voglio dimostrare che:
+Per prima cosa voglio dimostrare che (Rappresentazione di Schwinger del Logaritmo):
 $$
 	I(t)=\int^\infty_{0} \frac{e^{ -x }-e^{ -xt }}{x} dx = \log(t) \qquad \mathrm{Re}(t)>0
 $$
