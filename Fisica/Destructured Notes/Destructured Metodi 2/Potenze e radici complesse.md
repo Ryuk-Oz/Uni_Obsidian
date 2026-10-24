@@ -143,3 +143,6 @@ Ad esempio, per $q=5$ passo da $f_{0}\to f_{2}\to f_{4}\to f_{1}\to f_{3}\to f_{
 Per $q=6$ passo da $f_{0}\to f_{2}\to f_{4}\to f_{6}=f_{0}$
 Dunque se $q$ è dispari ho polidromia di ordine $q-1$, se $q$ è pari ho polidromia di ordine $\frac{q}{2}-1$.
 Nel caso in cui $q=2$ ho polidromia di ordine 0 e l'$\infty$ non è un punto di diramazione (questo non ci garantisce però che l'infinito non vada a causare problemi).
+
+
+**Lezione Associata:** [[2.Funzioni polidrome]]

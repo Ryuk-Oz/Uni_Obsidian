@@ -127,3 +127,5 @@ $$
 	f(z)=\frac{az+b}{cz+d}
 $$
 (lo vedremo meglio nelle esercitazioni con Maccaferri).
+
+**Lezione Associata:** [[1.Mappe conformi e Continuazione Analitica]]

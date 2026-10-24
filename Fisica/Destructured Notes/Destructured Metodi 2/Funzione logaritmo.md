@@ -111,3 +111,6 @@ $$
 e otterremo lo stesso risultato. Infatti, andando ad integrare lungo una curva $\gamma_{n}$ che gira $n$ volte attorno all'origine , il valore di $\phi(z)$ finisce varia col numero di giri che compiamo, aumentando di $i 2\pi n$ ad ogni giro.
 
 - **Oss:** ogni funzione polidroma necessita di una superficie di Riemann costruita ad-hoc per essere resa globalmente analitica.
+
+
+**Lezione Associata:** [[2.Funzioni polidrome]]

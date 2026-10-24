@@ -131,3 +131,5 @@ L'unicità discussa precedentemente vale solo quando le 2 possibili continuazion
 Se non avessi singolarità e andassi a prendere 2 cammini separati, potrei sempre estendere il dominio utilizzato per un cammino sul dominio utilizzato per il secondo cammino (per ottenere $D_{1} \cap D_{2} \neq \emptyset$), usando il teorema di Cauchy. Questo ovviamente non è possibile in presenza di singolarità.
 
 Più avanti nel corso vedremo come nel caso di singolarità isolate riusciremo ad andare a ristabilire l'unicità della continuazione analitica. Per singolarità non isolate, questa sarà invece destinata a cadere.
+
+**Lezione Associata:** [[1.Mappe conformi e Continuazione Analitica]]

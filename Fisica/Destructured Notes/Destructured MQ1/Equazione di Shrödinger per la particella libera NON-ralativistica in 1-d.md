@@ -383,3 +383,6 @@ Analogamente si può mostrare che nello "spazio $k$" la posizione è rappresenta
 $$
 	\hat{x}\equiv+i\frac{ \partial  }{ \partial k } 
 $$
+
+
+**Lezione Associata:** [[2.Equazione di Shrödinger]]

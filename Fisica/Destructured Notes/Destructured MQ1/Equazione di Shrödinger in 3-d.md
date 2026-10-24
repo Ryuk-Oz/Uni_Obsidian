@@ -179,3 +179,5 @@ $$
 $$
 Anche in questo caso vado a ritrovare le leggi classiche.
 Eleviamo questi risultati a postulati e diciamo che i valori medi delle osservabili fisiche evolvono nel tempo secondo leggi classiche. (Teorema di Ehrenfest).
+
+**Lezione Associata:** [[2.Equazione di Shrödinger]]

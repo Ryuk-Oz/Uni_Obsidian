@@ -31,6 +31,6 @@ source:
 - [ ] 
 
 ## Collegamenti
-- Lezione precedente: [[]]
 - Concetti collegati: [[]]
+- Corso:[[]]
 

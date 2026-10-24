@@ -121,3 +121,6 @@ $$
    La densità di probabilità di posizione oscilla con frequenza angolare $\omega_{ij}=\frac{E_{i}-E_{j}}{\hbar}$. Da qua si ritrova la formula di Rydberg.
 
 6. L'interpretazione fisica di $E$ come energia, richiede $E\in \mathbb{R}$. Siccome $E$ è autovalore di $\hat{H}$, questo va ad imporre una condizione su $\hat{H}$ (che vedremo essere l'ermeticità). Se $E$ fosse complessa, comparirebbe un termine esponenziale reale che non scompare nella densità di probabilità di posizione. La probabilità andrebbe a diminuire nel tempo e la soluzione non risulterebbe essere stazionaria.
+
+
+**Lezione Associata:** [[2.Equazione di Shrödinger]]

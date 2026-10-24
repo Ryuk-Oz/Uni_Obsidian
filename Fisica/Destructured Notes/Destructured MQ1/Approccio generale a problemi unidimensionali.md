@@ -50,3 +50,5 @@ $$
 	\psi_{n}(-x)=C\psi_{n}(x)
 	\end{cases}\implies C^2=1 \text{ e } C=\pm 1
    $$
+
+**Lezione Associata:** [[3.Studio di potenziali costanti in d=1]]

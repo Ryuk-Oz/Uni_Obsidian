@@ -1,4 +1,6 @@
 
+**Per un po' di contesto ulteriore:** [[Spettroscopia e modelli atomici]]
+
 L'obiettivo è quello di andare a verificare sperimentalmente la quantizzazione del momento angolare. Per farlo, si utilizzano degli atomi neutri (Ag) che vengono fatti deviare da un campo magnetico, per via del momento magnetico degli atomi.
 
 ![[Pasted image 20260927231221.png]]
@@ -58,3 +60,6 @@ Per una differenza di potenziale di circa $100\text{V}$ otteniamo un energia di 
 Nel caso in cui questa ipotesi fosse verificata sperimentalmente, ci mancherebbero però 2 cose:
 - un interpretazione
 - un'equazione d'onda
+
+
+**Lezione associata:** [[1.Introduzione storica alla meccanica quantistica]]

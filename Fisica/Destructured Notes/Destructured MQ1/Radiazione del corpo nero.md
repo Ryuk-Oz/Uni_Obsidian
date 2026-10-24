@@ -222,3 +222,5 @@ $$
 $$
 
 Per un po' si era convinti che questa quantizzazione provenisse dalla proprietà della materia che emetteva la radiazione, finchè nel 1905 Einstein non spiegò l'effetto fotoelettrico tramite l'ipotesi che la quantizzazione fosse propria delle radiazioni elettromagnetiche.
+
+**Lezione associata:** [[1.Introduzione storica alla meccanica quantistica]]

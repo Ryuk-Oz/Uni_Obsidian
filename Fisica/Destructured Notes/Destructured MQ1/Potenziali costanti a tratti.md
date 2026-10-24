@@ -56,3 +56,5 @@ Non abbiamo mai notato questo fenomeno perchè il coefficiente dell'esponenziale
 Questo fenomeno prende il nome di effetto tunnel e può essere usato per formulare i primi toy model in grado di spiegare i decadimenti radioattivi.
 
 ![[Pasted image 20261017111700.png]]
+
+**Lezione Associata:** [[3.Studio di potenziali costanti in d=1]]

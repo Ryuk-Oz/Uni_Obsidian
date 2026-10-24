@@ -77,3 +77,5 @@ $$
 $$
 	I(\alpha)= \frac{1}{1-e^{ i 2\pi \alpha }}\sum_{\text{al finito}} \text{Res}[z^\alpha R(z)|_{0}]
 $$
+
+**Lezione Associata:** [[3.Soluzione ad integrali reali sfruttando funzioni polidrome]]

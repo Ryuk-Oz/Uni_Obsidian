@@ -64,3 +64,6 @@ $$
 $$
 che equivale alla lunghezza d'onda di un fotone che ha come energia l'energia a riposo dell'$e^-$.
 Analogamente posso definire la lunghezza d'onda Compton di varie particelle differenti.
+
+
+**Lezione associata:** [[1.Introduzione storica alla meccanica quantistica]]

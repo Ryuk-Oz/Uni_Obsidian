@@ -74,3 +74,6 @@ $$
 	\end{aligned}
 $$
 Ulterioremente, con il teorema di Dirichlet, è possibile dimostrare che le due funzioni sono anche ortonormali.
+
+
+**Lezione Associata:** [[3.Studio di potenziali costanti in d=1]]

@@ -97,7 +97,8 @@ $$
 $$
 
 **OSS:** tramire un cambio di variabile "furbo", cioè tramite una trasformazione di Moebius, è sempre possibile ricondursi da questo caso a quello precedente.
-
 $$
 \int^b_{a}dx\, R(x)\left( \frac{x-a}{b-x} \right)^\alpha \underset{y=\frac{x-a}{b-x}}{=}\int^\infty_{0} dy\, \frac{b-a}{(1+y)^2}R\left( \frac{a+by}{1+y} \right)y^\alpha=\int^\infty_{0}dy\, R'(y)\,y^\alpha
 $$
+
+**Lezione Associata:** [[3.Soluzione ad integrali reali sfruttando funzioni polidrome]]

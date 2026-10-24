@@ -9,3 +9,5 @@ I primi 2 effetti sono ragionevoli anche da un punto di vista classico, gli altr
 - la radiazione viene assorbita dal metallo in pacchetti di energia $E=h\nu$
 - c'è emissione solo se $h\nu-V_{0}>0$, allora la frequenza $\nu_{0}=\frac{V_{0}}{h}$ non dipende dall'intensità.
 - l'energia cinetica massima è data $K_{max}=h\nu-V_{0}$ . Elettroni energeticamente più alti sono pressochè impossibili e prevedono che lo stesso elettrone venga colpito consecutivamente da più di un fotone.
+
+**Lezione associata:** [[1.Introduzione storica alla meccanica quantistica]]

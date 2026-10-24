@@ -1,7 +1,7 @@
 {
   "fwdMultiplier": 0,
-  "fwdTree": false,
-  "bwdMultiplier": 1,
+  "fwdTree": true,
+  "bwdMultiplier": 2,
   "lettersPerWt": 0,
   "manual": []
 }

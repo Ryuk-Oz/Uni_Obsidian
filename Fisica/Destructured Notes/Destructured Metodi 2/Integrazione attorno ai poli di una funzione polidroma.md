@@ -29,3 +29,6 @@ $$
 A denominatore abbiamo sviluppato il logaritmo: 
 $$\log z+i\pi=(\log z+i\pi)|_{z=-1}+(z+1) \frac{1}{z}|_{z=-1}+\dots=-1(z+1)$$
 Alla fine otteniamo che l'integrale vale $2\pi i$ sul primo foglio e 0 in tutti gli altri fogli
+
+
+**Lezione Associata:** [[2.Funzioni polidrome]]

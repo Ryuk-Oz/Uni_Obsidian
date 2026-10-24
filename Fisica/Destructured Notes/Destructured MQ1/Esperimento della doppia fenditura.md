@@ -80,3 +80,5 @@ Sarebbe possibile evitare il problema dell'influenza della misura in qualche mod
 Proviamo a fare due ipotesi ragionevoli e vediamo il motivo per cui non funzionano.
 - fissiamo $\lambda$ ma diminuiamo l'intensità della luce. Questo non va bene in quanto si tratta di un ragionamento puramente classico, l'intensità misura il numero di fotoni, non l'energia che ciascuno trasporta.
 - Diminuiamo la frequenza $\nu$ della luce. In questo caso il ragionamento non è più classico e funzionerebbe anche, se non fosse che così facendo vado a diminuire l'accuratezza della misura e il risultato smette di essere affidabile.
+
+**Lezione associata:** [[1.Introduzione storica alla meccanica quantistica]]

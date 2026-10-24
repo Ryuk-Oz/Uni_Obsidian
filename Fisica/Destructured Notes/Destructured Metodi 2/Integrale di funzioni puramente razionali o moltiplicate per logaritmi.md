@@ -71,3 +71,6 @@ $$
 $$
 **Osservazione finale utile per non sbagliare**:
 Per funzioni polidrome la somma di tutti i residui non è mai nulla (anche sommando su tutta la superficie di Riemann), perchè il mio cammino di integrazione dovrà necessariamente attraversare il taglio. Si può ugualmente definire una quantità che si annulla se sommatta su tutta la superficie, ma non ce ne occuperemo adesso.
+
+
+**Lezione Associata:** [[3.Soluzione ad integrali reali sfruttando funzioni polidrome]]

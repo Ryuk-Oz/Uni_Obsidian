@@ -123,3 +123,6 @@ $$
 $$R_{H}=\frac{\alpha}{4\pi a_{0}}$$
 
 Vediamo adesso la verifica sperimentale della quantizzazione del momento angolare.
+
+
+**Lezione associata:** [[1.Introduzione storica alla meccanica quantistica]]

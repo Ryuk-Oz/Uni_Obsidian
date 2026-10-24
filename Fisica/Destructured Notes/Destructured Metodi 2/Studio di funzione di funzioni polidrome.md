@@ -156,3 +156,5 @@ $$
 	f_{-}=\log |\frac{z-a}{z-b}|-i 2\pi n+i 2\pi n
 $$
 Ho ritrovato nuovamente la differenza di $i 2\pi$ sul taglio. Dunque questa scelta è consistente con la prima.
+
+**Lezione Associata:** [[2.Funzioni polidrome]]

@@ -55,3 +55,5 @@ Cerchiamo una soluzione a questo problema. Proviamo a definire l'inversa andando
 La seguente immagine da una buona idea di quello che andiamo a operare sul dominio.
 ![[Pasted image 20260929000847.png]]
 "Formalizziamo" quanto discusso andando a vedere un ulteriore esempio, quello della funzione logaritmo in campo complesso.
+
+**Lezione Associata:** [[2.Funzioni polidrome]]

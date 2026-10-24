@@ -8,49 +8,16 @@
         "type": "tabs",
         "children": [
           {
-            "id": "fb57cbe725fde1c2",
+            "id": "7c1591223d193a31",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Uni/Uni Terzo Anno/Metodi 2/5. Funzione Digamma.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "5. Funzione Digamma"
-            }
-          },
-          {
-            "id": "ab68aa85614321fd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Destructured Notes/Destructured Metodi 2/Rappresentazione integrale della funzione Digamma.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Rappresentazione integrale della funzione Digamma"
-            }
-          },
-          {
-            "id": "b2751b3cd5318f8e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Metodi 2 lezione del 23-10-2026.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Metodi 2 lezione del 23-10-2026"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -109,8 +76,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 294.359375,
-    "collapsed": true
+    "width": 294.359375
   },
   "right": {
     "id": "aef97c1a65414800",
@@ -216,34 +182,40 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "b2751b3cd5318f8e",
+  "active": "7c1591223d193a31",
   "lastOpenFiles": [
-    "Pasted image 20261023095918.png",
-    "Uni/Uni Terzo Anno/Metodi 2/5. Funzione Digamma.md",
-    "Metodi 2 lezione del 23-10-2026.md",
-    "Destructured Notes/Destructured Metodi 2/Rappresentazione integrale della funzione Digamma.md",
-    "Destructured Notes/Destructured Metodi 2/Costante di Eulero-Mascheroni.md",
-    "Uni/Uni Terzo Anno/Metodi 2/4.Funzione Gamma di Eulero.md",
-    "Uni/Uni Terzo Anno/Metodi 2/1.Mappe conformi e Continuazione Analitica.md",
-    "Uni/Uni Terzo Anno/Metodi 2/2.Funzioni polidrome.md",
+    "Uni/Uni Terzo Anno/MQ 1/2.Equazione di Shrödinger.md",
+    "Destructured Notes/Destructured Metodi 2/Rappresentazione in serie della funzione Digamma.md",
     "Uni/Uni Terzo Anno/Metodi 2/3.Soluzione ad integrali reali sfruttando funzioni polidrome.md",
+    "Destructured Notes/Destructured Metodi 2/Integrale di funzioni puramente razionali o moltiplicate per logaritmi.md",
+    "Destructured Notes/Destructured Metodi 2/Integrale di una potenza moltiplicata per una funzione razionale (in un intervallo finito).md",
+    "Destructured Notes/Destructured Metodi 2/Integrale di una potenza moltiplicata per una funzione razionale (tra 0 e infinito).md",
     "Uni/Uni Terzo Anno/Metodi 2/0. Metodi 2.md",
+    "Uni/Uni Terzo Anno/Metodi 2/2.Funzioni polidrome.md",
+    "Destructured Notes/Destructured Metodi 2/Integrazione attorno ai poli di una funzione polidroma.md",
+    "Destructured Notes/Destructured Metodi 2/Potenze e radici complesse.md",
+    "Destructured Notes/Destructured Metodi 2/Studio di funzione di funzioni polidrome.md",
+    "Destructured Notes/Destructured Metodi 2/Funzione logaritmo.md",
+    "Destructured Notes/Destructured Metodi 2/Funzione radice quadrata.md",
+    "Uni/Uni Terzo Anno/Metodi 2/1.Mappe conformi e Continuazione Analitica.md",
+    "Destructured Notes/Destructured Metodi 2/Continuazione analitica.md",
+    "Destructured Notes/Destructured Metodi 2/Mappe conformi.md",
+    "Appunti presi direttamente a lezione/Metodi",
+    "Appunti presi direttamente a lezione/Prob",
+    "Appunti presi direttamente a lezione/Gal",
+    "Appunti presi direttamente a lezione",
+    "Uni/Uni Terzo Anno/Metodi 2/5. Funzione Digamma.md",
     "Destructured Notes/Destructured Metodi 2/Definizione e proprietà della funzione Digamma.md",
-    "Destructured Notes/Destructured intro alla probabilità/Teoria assiomatica della probabilità.md",
-    "Uni/Uni Terzo Anno/Intro alla Probabilità/1.Introduzione e concetti base di teoria della probabilità.md",
-    "gamma.md",
-    "Destructured Notes/Destructured Metodi 2/Continuazione analitica per ricorrenza fattoriale e poli della funzione Gamma.md",
-    "Destructured Notes/Destructured Metodi 2/Continuazione di Gamma usando la Beta.md",
-    "Uni/Uni Terzo Anno/Intro alla Probabilità/4.Distribuzioni di Probabilità continue (di variabili aleatorie).md",
-    "Destructured Notes/Destructured Metodi 2/Integrale di Henkel.md",
-    "Destructured Notes/Destructured Metodi 2/Formula di duplicazione della Gamma.md",
-    "Destructured Notes/Destructured Metodi 2/Definizione della Beta di Eulero.md",
-    "Destructured Notes/Destructured Metodi 2/Continuazione analitica \"spezzando\" l'integrale della Gamma.md",
-    "Destructured Notes/Destructured Metodi 2/Analiticità della funzione Gamma.md",
-    "Destructured Notes/Destructured intro alla probabilità/Teoremi base della probabilità classica.md",
-    "Destructured Notes/Destructured intro alla probabilità/Fondamenti di Calcolo Combinatorio.md",
-    "Uni/Uni Terzo Anno/Intro alla Probabilità/2.Probabilità condizionata.md",
-    "Uni/Uni Terzo Anno/Intro alla Probabilità/3.Processi di ramificazione.md",
+    "Destructured Notes/Destructured Metodi 2/Funzione Poligamma.md",
+    "Appunti presi direttamente a lezione/Gal/Metodi 2 lezione del 23-10-2026.md",
+    "Destructured Notes/Destructured Metodi 2/Rappresentazione integrale della funzione Digamma.md",
+    "immagini/immagini_mq1/Shrodinger/Pasted image 20261024121401.png",
+    "immagini/Immagini_metodi_2/Funzioni speciali/Pasted image 20261023095918.png",
+    "Destructured Notes/Destructured MQ1/Equazione di Shrödinger per l'oscillatore armonico quantistico.md",
+    "Uni/Uni Terzo Anno/MQ 1/1.Introduzione storica alla meccanica quantistica.md",
+    "Destructured Notes/Destructured MQ1/Esperimento della doppia fenditura.md",
+    "Destructured Notes/Destructured MQ1/Esperimento di Stern-Gerlach e dualismo onda-particella.md",
+    "Destructured Notes/Destructured MQ1/Spettroscopia e modelli atomici.md",
     "immagini/Immagini_metodi_2/Funzioni speciali/Pasted image 20261022211051.png",
     "immagini/Immagini_metodi_2/Funzioni speciali/Pasted image 20261020225846.png",
     "immagini/Immagini_metodi_2/Funzioni speciali",
@@ -257,12 +229,6 @@
     "Integrale di una potenza moltiplicata per una funzione razionale (tra 0 e $",
     "immagini/Immagini_metodi_2/Integrali con funzioni polidrome/Pasted image 20261018165221.png",
     "Destructured Notes",
-    "immagini/Immagini_metodi_2/Integrali con funzioni polidrome/Pasted image 20261018180059.png",
-    "immagini/Immagini_metodi_2/Integrali con funzioni polidrome/Pasted image 20261018165400.png",
-    "immagini/immagini_mq1/Shrodinger/Pasted image 20261017105137.png",
-    "immagini/Immagini GAL2/Topologia",
-    "immagini/Immagini_metodi_2/Integrali con funzioni polidrome",
-    "immagini/immagini_mq1/Shrodinger",
-    "immagini/Immagini_metodi_2/Funzioni Polidrome"
+    "immagini/Immagini_metodi_2/Integrali con funzioni polidrome/Pasted image 20261018180059.png"
   ]
 }
