@@ -37,3 +37,5 @@ $$
 	P(M|T^+)=0.95\cdot \frac{0.05}{0.095}=0.5\implies \text{il test testa male le persone malate}
 $$
 Ne concludiamo che più la malattia è rara più sale la probabilità di falso positivo e più alta dev'essere la sensibilità.
+
+**Lezione Associata:** [[2.Probabilità condizionata]]

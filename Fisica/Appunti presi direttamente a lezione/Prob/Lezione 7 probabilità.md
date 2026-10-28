@@ -1,7 +1,7 @@
 
 ## Persistenza e transienza del random walk
 
-Un random walk è persistente se torna sicuramente in $\vec{x}=0$
+Diciamo che un random walk è persistente se torna sicuramente in $\vec{x}=0$
 Se $d\leq {2}$ il random walk è persistente.
 Se $d\geq 3$ il random walk è transiente, cioè c'è una probabilità non nulla di non tornare nell'origine.
 
@@ -33,9 +33,9 @@ $$
 	\sum_{t=1}^\infty s^t u(t)=\sum^\infty_{t=0}s^tu(t)-u(0)=U(s)-1
 $$
 $$
-	\sum_{t=0}^\infty s^t\sum_{k=0}^{t} f(t-k)u(k)=F(s)U(s)=U(s)-1 \qquad  (2)
+	\sum_{t=0}^\infty s^t\sum_{k=0}^{t} f(t-k)u(k)=F(s)U(s) \qquad (2)
 $$
-E i 2 uno si elidono a vicenda.
+Sono partito da 0 perchè il termine in 0 fa 0.
 Dimostro l'equazione $(2)$:
 $$
 	\begin{aligned}
@@ -44,7 +44,7 @@ $$
 	F(s)U(s)&=\sum_{n=0}^\infty s^n \sum_{q=0}^n u(q) f(n-q)
 	\end{aligned}
 $$
-
+Dunque alla fine di tutto abbiamo dimostrato che $F(s)U(s)=U(s)-1$.
 Definiamo bene la persistenza:
 $$
 	\text{persistenza} \iff f\equiv \sum_{t=0}^\infty f(t)=1
@@ -96,9 +96,9 @@ $$
 $$
 
 
-## Catene di Markov
+### Catene di Markov
 
-Si tratta di un modo per studiare procesis stocastici discreti
+Si tratta di un modo per studiare processi stocastici discreti
 Iniziamo definendo:
 $$
 	p_{i}(t)=P[X_{t}=i] \quad i\in \mathbb{Z}, t\in \mathbb{N}
@@ -108,7 +108,7 @@ Questa probabilità dipende dalla posizione della variabile nel tempo precedente
 $$
 	P[X_{t+1}=j|X_{t}=i_{1} \cap X_{t-1}=i_{2}\cap\dots\cap X_{t-s}=i_{s}]
 $$
-Se questa probabilità dipende solo dalla posizione immediatamente precedente, allora parliamo allora di processo Markoviano o senza memoria:
+Se questa probabilità dipende solo dalla posizione immediatamente precedente, allora parliamo di processo Markoviano o senza memoria:
 $$
 	P[x_{t+1}=j|X_{t}=i]
 $$
@@ -128,7 +128,7 @@ Convenzionalmente mettiamo il primo indice sulle colonne e il secondo indice sul
 L'evoluzione della catena di Markov è data da:
 $$p_{j}(t+1)=\sum_{i}p_{i}(t)W_{ij}(t)$$
 
-## Processi stazionari
+### Processi stazionari
 
 Ci occupiamo principalmente di processi stazionari, cioè processi per i quali $W_{ij}$ non dipende dal tempo.
 $$
@@ -161,7 +161,7 @@ $$
 $$
 E mi sono ricondotto al caso di prima (?).
 
-## Distribuzione stazionaria
+### Distribuzione stazionaria
 
 Parliamo di distribuzione stazionaria se esiste:
 $$

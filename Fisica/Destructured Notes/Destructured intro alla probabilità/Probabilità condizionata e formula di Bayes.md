@@ -16,3 +16,5 @@ $$
 	P(B|A)=P(A|B) \frac{P(B)}{P(A)} \,\left( = \frac{P(A\cap B)}{P(B)} \frac{P(B)}{P(A)} \equiv P(B|A) \right)
 $$
 La dimostrazione (banale) è quella illustrata tra le parentesi.
+
+**Lezione Associata:** [[2.Probabilità condizionata]]

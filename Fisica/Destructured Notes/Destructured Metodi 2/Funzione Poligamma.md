@@ -3,12 +3,12 @@
 
 **Idea:** Possiamo generalizzare la funzione Digamma a derivate logaritmiche superiori, e otteniamo la funzione poligamma.
 $$
-	\psi^{(k)}=\frac{d^k}{dz^k} \log \Gamma(z)=\frac{d^{k-1}}{dz^{k-1}}\psi (z)
+	\psi^{(k)}=\frac{d^{k+1}}{dz^{k+1}} \log \Gamma(z)=\frac{d^{k}}{dz^{k}}\psi (z)
 $$
 Molte delle rappresentazioni integrali di $\psi$ sono generalizzabili per la funzione poligamma andando a introdurre le derivate superiori.
 Ad esempio:
 $$
-	\psi^{(k)}=\sum^\infty_{n=0} \frac{(-1)^{k+1}(k+1)!}{(n+z)^{k+1}}
+	\psi^{(k)}=\sum^\infty_{n=0} \frac{(-1)^{k+1}(k)!}{(n+z)^{k+1}}
 $$
 $$
 	\psi^{(k)}=-\int^1_{0} dx\, \frac{x^{z-1}(\log z)^k}{1-x}

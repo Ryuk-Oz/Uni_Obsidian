@@ -58,3 +58,5 @@ $$
 	\end{aligned}
 $$
 Svolgendo il conto otteniamo una percentuale $p(A)\simeq 0,507$ per $n=23$ e $0,094$ per $n=60$.
+
+**Lezione Associata:** [[2.Probabilità condizionata]]

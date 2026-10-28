@@ -4,5 +4,6 @@
   "interfaceFontFamily": "NewComputerModern",
   "accentColor": "",
   "cssTheme": "",
-  "enabledCssSnippets": []
+  "enabledCssSnippets": [],
+  "baseFontSizeAction": true
 }
