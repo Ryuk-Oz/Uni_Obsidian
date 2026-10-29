@@ -200,7 +200,8 @@ $$
 	\end{aligned}
 $$
 - Gli autovalori $a_{\sigma}$ possono essere degeneri, cioè avere autospazi di dimensioni maggiori di 1.
-- 
+
+
 
 
 
