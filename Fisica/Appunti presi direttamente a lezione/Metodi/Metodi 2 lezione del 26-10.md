@@ -2,7 +2,7 @@
 **Funzione Zeta di Riemann**
 
 $$
-	\zeta(s)=\sum^\infty_{n=1} \frac{1}{n^s}\qquad s\in \mathbb{C} \quad \mathrm{Re}(s)>0
+	\zeta(s)=\sum^\infty_{n=1} \frac{1}{n^s}\qquad s\in \mathbb{C} \quad \mathrm{Re}(s)>1
 $$
 Una formulazione alternativa della zeta è la seguente:
 $$

@@ -170,7 +170,7 @@ Facciamo alcune assunzioni:
 $$
   	\ket{\alpha}  \sim k \ket{\alpha} \sim e^{ i\theta } \ket{\alpha} 
   $$
-  L'insieme di tutti i vettori $\ket{\alpha}$, cioè l'insieme delle osservabili fisiche è:
+  L'insieme di tutti i vettori $\ket{\alpha}$, cioè l'insieme degli stati possibili è lo spazio di Hilbert quozientato:
 $$
  \bar{\mathcal{H}}_{S}\equiv \{ \ket{\alpha}  \} \equiv \frac{\mathcal{H}_{S}}{\mathbb{C}}
 $$
@@ -178,7 +178,12 @@ $$
 $$
 	\langle \vec{r}|\alpha \rangle \equiv \psi_{\alpha}(\vec{r})
   $$
+  Ma devo essere più preciso nello stabilire cosa caratterizza uno stato in modo univoco
 - Lo spazio $\mathcal{H}_{S}$ (e quindi lo spazio $\bar{\mathcal{H}}_{S}$) è lo spazio degli stati a TEMPO FISSATO. L'evoluzione temporale è dettata dall'EdS.
+  L'EdS può essere riscritta in $\mathcal{H}$ nel seguente modo:
+$$
+	i\hbar \frac{d}{dt} \ket{\alpha(t)} =\hat{H} \ket{\alpha(t)} 
+$$
 
 #### 2. Corrispondenza tra osservabili fisiche e operatori lineari su $\mathcal{H}_{S}$.
 
@@ -189,9 +194,9 @@ $$
 $$
 Osservazioni varie:
 - gli $a_{\sigma}$ possono formare uno spettro discreto $a_{\sigma}\in \mathbb{N}$ , oppure possono avere uno spettro continuo, ovvero $a_{\sigma}\in \mathbb{R}$.
-- I corrispondenti autovettori $\ket{a_{\sigma}}$ formano basi ON in senso stretto nel caso discreto e basi ortogonali in senso generalizzato nel caso continuo.
+- I corrispondenti autovettori $\ket{a_{\sigma}}$ formano basi ON (che supponiamo siano basi complete) in senso stretto nel caso discreto e basi ortogonali in senso generalizzato nel caso continuo $\implies$ $\{ \ket{a_{\sigma}} \}$ sono basi in $\mathcal{H}$.
 - Interpreto $\{ a_{\sigma} \}$ come l'insieme dei possibili risultati per le misure di $A$.
-- Gli stati $\ket{a_{\sigma}}$ sono stati nei quali una misura di $A$ fornisce sempre $a_{\sigma}$ con $P(a_{\sigma})=1$. Infatti:
+- Gli stati $\ket{a_{\sigma}}$ sono stati nei quali una misura dell'osservabile $A$ è esattamente determinata, cioè fornisce sempre $a_{\sigma}$ con $P(a_{\sigma})=1$. Infatti:
 $$
 	\begin{aligned}
 	\langle \hat{A} \rangle _{\sigma}&\equiv \bra{a_{\sigma}} \hat{A}\ket{a_{\sigma}} =a_{\sigma} \langle a_{\sigma}|a_{\sigma} \rangle =a_{\sigma}\\

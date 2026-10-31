@@ -22,49 +22,49 @@
             }
           },
           {
-            "id": "7fe086c08e7aec92",
+            "id": "58a928105c008812",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Uni/Uni Terzo Anno/Intro alla Probabilità/6.Catene di Markov discrete.md",
+                "file": "Metodi 2 lezione del 30-10.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "6.Catene di Markov discrete"
+              "title": "Metodi 2 lezione del 30-10"
             }
           },
           {
-            "id": "8c18a88b918d8b90",
+            "id": "c6eb1d3fea80c809",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti presi direttamente a lezione/Prob/Lezione 8 probabilità.md",
+                "file": "Appunti presi direttamente a lezione/Metodi/Metodi 2 lezione del 26-10.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lezione 8 probabilità"
+              "title": "Metodi 2 lezione del 26-10"
             }
           },
           {
-            "id": "57b1744298db6e27",
+            "id": "b47b795f34629094",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lezione 10 Probabilità.md",
+                "file": "Gal2 lezione del 29-10.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lezione 10 Probabilità"
+              "title": "Gal2 lezione del 29-10"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -123,7 +123,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 294.359375
+    "width": 294.359375,
+    "collapsed": true
   },
   "right": {
     "id": "aef97c1a65414800",
@@ -229,18 +230,34 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "57b1744298db6e27",
+  "active": "58a928105c008812",
   "lastOpenFiles": [
-    "Uni/Uni Terzo Anno/Intro alla Probabilità/6.Catene di Markov discrete.md",
+    "Pasted image 20261031164516.png",
+    "Appunti presi direttamente a lezione/Metodi/Metodi 2 lezione del 26-10.md",
+    "Metodi 2 lezione del 30-10.md",
+    "Uni/Uni Terzo Anno/Metodi 2/4.Funzione Gamma di Eulero.md",
+    "Gal2 lezione del 29-10.md",
+    "Uni/Uni Terzo Anno/Metodi 2/0. Metodi 2.md",
+    "Destructured Notes/Destructured Metodi 2/Continuazione analitica per ricorrenza fattoriale e poli della funzione Gamma.md",
+    "Destructured Notes/Destructured Metodi 2/Integrale di Henkel.md",
+    "Destructured Notes/Destructured Metodi 2/Continuazione di Gamma usando la Beta.md",
+    "Destructured Notes/Destructured Metodi 2/Continuazione analitica \"spezzando\" l'integrale della Gamma.md",
+    "Appunti presi direttamente a lezione/Metodi/Metodi 2 lezione del 23-10-2026.md",
+    "Pasted image 20261028113953.png",
+    "Untitled.md",
+    "Pasted image 20261031103102.png",
+    "Pasted image 20261031102923.png",
+    "Pasted image 20261031102747.png",
+    "Appunti presi direttamente a lezione/MQ1/MQ lezione del 28-10-26.md",
     "Lezione 10 Probabilità.md",
+    "Uni/Uni Terzo Anno/GAL 2/3.Elementi di Topologia Generale.md",
+    "Uni/Uni Terzo Anno/GAL 2/1.Curve nello spazio.md",
+    "Uni/Uni Terzo Anno/Intro alla Probabilità/6.Catene di Markov discrete.md",
     "Appunti presi direttamente a lezione/Prob/Lezione 8 probabilità.md",
     "Lezione 9 Probabilità.md",
-    "Appunti presi direttamente a lezione/MQ1/MQ lezione del 28-10-26.md",
-    "Uni/Uni Terzo Anno/GAL 2/3.Elementi di Topologia Generale.md",
     "Uni/Uni Terzo Anno/GAL 2/2.Superfici nello spazio.md",
     "Appunti presi direttamente a lezione/Prob/Lezione 7 probabilità.md",
     "Uni/Uni Terzo Anno/Intro alla Probabilità/5. Moto Browniano e Random Walk.md",
-    "Pasted image 20261028113953.png",
     "immagini/Probabilità/Pasted image 20261027000431.png",
     "Appunti presi direttamente a lezione/MQ1",
     "Destructured Notes/Destructured intro alla probabilità/Distribuzione stazionaria.md",
@@ -249,29 +266,13 @@
     "immagini/Probabilità/Pasted image 20261027001850.png",
     "immagini/Probabilità/Pasted image 20261027001655.png",
     "Destructured Notes/Destructured intro alla probabilità/Definizione di catena di Markov e proprietà base.md",
-    "Appunti presi direttamente a lezione/Metodi/Metodi 2 lezione del 26-10.md",
     "Destructured Notes/Destructured intro alla probabilità/Random Walk 1-d.md",
     "Destructured Notes/Destructured intro alla probabilità/Persistenza e transienza del random walk.md",
     "immagini/Probabilità/Pasted image 20261026161130.png",
-    "immagini/Probabilità/Pasted image 20261026155649.png",
-    "Processi Stazionari.md",
-    "Uni/Uni Terzo Anno/Intro alla Probabilità/0. Intro alla probabilità.md",
-    "Uni/Uni Terzo Anno/Intro alla Probabilità/2.Probabilità condizionata.md",
-    "Destructured Notes/Destructured intro alla probabilità/Teorema delle moltiplicazioni.md",
-    "Destructured Notes/Destructured intro alla probabilità/Teorema della probabilità completa.md",
-    "Destructured Notes/Destructured intro alla probabilità/Probabilità condizionata e formula di Bayes.md",
-    "Destructured Notes/Destructured intro alla probabilità/Moto Browniano.md",
-    "Destructured Notes/Destructured intro alla probabilità/Definizione di processo stocastico.md",
-    "Uni/Uni Terzo Anno/Intro alla Probabilità/4.Distribuzioni di Probabilità continue (di variabili aleatorie).md",
-    "Destructured Notes/Destructured intro alla probabilità/Probabilità marginale, correlazione e indipendenza.md",
-    "Destructured Notes/Destructured Metodi 2/Rappresentazione in serie della funzione Digamma.md",
-    "Uni/Uni Terzo Anno/Metodi 2/5. Funzione Digamma.md",
     "Appunti presi direttamente a lezione/Metodi",
     "Appunti presi direttamente a lezione/Prob",
     "Appunti presi direttamente a lezione/Gal",
     "Appunti presi direttamente a lezione",
-    "immagini/immagini_mq1/Shrodinger/Pasted image 20261024121401.png",
-    "immagini/Immagini_metodi_2/Funzioni speciali/Pasted image 20261023095918.png",
     "immagini/Immagini_metodi_2/Funzioni speciali",
     "Destructured Notes/Destructured intro alla probabilità",
     "Destructured Notes/Destructured MQ1",

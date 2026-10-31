@@ -101,7 +101,7 @@ Ora posso andare ad accoppiare i termini della serie in modo diverso:
 $$
 	\sum^\infty_{k=1} \frac{1}{(k+a)(k+b)}=\frac{1}{b-a}(\psi(b+1)-\psi(a+1))
 $$
-Questo è il modo più semplice per andare a sommare la serie perchè non avendola mai spezzata, non ho mai scritto pezzi di serie divergenti.
+Questo è il modo più semplice per andare a sommare la serie, non avendola mai spezzata, non ho mai scritto pezzi di serie divergenti.
 
 **Oss:** Non sappiamo ancora come si comporta $\Gamma$ all'infinito. Per farlo dobbiamo aspettare di vedere gli sviluppi asintotici. Ci darà la formula di stirling!
 
