@@ -8,35 +8,91 @@
         "type": "tabs",
         "children": [
           {
-            "id": "f8e0d8540fc4450d",
+            "id": "a3c8a454ed06cda4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Metodi 2 lezione del 30-10.md",
+                "file": "MQ 1 lezione del 2-11.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Metodi 2 lezione del 30-10"
+              "title": "MQ 1 lezione del 2-11"
             }
           },
           {
-            "id": "bd9a30ef0d354461",
+            "id": "77c8fe9aae6fe68c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Metodi 2 lezione del 2-11.md",
+                "file": "MQ lezione del 30-10-26.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Metodi 2 lezione del 2-11"
+              "title": "MQ lezione del 30-10-26"
+            }
+          },
+          {
+            "id": "cae11972cbebbab2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Uni/Uni Terzo Anno/Intro alla Probabilità/1.Introduzione e concetti base di teoria della probabilità.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "1.Introduzione e concetti base di teoria della probabilità"
+            }
+          },
+          {
+            "id": "d9104eab6a7d16a7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Uni/Uni Terzo Anno/Intro alla Probabilità/2.Probabilità condizionata.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2.Probabilità condizionata"
+            }
+          },
+          {
+            "id": "94c3d63e647f2316",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Uni/Uni Terzo Anno/Intro alla Probabilità/3.Processi di ramificazione.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "3.Processi di ramificazione"
+            }
+          },
+          {
+            "id": "6601d0441cc0aff1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Uni/Uni Terzo Anno/Intro alla Probabilità/4.Distribuzioni di Probabilità continue (di variabili aleatorie).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "4.Distribuzioni di Probabilità continue (di variabili aleatorie)"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -95,8 +151,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 294.359375,
-    "collapsed": true
+    "width": 294.359375
   },
   "right": {
     "id": "aef97c1a65414800",
@@ -202,11 +257,18 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "bd9a30ef0d354461",
+  "active": "6601d0441cc0aff1",
   "lastOpenFiles": [
-    "Metodi 2 lezione del 30-10.md",
-    "Metodi 2 lezione del 2-11.md",
+    "Uni/Uni Terzo Anno/Intro alla Probabilità/3.Processi di ramificazione.md",
+    "Uni/Uni Terzo Anno/Intro alla Probabilità/2.Probabilità condizionata.md",
+    "Uni/Uni Terzo Anno/Intro alla Probabilità/1.Introduzione e concetti base di teoria della probabilità.md",
+    "Uni/Uni Terzo Anno/Intro alla Probabilità/4.Distribuzioni di Probabilità continue (di variabili aleatorie).md",
     "MQ lezione del 30-10-26.md",
+    "Uni/Uni Terzo Anno/Intro alla Probabilità/0. Intro alla probabilità.md",
+    "MQ 1 lezione del 2-11.md",
+    "Destructured Notes/Destructured intro alla probabilità/Probabilità marginale, correlazione e indipendenza.md",
+    "Metodi 2 lezione del 2-11.md",
+    "Metodi 2 lezione del 30-10.md",
     "Gal2 lezione del 29-10.md",
     "Appunti presi direttamente a lezione/MQ1/MQ lezione del 28-10-26.md",
     "Uni/Uni Terzo Anno/MQ 1/6.Principi Fondativi della meccanica quantistica.md",
@@ -228,13 +290,6 @@
     "Appunti presi direttamente a lezione/Metodi/Metodi 2 lezione del 23-10-2026.md",
     "Pasted image 20261031102923.png",
     "Pasted image 20261031102747.png",
-    "Uni/Uni Terzo Anno/GAL 2/3.Elementi di Topologia Generale.md",
-    "Uni/Uni Terzo Anno/GAL 2/1.Curve nello spazio.md",
-    "Uni/Uni Terzo Anno/Intro alla Probabilità/6.Catene di Markov discrete.md",
-    "Appunti presi direttamente a lezione/Prob/Lezione 8 probabilità.md",
-    "Uni/Uni Terzo Anno/GAL 2/2.Superfici nello spazio.md",
-    "Appunti presi direttamente a lezione/Prob/Lezione 7 probabilità.md",
-    "Uni/Uni Terzo Anno/Intro alla Probabilità/5. Moto Browniano e Random Walk.md",
     "immagini/Probabilità/Pasted image 20261027000431.png",
     "Appunti presi direttamente a lezione/MQ1",
     "immagini/Probabilità/Pasted image 20261028000250.png",

@@ -89,17 +89,17 @@ Le seguenti proprietà sono ovvie:
   Ne segue che se $A=A^{\dagger}$ e $B=B^{\dagger}$, posto $[A,B]=iC$ e $\{ A,B \}=D$, 
   si ha $C=C^{\dagger}$ e $D=D^{\dagger}$.
 
-Quando andiamo ad effettuare il calcolo esplicito dei commutatori, lo facciamo facendoli agire sullo stato, ad esempio:
+Quando andiamo ad effettuare il calcolo esplicito dei commutatori, lo facciamo facendoli agire su di un vettore, ad esempio:
 $$
 	[x,p]\psi=-i\hbar x \frac{d\psi}{dt}-\left( -i\hbar \frac{d}{dx} \right)(x\psi)=i\hbar \psi\quad \forall \psi
 $$
-Quindi scriviamo $[x,p]=i\hbar$.
-Ulteriormente:
+Quindi scriviamo $[x,p]=i\hbar \mathbb{1}_{\mathcal{H}}$.
+Spesso possiamo ridurre il calcolo di un commutatore più complesso al calcolo di questo.
 $$
 	H= \frac{|\vec{p}|^2}{2m}+V(\vec{r})\implies[\hat{H},\hat{x}]=\frac{1}{2m}[\hat{p}_{x}^2+\hat{p}_{y}^2+\hat{p}_{z}^2,\hat{x}]
 $$
-Perchè $[\hat{x}, f(\hat{x},\hat{y},\hat{z})]=0$.
-A questo punto, riconducendoci al caso unidimensionale:
+$V(\vec{r})$ compare perchè $[\hat{x}, f(\hat{x},\hat{y},\hat{z})]=0$, in quanto $\hat{x},\hat{y},\hat{z}$ agiscono moltiplicativamente.
+Ulteriormente ho $[x_{i},p_{j}]=i\hbar\delta_{ij}$, dunque:
 $$
 	[\hat{H},\hat{x}]=\frac{1}{2m}[\hat{p}_{x}^2,\hat{x}]=\frac{1}{2m}(\hat{p}_{x}[\hat{p}_{x},\hat{x}]+[\hat{p}_{x},\hat{x}]\hat{p}_{x})=-i\hbar \frac{\hat{p}_{x}}{m}
 $$
