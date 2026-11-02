@@ -8,21 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "3bf921866dc7a7e8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Uni/Uni Terzo Anno/Intro alla Probabilità/5. Moto Browniano e Random Walk.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "5. Moto Browniano e Random Walk"
-            }
-          },
-          {
-            "id": "58a928105c008812",
+            "id": "f8e0d8540fc4450d",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -36,31 +22,17 @@
             }
           },
           {
-            "id": "c6eb1d3fea80c809",
+            "id": "bd9a30ef0d354461",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti presi direttamente a lezione/Metodi/Metodi 2 lezione del 26-10.md",
+                "file": "Metodi 2 lezione del 2-11.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Metodi 2 lezione del 26-10"
-            }
-          },
-          {
-            "id": "b47b795f34629094",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Gal2 lezione del 29-10.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Gal2 lezione del 29-10"
+              "title": "Metodi 2 lezione del 2-11"
             }
           }
         ],
@@ -230,45 +202,45 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "58a928105c008812",
+  "active": "bd9a30ef0d354461",
   "lastOpenFiles": [
-    "Pasted image 20261031164516.png",
-    "Appunti presi direttamente a lezione/Metodi/Metodi 2 lezione del 26-10.md",
     "Metodi 2 lezione del 30-10.md",
-    "Uni/Uni Terzo Anno/Metodi 2/4.Funzione Gamma di Eulero.md",
+    "Metodi 2 lezione del 2-11.md",
+    "MQ lezione del 30-10-26.md",
     "Gal2 lezione del 29-10.md",
+    "Appunti presi direttamente a lezione/MQ1/MQ lezione del 28-10-26.md",
+    "Uni/Uni Terzo Anno/MQ 1/6.Principi Fondativi della meccanica quantistica.md",
+    "Uni/Uni Terzo Anno/MQ 1/5.Formalismo dei Bra e dei Ket.md",
+    "Lezione 9 Probabilità.md",
+    "Lezione 10 Probabilità.md",
+    "Uni/Uni Terzo Anno/MQ 1/0. Meccanica quantistica 1.md",
+    "Uni/Uni Terzo Anno/MQ 1/4.Oscillatore armonico quantistico.md",
+    "immagini/Immagini_metodi_2/Pasted image 20261031164516.png",
+    "immagini/Immagini_metodi_2/Pasted image 20261031103102.png",
+    "immagini/Probabilità/Pasted image 20261028113953.png",
+    "Appunti presi direttamente a lezione/Metodi/Metodi 2 lezione del 26-10.md",
+    "Uni/Uni Terzo Anno/Metodi 2/4.Funzione Gamma di Eulero.md",
     "Uni/Uni Terzo Anno/Metodi 2/0. Metodi 2.md",
     "Destructured Notes/Destructured Metodi 2/Continuazione analitica per ricorrenza fattoriale e poli della funzione Gamma.md",
     "Destructured Notes/Destructured Metodi 2/Integrale di Henkel.md",
     "Destructured Notes/Destructured Metodi 2/Continuazione di Gamma usando la Beta.md",
     "Destructured Notes/Destructured Metodi 2/Continuazione analitica \"spezzando\" l'integrale della Gamma.md",
     "Appunti presi direttamente a lezione/Metodi/Metodi 2 lezione del 23-10-2026.md",
-    "Pasted image 20261028113953.png",
-    "Untitled.md",
-    "Pasted image 20261031103102.png",
     "Pasted image 20261031102923.png",
     "Pasted image 20261031102747.png",
-    "Appunti presi direttamente a lezione/MQ1/MQ lezione del 28-10-26.md",
-    "Lezione 10 Probabilità.md",
     "Uni/Uni Terzo Anno/GAL 2/3.Elementi di Topologia Generale.md",
     "Uni/Uni Terzo Anno/GAL 2/1.Curve nello spazio.md",
     "Uni/Uni Terzo Anno/Intro alla Probabilità/6.Catene di Markov discrete.md",
     "Appunti presi direttamente a lezione/Prob/Lezione 8 probabilità.md",
-    "Lezione 9 Probabilità.md",
     "Uni/Uni Terzo Anno/GAL 2/2.Superfici nello spazio.md",
     "Appunti presi direttamente a lezione/Prob/Lezione 7 probabilità.md",
     "Uni/Uni Terzo Anno/Intro alla Probabilità/5. Moto Browniano e Random Walk.md",
     "immagini/Probabilità/Pasted image 20261027000431.png",
     "Appunti presi direttamente a lezione/MQ1",
-    "Destructured Notes/Destructured intro alla probabilità/Distribuzione stazionaria.md",
     "immagini/Probabilità/Pasted image 20261028000250.png",
     "immagini/Probabilità/Pasted image 20261027225928.png",
     "immagini/Probabilità/Pasted image 20261027001850.png",
     "immagini/Probabilità/Pasted image 20261027001655.png",
-    "Destructured Notes/Destructured intro alla probabilità/Definizione di catena di Markov e proprietà base.md",
-    "Destructured Notes/Destructured intro alla probabilità/Random Walk 1-d.md",
-    "Destructured Notes/Destructured intro alla probabilità/Persistenza e transienza del random walk.md",
-    "immagini/Probabilità/Pasted image 20261026161130.png",
     "Appunti presi direttamente a lezione/Metodi",
     "Appunti presi direttamente a lezione/Prob",
     "Appunti presi direttamente a lezione/Gal",

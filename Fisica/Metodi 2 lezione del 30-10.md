@@ -40,7 +40,7 @@ $$
 	I_{N}=4\pi i (2\pi)^{s-1} e^{ i\pi s } \sin \left( \frac{\pi}{2}s \right)\sum^N_{n=1} n^{s-1}
 $$
 Tuttavia questo non è l'unico modo di risovere l'integrale.
-Posso infatti scomporre $C_{N}=C_{HN}+\Gamma_{N}$ cove $C_{HN}$ è un cammino di Henkel, fatto dalla circonferenza piccola e dai due pezzi rettilinei, e $\Gamma_{N}$ è la circonferenza grande.
+Posso infatti scomporre $C_{N}=C_{HN}+\Gamma_{N}$ cove $C_{HN}$ è quasi un cammino di Henkel, fatto dalla circonferenza piccola e dai due pezzi rettilinei, e $\Gamma_{N}$ è la circonferenza grande.
 $$
 	I_{N}=\int_{\Gamma_{N}} fdz+\int_{C_{HN}} f dz
 $$
@@ -48,7 +48,7 @@ Dunque:
 $$
 	\int_{\Gamma_{N}} fdz+\int_{C_{HN}} f dz = 4\pi i (2\pi)^{s-1} e^{ i\pi s } \sin \left( \frac{\pi}{2}s \right)\sum^N_{n=1} n^{s-1}
 $$
-Mandando $N\to \infty$ abbiamo che la serie converge a $\zeta(1-s)$ per $\mathrm{Re}(s)<0$, ulteriormente si può dimostrare che $\int_{\Gamma_{N}}\to{0}$. L'integrale su $C_{HN}$ è un integrale sul contorno di Henkel che sappiamo calcolare.
+Mandando $N\to \infty$ abbiamo che la serie converge a $\zeta(1-s)$ per $\mathrm{Re}(s)<0$, ulteriormente si può dimostrare che $\int_{\Gamma_{N}}\to{0}$. L'integrale su $C_{HN}$ diventa un integrale sul contorno di Henkel, che sappiamo calcolare.
 $$
 	I(s)=\int_{C_{H}}=dz \, \frac{z^{s-1}}{e^{ z }-1}=e^{ i\pi s } 2\pi i \frac{\zeta(s)}{\Gamma(1-s)}
 $$
