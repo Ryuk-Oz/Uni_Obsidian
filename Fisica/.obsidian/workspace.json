@@ -4,95 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "7bba5619d264e851",
+        "id": "1738cff217588130",
         "type": "tabs",
         "children": [
           {
-            "id": "a3c8a454ed06cda4",
+            "id": "68b87ab1690dfe2f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MQ 1 lezione del 2-11.md",
+                "file": "Gal 2 lezione del 30-10.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "MQ 1 lezione del 2-11"
+              "title": "Gal 2 lezione del 30-10"
             }
           },
           {
-            "id": "77c8fe9aae6fe68c",
+            "id": "5dc9bd1dfb41cc95",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MQ lezione del 30-10-26.md",
+                "file": "Gal 2 lezione del 4-11.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "MQ lezione del 30-10-26"
-            }
-          },
-          {
-            "id": "cae11972cbebbab2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Uni/Uni Terzo Anno/Intro alla Probabilità/1.Introduzione e concetti base di teoria della probabilità.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "1.Introduzione e concetti base di teoria della probabilità"
-            }
-          },
-          {
-            "id": "d9104eab6a7d16a7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Uni/Uni Terzo Anno/Intro alla Probabilità/2.Probabilità condizionata.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2.Probabilità condizionata"
-            }
-          },
-          {
-            "id": "94c3d63e647f2316",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Uni/Uni Terzo Anno/Intro alla Probabilità/3.Processi di ramificazione.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "3.Processi di ramificazione"
-            }
-          },
-          {
-            "id": "6601d0441cc0aff1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Uni/Uni Terzo Anno/Intro alla Probabilità/4.Distribuzioni di Probabilità continue (di variabili aleatorie).md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "4.Distribuzioni di Probabilità continue (di variabili aleatorie)"
+              "title": "Gal 2 lezione del 4-11"
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -257,45 +201,46 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "6601d0441cc0aff1",
+  "active": "5dc9bd1dfb41cc95",
   "lastOpenFiles": [
-    "Uni/Uni Terzo Anno/Intro alla Probabilità/3.Processi di ramificazione.md",
-    "Uni/Uni Terzo Anno/Intro alla Probabilità/2.Probabilità condizionata.md",
-    "Uni/Uni Terzo Anno/Intro alla Probabilità/1.Introduzione e concetti base di teoria della probabilità.md",
-    "Uni/Uni Terzo Anno/Intro alla Probabilità/4.Distribuzioni di Probabilità continue (di variabili aleatorie).md",
-    "MQ lezione del 30-10-26.md",
-    "Uni/Uni Terzo Anno/Intro alla Probabilità/0. Intro alla probabilità.md",
-    "MQ 1 lezione del 2-11.md",
-    "Destructured Notes/Destructured intro alla probabilità/Probabilità marginale, correlazione e indipendenza.md",
-    "Metodi 2 lezione del 2-11.md",
-    "Metodi 2 lezione del 30-10.md",
-    "Gal2 lezione del 29-10.md",
+    "Gal 2 lezione del 30-10.md",
+    "Gal 2 lezione del 4-11.md",
+    "Esercitazione MQ 4-11.md",
+    "Appunti presi direttamente a lezione/MQ1/MQ lezione del 3 novembre.md",
     "Appunti presi direttamente a lezione/MQ1/MQ lezione del 28-10-26.md",
-    "Uni/Uni Terzo Anno/MQ 1/6.Principi Fondativi della meccanica quantistica.md",
-    "Uni/Uni Terzo Anno/MQ 1/5.Formalismo dei Bra e dei Ket.md",
-    "Lezione 9 Probabilità.md",
-    "Lezione 10 Probabilità.md",
-    "Uni/Uni Terzo Anno/MQ 1/0. Meccanica quantistica 1.md",
+    "Appunti presi direttamente a lezione/MQ1/MQ lezione del 30-10-26.md",
     "Uni/Uni Terzo Anno/MQ 1/4.Oscillatore armonico quantistico.md",
+    "Gal2 lezione del 29-10.md",
+    "Pasted image 20261103231919.png",
+    "Pasted image 20261103212927.png",
+    "Pasted image 20261103212212.png",
+    "Destructured Notes/Destructured Metodi 2/Definizione di sviluppo asintotico.md",
+    "Destructured Notes/Destructured Metodi 2/Somma secondo Borel.md",
+    "immagini/Pasted image 20261102145722.png",
+    "Appunti presi direttamente a lezione/Prob/Lezione 9 Probabilità.md",
+    "Appunti presi direttamente a lezione/MQ1/MQ lezione del 2-11.md",
+    "Appunti presi direttamente a lezione/Metodi/Metodi 2 lezione del 2-11.md",
+    "Appunti presi direttamente a lezione/Metodi/Metodi 2 lezione del 30-10.md",
+    "Appunti presi direttamente a lezione/Prob/Lezione 11 probabilità.md",
+    "Destructured Notes/Destructured intro alla probabilità/Distribuzione stazionaria.md",
+    "Uni/Uni Terzo Anno/Metodi 2/6. Funzione Zeta di Riemann.md",
+    "immagini/Pasted image 20261103120351.png",
+    "Uni/Uni Terzo Anno/Intro alla Probabilità/6.Catene di Markov discrete.md",
+    "Appunti presi direttamente a lezione/Prob/Lezione 10 Probabilità.md",
+    "Destructured Notes/Destructured MQ1/Buca di potenziali infinita.md",
+    "Uni/Uni Terzo Anno/MQ 1/3.Studio di potenziali costanti in d=1.md",
+    "Uni/Uni Terzo Anno/MQ 1/0. Meccanica quantistica 1.md",
+    "Uni/Uni Terzo Anno/MQ 1/2.Equazione di Shrödinger.md",
+    "Destructured Notes/Destructured MQ1/Soluzione all'EdS per potenziali conservativi.md",
+    "Uni/Uni Terzo Anno/Metodi 2/7. Sviluppi Asintotici.md",
+    "Unicità/Non-unicità di uno sviluppo asintotico.md",
+    "immagini/Pasted image 20261102145733.png",
+    "Unicità",
     "immagini/Immagini_metodi_2/Pasted image 20261031164516.png",
     "immagini/Immagini_metodi_2/Pasted image 20261031103102.png",
     "immagini/Probabilità/Pasted image 20261028113953.png",
-    "Appunti presi direttamente a lezione/Metodi/Metodi 2 lezione del 26-10.md",
-    "Uni/Uni Terzo Anno/Metodi 2/4.Funzione Gamma di Eulero.md",
-    "Uni/Uni Terzo Anno/Metodi 2/0. Metodi 2.md",
-    "Destructured Notes/Destructured Metodi 2/Continuazione analitica per ricorrenza fattoriale e poli della funzione Gamma.md",
-    "Destructured Notes/Destructured Metodi 2/Integrale di Henkel.md",
-    "Destructured Notes/Destructured Metodi 2/Continuazione di Gamma usando la Beta.md",
-    "Destructured Notes/Destructured Metodi 2/Continuazione analitica \"spezzando\" l'integrale della Gamma.md",
-    "Appunti presi direttamente a lezione/Metodi/Metodi 2 lezione del 23-10-2026.md",
     "Pasted image 20261031102923.png",
-    "Pasted image 20261031102747.png",
-    "immagini/Probabilità/Pasted image 20261027000431.png",
     "Appunti presi direttamente a lezione/MQ1",
-    "immagini/Probabilità/Pasted image 20261028000250.png",
-    "immagini/Probabilità/Pasted image 20261027225928.png",
-    "immagini/Probabilità/Pasted image 20261027001850.png",
-    "immagini/Probabilità/Pasted image 20261027001655.png",
     "Appunti presi direttamente a lezione/Metodi",
     "Appunti presi direttamente a lezione/Prob",
     "Appunti presi direttamente a lezione/Gal",
@@ -303,7 +248,6 @@
     "immagini/Immagini_metodi_2/Funzioni speciali",
     "Destructured Notes/Destructured intro alla probabilità",
     "Destructured Notes/Destructured MQ1",
-    "Destructured Notes/Destructured Metodi 2",
-    "Integrale di una potenza moltiplicata per una funzione razionale (tra 0 e $"
+    "Destructured Notes/Destructured Metodi 2"
   ]
 }

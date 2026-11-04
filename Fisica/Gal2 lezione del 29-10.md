@@ -57,9 +57,9 @@ $$
 è ben definita perchè non vede la differenza tra rappresentazioni diverse e soddisfa tutte le proprietà di una derivazione.
 Chiamiamo derivazioni di questo tipo derivazioni geometriche perchè costruite con l'ausilio di oggetti geometrici, come le curve.
 
-2. Ogni derivazione è geometrica, ossia $\forall D \quad \exists \alpha: \, D=D_{\alpha}$
+2. Ogni derivazione è geometrica, ossia $\forall D \quad \exists \alpha \; (\text{curva}): \, D=D_{\alpha}$
 
-Dunque possiamo definire $T_{p}M=\text{derivate direzionali nel punto }p \text{ (al valore di } f \text{)}$.
+Dunque possiamo definire $T_{p}M=\text{insieme delle derivate direzionali nel punto }p \text{ (al valore di } f \text{)}$.
 
 Non dimostreremo il teorema, tuttavia è utile approfondire alcuni ingredienti della dimostrazione:
 
@@ -160,8 +160,8 @@ $$
 	F_{*}:(C_{p}^\infty)^*\to(C_{F(p)})^*
 $$
 Questa mappa è diversa da $F$ perchè sto lavorando sul duale dei germi e non di  tutto lo spazio duale $M_{i}^*$, dunque si tratta del "duale di una restrizione del duale di $F$".
-Ricordando che le derivazioni sono applicazioni lineari sui germi, quindi $F_{*}$ opera anche sui duali.
-Se tramite questa mappa anzichè prendere un elemento generico dello spazio dei germi prendo una derivazione, cosa succede?
+Ricordando che le derivazioni sono applicazioni lineari sui germi, quindi $F_{*}$ opera anche sulle derivazioni.
+A questo punto è lecito chiedersi:
 $F_{*}$ manda derivazioni in derivazioni?
 Sì, per mostrarlo consideriamo $D \in T_{p}M$. Chiediamoci se $F_{*}(D)\in (C_{F(p)}^\infty)^*$ sia una derivazione.
 - $F_{*}(D)$ è lineare per dualizzazione
@@ -177,8 +177,11 @@ La restrizione di $F_{*}$ agli spazi tangenti è la definizione di differenziale
 $$
 	dF = F_{*}|_{T_{p}M}
 $$
-
-
+Cioè il differenziale di $F$ è una mappa tra gli spazi tangenti (come per le superfici):
+$$
+	dF: T_{p}S_{1}\to T_{F(p)}S_{2}
+$$
+Siamo riusciti però a creare una nozione di calcolo della derivata che è intrinseco.
 
 
 

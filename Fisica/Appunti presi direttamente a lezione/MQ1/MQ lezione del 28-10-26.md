@@ -31,13 +31,15 @@ $$
 $$
 = Completezza generalizzata
 
-Paragonandolo al caso discreto abbiamo:
-$\hat{H} \ket{n}=E_{n}\ket{n}$
-$\langle n|m \rangle=\delta_{nm}$
-$\sum_{n} \ket{n}\bra{n}=\mathbb{1}$
-$\forall \ket{\alpha}\in \mathcal{H} \quad : \quad \ket{\alpha}=\sum_{n}c_{n} \ket{n}$ con $c_{n}=\langle n|\alpha \rangle$.
-E $|c_{n}|^2= P(E_{n})$.
-
+Nel caso discreto abbiamo invece:
+$$
+	\begin{aligned}
+	&\hat{H} \ket{n}=E_{n}\ket{n}\\
+	&\langle n|m \rangle=\delta_{nm}\\
+	&\sum_{n} \ket{n}\bra{n}=\mathbb{1}\\
+	\forall \ket{\alpha}\in \mathcal{H} \;: \; \ket{\alpha}=\sum_{n}c_{n} &\ket{n} \; \text{ con } \; c_{n}=\langle n|\alpha \rangle \; \text{ e } \; |c_{n}|^2= P(E_{n})\\
+	\end{aligned}
+$$
 Estendendo quest'ultima cosa a stati discreti abbiamo:
 $$
 	\forall \ket{\alpha} \in \mathcal{H} \qquad \ket{\alpha} =\int dy\, \psi_{\alpha}(y) \ket{y} 

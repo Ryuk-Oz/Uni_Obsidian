@@ -105,7 +105,7 @@ $$
 $$
 Abbiamo verificato che la funzione che minimizza l'incertezza è il pacchetto gaussiano.
 
-### Insiemi completi di osservabili compatibili (ICOC)
+### Insiemi completi di osservabili compatibili (ICOC, CSCO in inglese)
 
 - Date $\{ a_{i} \}$, $i=1,\dots,p$ sono compatibili se i corrispondenti operatori commutano (sono cioè simultaneamente misurabili).
 $$
