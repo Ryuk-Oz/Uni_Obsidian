@@ -104,4 +104,4 @@ $$
 Come avevamo precedentemente previsto.
 (Vedi quest'ultima parte sul griffith che non mi è chiarissima).
 
-**Lezione Associata:** [[4.Oscillatore armonico quantistico]]
+**Lezione Associata:** [[4.Oscillatore armonico quantistico (senza operatori)]]

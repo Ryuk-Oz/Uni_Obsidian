@@ -192,8 +192,6 @@ Dunque $\varepsilon_{0}=\frac{1}{2}$, cioè $E_{0}=\frac{1}{2}\hbar \omega$.
 $$
 	\varepsilon_{n}=\left( n+\frac{1}{2} \right) \implies E_{n}\left( n+\frac{1}{2} \right)\hbar \omega
 $$
-
-
 **Studio di $a$ e $a^{\dagger}$**
 
 $$

@@ -70,8 +70,16 @@ $$
 $$
 Quanto è legittimo prendere $s\in \mathbb{R}_{+}$? Prendessi $s$ complesso, andrei a integrare su una retta inclinata, ma per $\mathrm{Re}(s)>\alpha_{0}$ l'argomento dell'integrale è analitico allora posso sempre deformare questa retta sulla retta reale. (Cioè posso continuare analiticamente l'integrale che abbiamo appena calcolato su tutto $D$)
 
-**OSS:** non è detto che prendendo più termini la precisione aumenti, essendo la serie divergente, da un certo punto in poi inizierò a divergere. 
-Esiste un numero ottimale oltre il quale la precisione inizia a calare.
+**OSS:** Per serie divergenti non è detto che prendendo più termini la precisione aumenti, fissato $z$, vicino a $z_{0}$, aumentando il valore di $n$ la precisione aumenterà fino ad un certo punto, oltre il quale inizierà a divergere. Al contrario, fissato $n$, per $z\to z_{0}$ la precisione continuerà ad aumentare.
+Esiste un $n$ ottimale che minimizza l'errore e oltre il quale la precisione inizia a calare.
+
+Se fisso $n$ e mi avvicino a $z_{0}$, avrò un numero finito di $a_{k}$ che cresceranno (spesso con andamento fattoriale) fino a fermarsi ad $a_{n}$, indipendentemente da quanto io sia vicino a $z_{0}$. Al contrario i termini del tipo $(z-z_{0})^k$ diventeranno sempre più piccoli più mi avvicino a $z_{0}$.
+Quindi la precisione della mia stima aumenterà.
+
+Se invece fisso $z$ e aumento $n$, se è vero che i termini $(z-z_{0})^n$ diventeranno semprè più piccoli all'aumentare di $n$, d'altra parte è anche vero che i termini $a_{n}$ diventeranno sempre più grandi. Ad un certo punto i termini $a_{n}$ inizieranno a crescere più velocemente di quanto i termini $(z-z_{0})^n$ non diminuiscano e la serie andrà a divergere.
+Quindi la precisione della mia stima inizierà a diminuire dopo un certo $n$.
+
+Quando vado a calcolare il resto, facendo il limite $z\to z_{0}$, i coefficienti $a_{n}$ li andò a trattare come costanti e non influeranno sul risultato del limite, motivo per cui continuerò ad avere $R_{n}=o(\varphi_{n-1})$.
 
 Qual è il numero ottimale di termini (nell'esempio che abbiamo appena svolto)?
 $$

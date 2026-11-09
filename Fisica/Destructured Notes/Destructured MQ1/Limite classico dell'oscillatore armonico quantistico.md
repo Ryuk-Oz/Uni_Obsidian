@@ -37,4 +37,4 @@ $\implies$ per $n$ grandi $\rho_{n}(x)$ oscilla nella regione classicamente perm
 
 ![[Pasted image 20261024121401.png]]
 
-**Lezione associata:** [[4.Oscillatore armonico quantistico]]
+**Lezione associata:** [[4.Oscillatore armonico quantistico (senza operatori)]]

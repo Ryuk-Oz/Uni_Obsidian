@@ -65,4 +65,4 @@ $$
 	H_{n}(-\xi)=(-1)^n H_{n}(\xi)
    $$
 
-**Lezione Associata:** [[4.Oscillatore armonico quantistico]]
+**Lezione Associata:** [[4.Oscillatore armonico quantistico (senza operatori)]]

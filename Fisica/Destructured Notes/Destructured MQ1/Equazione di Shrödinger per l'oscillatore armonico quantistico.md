@@ -151,4 +151,4 @@ $$
 Polinomi di questo tipo si dicono polinomi di Hermite.
 $N_{n}$ è la costante di normalizzazione.
 
-**Lezione Associata:** [[4.Oscillatore armonico quantistico]]
+**Lezione Associata:** [[4.Oscillatore armonico quantistico (senza operatori)]]

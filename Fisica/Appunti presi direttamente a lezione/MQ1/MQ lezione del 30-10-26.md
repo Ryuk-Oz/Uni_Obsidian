@@ -105,4 +105,7 @@ $$
 $$
 In quest'ultimo esempio ci siamo avvalsi solo delle proprietà e della nostra conoscenza di $[\hat{x},\hat{p}_{x}]$.
 
+Abbiamo detto che se 2 operatori commutano, allora ammettono una base di autovettori comune (e le osservabili associate sono perfettamente definite). 
+A questo punto è lecito chiedersi: quanta informazione perdo se 2 operatori non commutano?
+
 

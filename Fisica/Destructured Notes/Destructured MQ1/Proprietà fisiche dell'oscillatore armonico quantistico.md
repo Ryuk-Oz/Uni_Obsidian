@@ -94,4 +94,4 @@ $$
    $$
    Lo stato di minima energia è quello che minimizza questao prodotto, cioè $\psi_{0}(x)$ che è una funzione gaussiana e ha $(\Delta x \Delta p)_{0}=\frac{\hbar}{2}$.
 
-**Lezione Associata:** [[4.Oscillatore armonico quantistico]]
+**Lezione Associata:** [[4.Oscillatore armonico quantistico (senza operatori)]]
