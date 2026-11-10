@@ -80,13 +80,13 @@ $$
 
 La definizione di integrale richiede la scelta di una 1-forma $\alpha$ su $M$ che lo renda indipendente dalla parametrizzazione di $\gamma$.
 $$
-	\int_{\gamma} f\, \alpha = \int_{a}^b (f\circ\gamma)\alpha(\dot{\gamma})\; dt
+	\int_{\gamma} f\, \alpha := \int_{a}^b (f\circ\gamma)\alpha(\dot{\gamma})\; dt
 $$
 Esempio:
 $f:M\to \mathbb{R}$, $df: T_{p}M\to T_{f(p)}\mathbb{R}=\mathbb{R}$.
-$df \in T_{p}^*M$ è una 1-forma speciale (esatta), una 1-forma si dice esatta quando rappresenta un differenziale.
+$df \in T_{p}^*M$ è una 1-forma speciale (esatta), una 1-forma si dice esatta quando rappresenta un differenziale (più precisamente quando la sua immagine è un differenziale).
 
-Perchè ci interessano 1-forme esatte? L'integrazione di 1-forme esatte ci da il TFCI:
+Perchè ci interessano 1-forme esatte? L'integrazione di 1-forme esatte ci da il caso di forze conservative:
 $$
 	\int_{\gamma} df = \int^b_{a} df(\dot{\gamma}) dt = \int^b_{a} \frac{d}{dt} (f \circ\gamma)(t) dt = (f\circ\gamma)(b)-(f\circ\gamma)(a)
 $$
@@ -106,10 +106,11 @@ $$
 $$
 	\varphi^* \alpha|_{p} (v\in T_{p}M) := \alpha|_{\varphi(p)}(d\varphi|_{p}(v) \in T_{\varphi(p)}M)
 $$
-Con questa nozione posso calcolare la derivata di Lie di $\alpha$ rispetto a un campo $X$ nel seguente modo:
+Con questa nozione posso calcolare la derivata di Lie di $\alpha$ rispetto a un campo $X$ nel seguente modo, sia $\varphi$ il flusso associato al campo $X$, allora:
 $$
 	\mathcal{L}_{X} \alpha = \frac{d}{dt} \varphi^*_{t}\alpha|_{p;t=0} = \lim_{ t \to 0 } \frac{\varphi^*_{t}\alpha|_{p}-\varphi^*_{0}\alpha|_{p}}{t}
 $$
+Come nella derivata di Lie di una funzione, sto "spostando" tramite un campo le unoforme in modo che vivano nello stesso spazio.
 Calcola come varia $\alpha$ rispetto ai diffeomorfismi $\varphi_{t}$, ossia rispetto ai campi $X$.
 $$
 	\mathcal{L}_{X}\alpha=0
@@ -131,7 +132,7 @@ $$
 $$
 Molto spesso:
 $$
-	V^* \otimes W^* = \{ \text{forme bilineari su } \underbrace{V^{**}\times W^{**}}_{V\times W}\to \mathbb{R}, \quad (v,w)\to\in \mathbb{R} \}
+	V^* \otimes W^* = \{ \text{forme bilineari su } \underbrace{V^{**}\times W^{**}}_{V\times W\; \text{molto spesso, ma non sempre}}\to \mathbb{R}, \quad (v,w)\to\in \mathbb{R} \}
 $$
 Esempio:
 Prodotto scalare $\langle , \rangle\in V^*\otimes V^*$ perchè forma bilineare su $V\times V\to \mathbb{R}$.

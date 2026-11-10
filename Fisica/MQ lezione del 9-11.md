@@ -28,7 +28,7 @@ Dunque:
 $$
 	\ket{n} = \frac{(a^{\dagger})^n}{\sqrt{ n! }} \ket{0} 
 $$
-Lo stato $\ket{0}$ è normalizzato perchè definito tramite un'equazione agli autovalori (?) CAPISCI MEGLIO.
+Lo stato $\ket{0}$ è normalizzato per definizione.
 
 Ricaviamo ora le funzioni d'onda, partendo dallo stato fondamentale.
 $$
@@ -64,7 +64,7 @@ Questa è un'altra versione della formula di Rodriguez! $\implies$ escono i poli
 $$
 	\left( \frac{d}{d\xi}-\xi \right)^n f(\xi) = \left( e^{ 1/2 \; \xi^2 } \frac{d^n}{d\xi^n} e^{ -1/2 \; \xi^2 } \right) f(\xi)
 $$
-VERIFICA QUESTA IDENTITà.
+Si verifica per induzione.
 
 Sostituendo nel risultato di prima troviamo:
 $$
@@ -138,11 +138,12 @@ Le tre componenti del momento angolare NON commutano tra loro ma commutano con i
 $$
 	[L^2,L_{i}]=0
 $$
-
 Ne concludiamo che $L_{x},L_{y},L_{z}$ non sono compatibili, dunque il nostro ICOC (in un problema in cui l'unica osservabile è il momento angolare) sarà:
 $$
 	\{ L^2,L_{z} \}
 $$
+
+**Derivazione algebrica del momento angolare**
 
 Ricaviamo l'operatore momento angolare partendo solo da queste probabilità algebriche.
 Ci mettiamo in un sistema di misura in cui $\hbar=1$.
@@ -169,7 +170,7 @@ $$
 	&=\sum^3_{i=1}\lVert J_{i}\ket{j,m}  \rVert \geq 0
 	\end{aligned}
 $$
-Ho due possibilità, $j\geq0$ e $j\leq-1$. Devo studiare due casi sepratai? No, qualunque scelta io faccia è analoga, basta usare la trasformazione $j\leftrightarrow-j-1$ che lascia invariato $j(j+1)$.
+Ho due possibilità, $j\geq0$ e $j\leq-1$. Devo studiare due casi separati? No, qualunque scelta io faccia è analoga, basta usare la trasformazione $j\leftrightarrow-j-1$ che lascia invariato $j(j+1)$.
 Per comodità scelgo $j\geq 0$.
 
 Definisco 2 operatori (che salgono e scendono):
@@ -199,7 +200,7 @@ Dunque:
 $$
 	J_{\pm}\ket{j,m} \propto \ket{j,m\pm1} 
 $$
-Poichè, trovandoci in un icoc, non c'è ulteriore degenerazione.
+Poichè, trovandoci in un icoc, non c'è ulteriore degenerazione, dunque esiste un solo stato associato all'autovalore $m+1$. Per convenzione chiamiamo questo stato $\ket{m+1}$ e in un certo senso stiamo "ordinando" la nostra base.
 $$
 	\implies J_{\pm}\ket{j,m} =N^\pm_{j,m}\ket{j,m\pm1} 
 $$
@@ -241,14 +242,14 @@ $$
 	-j\leq m\leq j
 $$
 Questo ci dice che $|L_{z}|^2 \leq |L|^2$.
-L'azione di $J_{\pm}$ su $\ket{j,m}$ DEVE TERMINARE, quindi devono esistere degli $m$ tali che $N_{jm}^\pm=0$.
-Facciamolo esplicitamente.
+L'azione di $J_{\pm}$ su $\ket{j,m}$ DEVE TERMINARE, quindi nei limiti dell'intervallo di esistenza di $m$, $[-j,j]$,  devo avere $N_{jm}^\pm=0$. Infatti:
 $$
 	N^-_{j,-j}=\sqrt{ j(j+1)-(-j)(-j-1) }=0
 $$
 $$
 	N^+_{j,j}=\sqrt{ j(j+1)-j(j+1) }=0
 $$
+Se anzichè scegliere come autovalori $j(j+1)$ avessi scelto $\lambda$ generico, sarei riuscito a ritrovare $j(j+1)$ imponendo la fine dell'azione di $J_{\pm}$.
 Quindi devono esistere gli stati $\{ \ket{j,j}, \; \ket{j,-j} \}$, cioè i valori estremi di $m$ sono raggiunti.
 Questo significa che partendo da $m=-j$ devo arrivare a $m=+j$ facendo passi interi $\implies 2j \in \mathbb{N}$
 
@@ -271,7 +272,7 @@ $$
 $j=0\implies J^2=0, \;m=0, \, J_{z}=0$
 $j= \frac{1}{2} \implies J^2 =\frac{3}{4}\hbar^2, \; m\in \left\{  -\frac{1}{2}, \frac{1}{2}  \right\}, \; J_{z}=\pm \frac{\hbar}{2}$
 $j=1\implies J^2= 2\hbar^2,\; m \in \{ -1,0,1 \}, \; J_{z}=0, \pm \hbar$
-in generale $m$ha $2j+1$ valori.
+in generale $m$ ha $2j+1$ valori.
 Il momento angolare è quantizzato, non è un vettore in senso stratto ma un vettore di operatori.
 
 
