@@ -51,7 +51,7 @@ $$
 	\begin{aligned}
 	&\int^\infty_{-\infty} e^{ -tAw^2 } dw = \sqrt{ \frac{\pi}{tA} }\\
 	&\int^\infty_{-\infty} e^{ -tAw^2 } w^2 dw = -\frac{d}{d(tA)} \sqrt{ \frac{\pi}{tA} }=+\frac{1}{2} \frac{\sqrt{ \pi }}{(tA)^{3/2}} =+\frac{1}{2} \sqrt{ \frac{\pi}{tA} } \frac{1}{tA}\\
-	& \int^\infty_{-\infty} e^{ -tAw^2 } w^{2n} dw = (-1)^n \frac{d^n}{d(tA)^n}(-1)^n \frac{1}{2} \frac{3}{2} \frac{5}{2}\dots \frac{2n-1}{2} \sqrt{ \frac{\pi}{tA} } \frac{1}{(tA)^n}=\frac{(2n-1)!}{2^n} \sqrt{ \frac{\pi}{tA} } \frac{1}{(tA)^n}
+	& \int^\infty_{-\infty} e^{ -tAw^2 } w^{2n} dw = (-1)^n \frac{d^n}{d(tA)^n}(-1)^n \frac{1}{2} \frac{3}{2} \frac{5}{2}\dots \frac{2n-1}{2} \sqrt{ \frac{\pi}{tA} } \frac{1}{(tA)^n}=\frac{(2n-1)!!}{2^n} \sqrt{ \frac{\pi}{tA} } \frac{1}{(tA)^n}
 	\end{aligned}
 $$
 Il termine dominante è chiaramente il primo. 
@@ -108,7 +108,6 @@ $$
 	&t \in D
 	\end{aligned}}{\sim} 2\int^\infty_{0} dx\, e^{ -tx } \left( x-\frac{1}{6}x^3+\frac{1}{6}tx^4 \right)
 $$
-(PER CASA FAI L'ORDINE SUCCESSIVO).
 $$
 	= 2\int^\infty_{0} dx \, e^{ -tx }-\frac{1}{3} \int^\infty_{0} dx\, e^{ -tx } x^3 + \frac{t}{3} \int^\infty_{0} dx\, e^{ -tx } x^4
 $$
@@ -135,7 +134,7 @@ $$
 $\sin x$ ha un max in $\frac{\pi}{2}$.
 Riscrivo $\sin x$ come:
 $$
-	\sin x = \cos\left( \frac{\pi}{2}-x \right)=1- \frac{1}{2} \left( x-\frac{\pi}{2} \right)^2+ \sum^\infty_{l=0} \frac{(-1)^l}{(2l)!}\left( x-\frac{\pi}{2} \right)^{2l}=1-\frac{1}{2} w^2+ \sum^\infty_{l=0} \frac{(-1)^l}{(2l)!}w^{2l}
+	\sin x = \cos\left( \frac{\pi}{2}-x \right)=1- \frac{1}{2} \left( x-\frac{\pi}{2} \right)^2+ \sum^\infty_{l=2} \frac{(-1)^l}{(2l)!}\left( x-\frac{\pi}{2} \right)^{2l}=1-\frac{1}{2} w^2+ \sum^\infty_{l=2} \frac{(-1)^l}{(2l)!}w^{2l}
 $$
 Sostituiamo nell'integrale:
 $$
@@ -155,7 +154,7 @@ $$
 	&= e^{ t } \sqrt{ \frac{2\pi}{t} } \left( 1-\frac{1}{2} \frac{1}{t}+ \frac{1}{8} \frac{1}{t} \right)= e^{ t } \sqrt{ \frac{2\pi}{t} } \left( 1-\frac{3}{8} \frac{1}{t} \right)
 	\end{aligned}
 $$
-FAI ORDINE SUCCESSIVO
+L'ordine successivo, a meno di errori di conto, dovrebbe essere $-\frac{15}{228} \frac{1}{t^2}$.
 a $+\infty$ e $-\infty$ gli andamenti sono significativamente diversi.
 
 
@@ -189,18 +188,18 @@ Dunque:
 $$
 	\begin{aligned}
 	f(y) = \log y-y &= \cancel{(y-1)}-\frac{1}{2}(y-1)^2+\frac{1}{3}(y-1)^3+\dots-(y-1)-1\\
-	&= -1-\frac{1}{2}(y-1)^2 +\sum^\infty_{n=3} \frac{(-1)^n}{n} (y-1)^n
+	&= -1-\frac{1}{2}(y-1)^2 -\sum^\infty_{n=3} \frac{(-1)^n}{n} (y-1)^n
 	\end{aligned}
 $$
 Sviluppiamo anche il termine al piano terra:
 $$
 	\frac{1}{y}= \frac{1}{(y-1)+1} = \sum^\infty_{k=0} (y-1)^k (-1)^k=1-(y-1)+(y-1)^2+\dots
 $$
-Mettendo tutti i0 pezzi insieme si ha:
+Mettendo tutti i pezzi insieme si ha:
 $$
 	\begin{aligned}
-	\Gamma(t) &\underset{t\to \infty}{\sim} \int^{1+\delta}_{1-\delta} dy\, (\dots)=t^t \int^\delta_{-\delta} dw \; e^{ t \left( 1-1/2\; w^2+\sum_{n=3}^\infty \frac{(-1)^n}{n} w^n \right)} \sum^\infty_{l=0} (-1)^l w^l\\
-	& \sim t^t e^{ -t } \int^\infty_{-\infty} e^{ -t/2\; w^2 }\left[ 1+t \left( -\frac{w^3}{3}+ \frac{w^4}{4}+\dots \right)+\frac{t^2}{2}\left( -\frac{w^3}{3}+\dots \right)^2\right]\cdot[1-w+w^2]
+	\Gamma(t) &\underset{t\to \infty}{\sim} \int^{1+\delta}_{1-\delta} dy\, (\dots)=t^t \int^\delta_{-\delta} dw \; e^{ t \left( 1-1/2\; w^2-\sum_{n=3}^\infty \frac{(-1)^n}{n} w^n \right)} \sum^\infty_{l=0} (-1)^l w^l\\
+	& \sim t^t e^{ -t } \int^\infty_{-\infty} e^{ -t/2\; w^2 }\left[ 1+t \left( \frac{w^3}{3}- \frac{w^4}{4}+\dots \right)+\frac{t^2}{2}\left( +\frac{w^3}{3}-\dots \right)^2\right]\cdot[1-w+w^2]
 	\end{aligned}
 $$
 Prendendo solo il termine dominante abbiamo:
@@ -211,5 +210,13 @@ Prendiamo anche l'ordine successivo:
 $$
 		\Gamma(t) \sim t^t e^{ -t } \int^\infty_{-\infty} dw\, e^{ -t/2\; w^2 }\left( 1+w^2-t w^4\left( \frac{1}{4}+\frac{1}{3} \right) +\frac{t^2}{18}w^6\right)
 $$
-CONTROLLA CON CALMA I SEGNI (SU TUTTO STIRLING)
-FINISCI A CASA.
+Svolgendo tutti i conti si arriva a dire che:
+$$
+	\Gamma(t)\sim t^t e^{ -t } \sqrt{ \frac{2\pi}{t} }\left[ 1+\frac{1}{12t} \right]
+$$
+Ora possiamo sviluppare il fattoriale.
+$$
+	n! = \Gamma(n+1)=n\Gamma(n)\sim n^n e^{ -n } \sqrt{ 2\pi n }\left[ 1+\frac{1}{12n} \right]
+$$
+che è proprio la formula di stirling al primo ordine.
+Prova a rifare tutto valutando direttamente $\Gamma(t+1)$.

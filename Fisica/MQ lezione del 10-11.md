@@ -227,7 +227,7 @@ con un cambio di variabili intelligente: $t=\frac{1+x}{2}\implies x=2t-1$,
 $\begin{cases}(1-x)=2(1-t) \\  (1+x)=2t\end{cases}\quad dx=2tdt$
 Arriviamo a:
 $$
-	1=2\pi |N|^2 2^{2l+1} \underbrace{\int^1_{0} dt\, t^l (1-t)^l}_{B(l+1,l+1)}=2\pi |N|^2\dots
+	1=2\pi |N|^2 2^{2l+1} \underbrace{\int^1_{0} dt\, t^l (1-t)^l}_{B(l+1,l+1)}=2\pi |N|^2 2^{2l} \frac{(l!)^2}{(2l+1)!}
 $$
 E troviamo:
 $$
