@@ -107,12 +107,12 @@ Abbiamo verificato che la funzione che minimizza l'incertezza è il pacchetto ga
 
 ### Insiemi completi di osservabili compatibili (ICOC, CSCO in inglese)
 
-- Date $\{ a_{i} \}$, $i=1,\dots,p$ sono compatibili se i corrispondenti operatori commutano (sono cioè simultaneamente misurabili).
+- Dato un set di osservabili $\{ a_{i} \}$, $i=1,\dots,p$; si dice che le osservabili sono COMPATIBILI se i corrispondenti operatori commutano (sono cioè simultaneamente misurabili).
 $$
 	[A_{i},A_{j}]=0 \qquad \forall i,j=1,\dots,p
 $$
-- Diciamo che $a$ e $b$ sono INDIPENDENTI se la misura di una di esse non determina il risultato di una misura dell'altra. (DIVERSA DALLA DEFINIZIONE DI INDIP: PROBABILISTICA?)
-  Se due osservabili sono compatibili e indipendenti $\implies$ ci deve seere degenerazione
+- Diciamo che $a$ e $b$ sono INDIPENDENTI se la misura di una di esse non determina il risultato di una misura dell'altra. (si tratta di una definizione di indipendenza diversa da quella che si dà in teoria delle probabilità)
+  Se due osservabili sono compatibili e indipendenti $\implies$ ci deve essere degenerazione, infatti:
   $\exists$ diversi stati $\ket{a_{i}, \cdot}\in$ autovalori diversi di $B$.
   Dunque ha più senso chiamare lo stato non più $\ket{a_{i}}$ ma:
   $\ket{a_{i}}\to\ket{a_{i},b_{i}} \, /\, \begin{cases}A\ket{a_i, b_{j}} =a_{i}\ket{{a_{i}, b_{j}}} \\  B\ket{{a_{i}, b_{j}}}=b_{j} \ket{{a_{i}, b_{j}}}\end{cases}$
@@ -157,7 +157,7 @@ FINIAMO QUESTA COSA DOMANI; ORA VEDIAMO UN'ALTRA ROBA
 $Q$ osservabile, $Q=Q^{\dagger}$, $\ket{\alpha}\in \mathcal{H}$.
 $$
 	\begin{aligned}
-	\frac{d}{dt}\bra{\alpha} Q\ket{\alpha} =\left( \frac{d}{dt} \bra{\alpha}  \right) Q \ket{\alpha} + \bra{\alpha} \frac{dQ}{dt} \ket{\alpha} +\bra{\alpha}Q \left( \frac{d}{dt} \ket{\alpha} \right) 
+	\frac{d}{dt}\bra{\alpha} Q\ket{\alpha} =\left( \frac{ \partial  }{ \partial t }  \bra{\alpha}  \right) Q \ket{\alpha} + \bra{\alpha} \frac{ \partial Q }{ \partial t }  \ket{\alpha} +\bra{\alpha}Q \left( \frac{ \partial  }{ \partial t }  \ket{\alpha} \right) 
 	\end{aligned}
 $$
 A queto punto sfrutto l'eq. di shrodinger:
@@ -166,7 +166,7 @@ $$
 $$
 e:
 $$
-	-i\hbar \frac{d}{dt} \bra{\alpha}  = \bra{\alpha} HQ \ket{\alpha} 
+	-i\hbar \frac{d}{dt} \bra{\alpha}  = \bra{\alpha} H
 $$
 Dunque:
 $$
@@ -182,4 +182,5 @@ $$
 $$
 	\frac{dA}{dt} = \frac{ \partial A }{ \partial t } + \{ A,H \}_{\text{pp}}
  $$
- Ho una corrispondenza biunivoca tra le parentesi di poisson in meccanica classica e il commutatore in meccanica quantistica.
+ Ho quindi una corrispondenza biunivoca tra le parentesi di poisson in meccanica classica e il commutatore in meccanica quantistica.
+Si può ricostruire tutta la meccanica quantistica proprio a partire da questa equivalenza (è ciò che fa Dirac nei sui principi di meccanica Quantistica).

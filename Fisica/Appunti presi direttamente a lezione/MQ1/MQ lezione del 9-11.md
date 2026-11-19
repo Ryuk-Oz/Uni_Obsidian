@@ -79,7 +79,7 @@ Abbiamo ritrovato le stesse funzioni d'onda che si otterrebbero con l'equazione 
 
 **Algebra del momento angolare:**
 
-In meccanica classico studiamo il momento angolare come:
+In meccanica classica il momento angolare è uno pseudovettore, come possiamo vedere dalla sua definizione:
 $$
 	\begin{cases}
 	\vec{L} = \vec{r} \wedge \vec{p} \\
@@ -110,7 +110,6 @@ In MQ questi operatori non commutano:
 $$
 	[L_{x},L_{y}]=[yp_{z}-zp_{y},zp_{x}-xp_{z}]=y[p_{z},z]p_{x}+x[z,p_{z}]p_{y}=i\hbar(xp_{y}-yp_{x})=i\hbar L_{z}
 $$
-VERIFICA USANDO LE PROPRIETà DEI COMMUTATORI IN MODO ESPLICITO.
 Analogamente, ciclando in senso orario abbiamo:
 $$
 	\begin{aligned}
@@ -138,10 +137,12 @@ Le tre componenti del momento angolare NON commutano tra loro ma commutano con i
 $$
 	[L^2,L_{i}]=0
 $$
-Ne concludiamo che $L_{x},L_{y},L_{z}$ non sono compatibili, dunque il nostro ICOC (in un problema in cui l'unica osservabile è il momento angolare) sarà:
+Ne concludiamo che $L_{x},L_{y},L_{z}$ non sono compatibili, dunque il nostro ICOC (in un problema in cui l'unica osservabile è il momento angolare) sarà qualcosa del tipo:
 $$
 	\{ L^2,L_{z} \}
 $$
+(Perchè $L^2$ e $L_{z}$ sono diagonalizzabili simultaneamente),
+Dove $L_{z}$ viene scelto in maniera arbitraria.
 
 **Derivazione algebrica del momento angolare**
 
@@ -187,7 +188,7 @@ $$
 $$
 	[J_{z},J_{\pm}]=[J_{z},J_{x}\pm iJ_{y}]=iJ_{y}\pm i(-iJ_{x})=\pm J_{x}+iJ_{y}=\pm J_{\pm}
 $$
-$J_{\pm}$ sono operatori di innalazamento e abbassamento per $m$. Vediamo come
+$J_{\pm}$ sono operatori di innalazamento e abbassamento per $m$. Vediamo come:
 $$
 	J^2(J_{\pm}\ket{j,m} )=J_{\pm}(J^2 \ket{j,m} )=j(j+1)(J_{\pm}\ket{j,m} )
 $$
@@ -195,12 +196,12 @@ lo stato $J_{\pm}\ket{j,m}$ è autostato di $J^2\in j(j+1)$
 $$
 	J_{z}(J_{\pm}\ket{j,m} )= (J_{\pm}J_{z}\pm J_{\pm})\ket{j,m} =(m\pm1)(J_{\pm}\ket{j,m} )
 $$
-lo stato $J_{\pm}\ket{j,m}$ è autostato di $J_{z}\in m\pm{1}$. Sembra che $m$ debba andare a passi interi.
-Dunque:
+lo stato $J_{\pm}\ket{j,m}$ è autostato di $J_{z}\in m\pm{1}$. A questo punto ha senso chiedersi se $m$ vada a passi interi o se esistano autovalori intermedi.
+Poichè, trovandoci in un icoc, non c'è ulteriore degenerazione, dunque esiste un solo stato associato all'autovalore $m+1$, possiamo dire che:
 $$
 	J_{\pm}\ket{j,m} \propto \ket{j,m\pm1} 
 $$
-Poichè, trovandoci in un icoc, non c'è ulteriore degenerazione, dunque esiste un solo stato associato all'autovalore $m+1$. Per convenzione chiamiamo questo stato $\ket{m+1}$ e in un certo senso stiamo "ordinando" la nostra base.
+Per convenzione chiamiamo questo stato $\ket{m+1}$ (potevo anche chiamarlo $\ket{\text{pippo}}$, ma "ordinare" la nostra base è comodo).
 $$
 	\implies J_{\pm}\ket{j,m} =N^\pm_{j,m}\ket{j,m\pm1} 
 $$
@@ -214,7 +215,7 @@ $$
 $$
 Il caso opposto sarà:
 $$
-	J_{+}J_{-}=J^2-J_{z^2}+J_{z}
+	J_{+}J_{-}=J^2-J_{z}^2+J_{z}
 $$
 Dunque:
 $$
@@ -230,7 +231,7 @@ $$
 	\end{cases}
 $$
    $\implies -j-1 \leq m\leq j$
-2. Il caso negativo reistituisce:
+2. Il caso negativo restituisce:
    $$
 	m=\begin{cases}
 	j+1 \\
@@ -242,20 +243,29 @@ $$
 	-j\leq m\leq j
 $$
 Questo ci dice che $|L_{z}|^2 \leq |L|^2$.
-L'azione di $J_{\pm}$ su $\ket{j,m}$ DEVE TERMINARE, quindi nei limiti dell'intervallo di esistenza di $m$, $[-j,j]$,  devo avere $N_{jm}^\pm=0$. Infatti:
+L'azione di $J_{\pm}$ su $\ket{j,m}$ DEVE TERMINARE e $m$ DEVE RAGGIUNGERE GLI ESTREMI, quindi nei limiti dell'intervallo di esistenza di $m$, $[-j,j]$,  devo avere $N_{jm}^\pm=0$. Infatti:
 $$
 	N^-_{j,-j}=\sqrt{ j(j+1)-(-j)(-j-1) }=0
 $$
 $$
 	N^+_{j,j}=\sqrt{ j(j+1)-j(j+1) }=0
 $$
-Se anzichè scegliere come autovalori $j(j+1)$ avessi scelto $\lambda$ generico, sarei riuscito a ritrovare $j(j+1)$ imponendo la fine dell'azione di $J_{\pm}$.
 Quindi devono esistere gli stati $\{ \ket{j,j}, \; \ket{j,-j} \}$, cioè i valori estremi di $m$ sono raggiunti.
 Questo significa che partendo da $m=-j$ devo arrivare a $m=+j$ facendo passi interi $\implies 2j \in \mathbb{N}$
 
-PROVA A RIFARE TUTTO CON $\lambda$ generico al posto di $j(j-1)$ e vedi cosa esce.
+Se anzichè scegliere come autovalori $j(j+1)$ avessi scelto $\lambda$ generico, sarei riuscito a ritrovare gli stessi risultati scritti in forma meno bella.
+Nello specifico, troverei:
+$$
+	-\left( \frac{\sqrt{ 1+4\lambda }-1}{2} \right)\leq m\leq \frac{\sqrt{ 1+4\lambda }-1}{2}
+$$
+In modo più difficile da qua si vede sempre che $|L_{z}|^2\leq |L|^2$, e troviamo che l'azione di $j$ termina ugualmente.
+Infine per ritrovare $\lambda=j(j+1)$ basta imporre:
+$$
+	\frac{\sqrt{ 1+4\lambda }-1}{2}=j
+$$
+(Dove ho scelto di chiamarla $j$ in maniera arbitraria).
 
-Alla fine di tutto arriviamo a drie:
+Alla fine di tutto arriviamo a dire:
 $$
 	\begin{cases}
 	J^2 \ket{j,m} = j(j+1)\ket{j,m}  \\

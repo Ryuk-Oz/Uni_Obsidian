@@ -1,5 +1,6 @@
 [
   "obsidian-latex-suite",
   "templater-obsidian",
-  "preserve-blank-lines"
+  "preserve-blank-lines",
+  "better-export-pdf"
 ]

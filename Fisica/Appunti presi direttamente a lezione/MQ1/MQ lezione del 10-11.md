@@ -1,7 +1,7 @@
 
 VEDI SE SIA NECESSARIO AGGIUNGERE ROBE DALLE DISPENSE
 
-OSS: l'algebra dei momenti che abbiamo visto ieri ha a che fare con il gruppo $SU(2)$ e $SO(3)$, cioè ha a che fare con le rotazioni.
+OSS: L'algebra dei momenti che abbiamo visto ieri ha a che fare con il gruppo $SU(2)$ e $SO(3)$, cioè ha a che fare con le rotazioni.
 Per tale motivo ha senso usare le coordinate polari sferiche.
 Convenzione magne: $\varphi$ angolo azimutale, $\theta$ angolo (verticale?).
 $$
@@ -12,10 +12,7 @@ $$
 	\end{cases}
 $$
 Con $\theta \in[0,\pi]$, $\varphi \in[0,2\pi)$.
-
-FAI TUTTI I CONTI CON CALMA A CASA.
-
-Dobbiamo calcolare la matrice Jacobiana della trasformazione.
+Dobbiamo calcolare la matrice Jacobiana della trasformazione:
 $$
 	\begin{cases}
 	r=\sqrt{ x^2+y^2+z^2 } \\
@@ -52,7 +49,7 @@ $$
 **OSS:** $L_{z}$ assomiglia all'operatore impulso
 Posso calcolare anche $L_{x}$ e $L_{y}$:
 $$
-	L_{x}=i\hbar \left[ \sin \varphi \frac{ \partial  }{ \partial \theta } +\frac{\cos \varphi \cos \theta}{\sin \theta} \frac{ \partial y }{ \partial \varphi }  \right]
+	L_{x}=i\hbar \left[ \sin \varphi \frac{ \partial  }{ \partial \theta } +\frac{\cos \varphi \cos \theta}{\sin \theta} \frac{ \partial  }{ \partial \varphi }  \right]
 $$
 $$
 	L_{y}=-i\hbar\left[ \cos \varphi \frac{ \partial  }{ \partial \theta } -\frac{\sin \varphi \cos \theta}{\sin \theta} \frac{ \partial  }{ \partial \varphi }  \right]
@@ -70,11 +67,15 @@ Sulla base di queste considerazioni è anche vero che:
 $$
 	L_{-}=L^{\dagger}_{+}
 $$
-A questo punto ci manca $L^2$. Calcolandolo otteniamo:
+A questo punto ci manca $L^2$. Calcolandolo (applicando più volte $L_{x,y,z}$ ad una funzione di prova $f(\theta,\varphi)$) otteniamo:
 $$
 	L^2=-\hbar^2\left[ \frac{ \partial^2  }{ \partial \theta^2 } +\frac{\cos \theta}{\sin \theta} \frac{ \partial  }{ \partial \theta } +\frac{1}{\sin^2\theta} \frac{ \partial^2  }{ \partial \varphi^2 }  \right]
 $$
-Tutti gli operatori che si servono sono dunque:
+Alternativamente possiamo riscriverlo come:
+$$
+	L^2=-\hbar^2\left[ \frac{1}{\sin \varphi} \frac{ \partial  }{ \partial \theta } \left( \sin \theta \frac{ \partial  }{ \partial \theta }  \right) +\frac{1}{\sin^2\theta} \frac{ \partial  }{ \partial \varphi^2 } \right]
+$$
+Riassumendo, gli operatori che si servono sono:
 $$
 	\begin{cases}
 		L^2=-\hbar^2\left[ \frac{ \partial^2  }{ \partial \theta^2 } +\frac{\cos \theta}{\sin \theta} \frac{ \partial  }{ \partial \theta } +\frac{1}{\sin^2\theta} \frac{ \partial^2  }{ \partial \varphi^2 }  \right] \\
@@ -82,7 +83,10 @@ $$
 		L_{z}=-i\hbar \frac{ \partial  }{ \partial \varphi } 
 	\end{cases}
 $$
-Cerchiamo le autofunzioni di questi operatori.
+
+### Autofunzioni degli operatori momento angolare, le armoniche sferiche
+
+Cerchiamo le autofunzioni dell'operatore momento angolare.
 Per farlo, anzichè risolvere l'eq. diff., risolviamo il problema agli autovalori.
 
 **Caso $L_{z}$**.
@@ -104,9 +108,37 @@ $$
 Ma abbiamo detto di voler soltanto funzioni monodrome, dunque $m\in \mathbb{Z}$.
 I valori seminteri di $m$ non sono ammessi quando realizziamo l'algebra del momento angolare in termini di operatori differenziali su $S^2$.
 
-**Achtung!** Se scegliesi un valore semintero di $m$ il mio risultato varierebbe solo per una differenza di segno (cioè una differenza di fase), e abbiamo più volte detto che a meno di una differenza di fase due vattori $\ket{\alpha}$ e $e^{ i\theta }\ket{\alpha}$ rappresentano lo stesso stato! Allora dov'è il problema? In realtà il problema è molto più delicato ma il risultato finale è l'esclusione dei seminteri.
+**Achtung!** Se scegliesi un valore semintero di $m$ il mio risultato varierebbe solo per una differenza di segno (cioè una differenza di fase) ad ogni giro (come abbiamo visto a metodi). Abbiamo più volte detto che a meno di una differenza di fase due vattori $\ket{\alpha}$ e $e^{ i\theta }\ket{\alpha}$ rappresentano lo stesso stato! Allora dov'è il problema? In realtà il problema è molto più delicato ed è legato ai problemi che emergono dalla polidromia (usando valori seminteri manderei ogni $\varphi$ in due risultati $\pm f(\varphi)$), e ogni volta mi troverei a scegliere il valore corretto.
+Per dimostrare in maniera rigorosa che gli autovalori di $L_{z}$ possono assumere solo valori interi è possibile procedere in maniera algebrica.
 
-Ma l'algebra di $SO(3)$ (o $SU(2)$), cioè l'algebra del momento angolare, può essere realizzata con $j,m$ semi-interi in termini di MATRICI FINITE.
+
+___
+**Da Destri-Onofri, non necessario per esame:**
+
+Introduciamo i seguenti operatori:
+$$
+	\begin{cases}
+	a_{1}=\frac{1}{2}[x+p_{y}-i(y-p_{x})] \\
+	a_{2}=\frac{1}{2}[x-p_{y}+i(y+p_{x})]
+	\end{cases}
+$$
+Si può facilemente verificare che questi operatori soddisfano le relazioni di commutazione tipiche degli operatori di costruzione-distruzione che abbiamo visto per l'oscillatore armonico.
+$$
+	\begin{cases}
+	[a_{j},a_{k}]=0=[a_{j}^{\dagger}, a_{k}^{\dagger}] \\
+	[a_{j}, a_{k}^{\dagger}]=\delta_{jk}
+	\end{cases}
+$$
+Per questo il libro conclude in qualche modo che $a_{1}a_{1}^{\dagger}$ e $a_{2}a_{2}^{\dagger}$ hanno autovalori interi, il motivo non mi è chiarissimo e richiede studio ulteriore (prova a chiedere a Magnea).
+Tramite lunghi conti algebrici che qua omettiamo è possibile dimostrare che:
+$$
+	L_{z}=xp_{y}-yp_{x}=a_{1}a_{1}^{\dagger}-a_{2}a_{2}^{\dagger}
+$$
+Per questo motivo, gli autovalori di $L_{z}$ saranno $m=n_{1}-n_{2}$ con $n_{1},n_{2}$ numeri interi positivi. Dunque $m$ assumerà soltanto valori interi.
+___
+
+
+In realtà, l'algebra di $SO(3)$ (o $SU(2)$), cioè l'algebra del momento angolare, può essere realizzata con $j,m$ semi-interi in termini di matrici finite.
 Ad esempio:
 
 **Matrici di Pauli**
@@ -156,10 +188,12 @@ $$
 	L^2= 2\hbar \mathbb{1}
    $$
 Questo apre all'idea di funzioni d'onda vettoriali, con più di una componente, sulle quali agiscono queste matrici anzichè gli operatori differenziali.
+Per valori di $j,m$ impareremo a conoscere pertanto oggetti di natura diversa.
 
 **OSS:** le matrici di Pauli 2-d, a differenza di quelle 3-d, sono matrici complesse, pertanto acquisiscono senso soltanto nell'ambito della meccanica quantistica.
 
 ### Armoniche sferiche
+
 
 Definiamo:
 $$
@@ -168,7 +202,7 @@ $$
 $$
 	L_{\pm}\ket{l,m} =\sqrt{ l(l+1)-m(m\pm 1) } \ket{l,m\pm1} 
 $$
-Scegliamo di usare $L_{-}$ e usiamo il fatto che:
+Scegliamo di usare $L_{-}$ e sfruttiamo il fatto che:
 $$
 	L_{-}\ket{l-l} =0
 $$

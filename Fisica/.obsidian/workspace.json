@@ -4,21 +4,59 @@
     "type": "split",
     "children": [
       {
-        "id": "0d7cf2f93f69572c",
+        "id": "1bc53244ae283e9a",
         "type": "tabs",
         "children": [
           {
-            "id": "b965fed19ff8042d",
+            "id": "c0d287a99daf8bdd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Fisica della computazione lezione dell'11-11.md",
+                "file": "Armoniche Sferiche.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Fisica della computazione lezione dell'11-11"
+              "title": "Armoniche Sferiche"
+            }
+          },
+          {
+            "id": "f2722386dbb3efdc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Appunti presi direttamente a lezione/MQ1/MQ lezione dell'11-11.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "MQ lezione dell'11-11"
+            }
+          },
+          {
+            "id": "e8a736186b69afc7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Destructured Notes/Destructured Metodi 2/Continuazione di Gamma usando la Beta.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Continuazione di Gamma usando la Beta"
+            }
+          },
+          {
+            "id": "8ec0f90c78a8cd34",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -186,44 +224,44 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "b965fed19ff8042d",
+  "active": "c0d287a99daf8bdd",
   "lastOpenFiles": [
-    "Pasted image 20261111170408.png",
-    "Pasted image 20261111164753.png",
-    "Pasted image 20261111163741.png",
-    "Pasted image 20261111163455.png",
-    "Pasted image 20261111163355.png",
-    "Pasted image 20261111163042.png",
-    "Pasted image 20261111162506.png",
-    "Pasted image 20261111162328.png",
-    "Pasted image 20261111162221.png",
-    "Pasted image 20261111162208.png",
-    "Fisica della computazione lezione dell'11-11.md",
-    "Metodi 2 lezione del 9-11.md",
-    "Metodi 2 lezione dell'11-11.md",
-    "Pasted image 20261111145759.png",
-    "MQ lezione del 10-11.md",
-    "Appunti presi direttamente a lezione/Metodi/Metodi 2 lezione del 6-11.md",
-    "Destructured Notes/Destructured Metodi 2/Definizione della funzione Gamma.md",
-    "Uni/Uni Terzo Anno/Metodi 2/4.Funzione Gamma di Eulero.md",
-    "MQ lezione dell'11-11.md",
-    "Gal2 lezione del 10-11.md",
-    "Appunti presi direttamente a lezione/Gal/Gal 2 lezione del 6-11.md",
-    "MQ lezione del 9-11.md",
-    "Destructured Notes/Destructured MQ1/Proprietà dei commutatori.md",
+    "Autofunzioni del momento angolare, armoniche sferiche.md",
+    "Armoniche Sferiche.md",
+    "Appunti presi direttamente a lezione/MQ1/MQ lezione dell'11-11.md",
     "Destructured Notes/Destructured Metodi 2/Continuazione di Gamma usando la Beta.md",
+    "Matrici di Pauli.md",
+    "Appunti presi direttamente a lezione/MQ1/MQ lezione del 10-11.md",
+    "Uni/Uni Terzo Anno/MQ 1/8. Momento angolare in meccanica quantistica.md",
+    "Uni/Uni Terzo Anno/Metodi 2/4.Funzione Gamma di Eulero.md",
     "Destructured Notes/Destructured Metodi 2/Definizione della Beta di Eulero.md",
     "Uni/Uni Terzo Anno/Metodi 2/0. Metodi 2.md",
+    "Autovalori del momento angolare ed operatori gradino.md",
     "Destructured Notes/Destructured MQ1/Commutatori e relazioni di indeterminazione.md",
+    "Momento angolare in coordinate sferiche.md",
+    "Algebra del momento angolare.md",
     "Uni/Uni Terzo Anno/MQ 1/6.Principi Fondativi della meccanica quantistica.md",
-    "Appunti presi direttamente a lezione/MQ1/MQ lezione del 3 novembre.md",
-    "Appunti presi direttamente a lezione/MQ1/MQ lezione del 2-11.md",
-    "Appunti presi direttamente a lezione/MQ1/MQ lezione del 30-10-26.md",
-    "Appunti presi direttamente a lezione/MQ1/Esercitazione MQ 4-11.md",
-    "Uni/Uni Terzo Anno/Metodi 2/7. Sviluppi Asintotici.md",
-    "Destructured Notes/Destructured Metodi 2/Metodo di Laplace per lo studio asintotico di integrali (in campo reale).md",
-    "Destructured Notes/Destructured Metodi 2/Continuazione analitica per ricorrenza fattoriale e poli della funzione Gamma.md",
-    "Destructured Notes/Destructured MQ1/Indeterminazione Energia-Tempo.md",
+    "Uni/Uni Terzo Anno/MQ 1/0. Meccanica quantistica 1.md",
+    "Appunti presi direttamente a lezione/MQ1/MQ lezione del 9-11.md",
+    "Uni/Uni Terzo Anno/MQ 1/7. Oscillatore armonico quantistico (con la teoria degli operatori).md",
+    "Uni/Uni Terzo Anno/Intro alla Probabilità/3.Processi di ramificazione.md",
+    "Uni/Uni Terzo Anno/Intro alla Probabilità/4.Distribuzioni di Probabilità continue (di variabili aleatorie).md",
+    "Uni/Uni Terzo Anno/Intro alla Probabilità/6.Catene di Markov discrete.md",
+    "Uni/Uni Terzo Anno/Intro alla Probabilità/5. Moto Browniano e Random Walk.md",
+    "Uni/Uni Terzo Anno/Intro alla Probabilità/1.Introduzione e concetti base di teoria della probabilità.md",
+    "Uni/Uni Terzo Anno/Intro alla Probabilità/2.Probabilità condizionata.md",
+    "Destructured Notes/Destructured intro alla probabilità/Probabilità marginale, correlazione e indipendenza.md",
+    "Uni/Uni Terzo Anno/Metodi 2/5. Funzione Digamma.md",
+    "immagini/Pasted image 20261112111641.png",
+    "immagini/Pasted image 20261112155440.png",
+    "immagini/Pasted image 20261112155340.png",
+    "immagini/Pasted image 20261112154720.png",
+    "immagini/Pasted image 20261111170408.png",
+    "immagini/Pasted image 20261111135654.png",
+    "immagini/Pasted image 20261111164753.png",
+    "immagini/Pasted image 20261111163741.png",
+    "immagini/Pasted image 20261111163455.png",
+    "immagini/Pasted image 20261111163355.png",
     "Unicità",
     "Appunti presi direttamente a lezione/MQ1",
     "Appunti presi direttamente a lezione/Metodi",

@@ -173,4 +173,23 @@ $$
 $$
 Abbiamo verificato che la funzione che minimizza l'incertezza è il pacchetto gaussiano.
 
+**Es:** Indeterminazione su operatori Hermitiani ma non Autoaggiunti:
+Particella in moto su un cerchio $S^1$, posso fissare il raggio WLOG, ad esempio $R=1$.
+$$
+	\mathcal{H} \sim L^2(S^1) \qquad x\in[0,2\pi)
+$$
+Sul cerchio devo richiedere l'ulteriore condizione di periodicità per non avere ramificazioni.
+Considero:
+$$
+	\psi_{n}(x) \propto e^{ inx }\quad \text{autofunzioni di } \quad p=-i\hbar \frac{d}{dx}
+$$
+Achtung! Sto lavorando con degli angoli in realtà. Quindi questa non è propriamente la quantità di moto.
+Dunque:
+$$
+	-i\hbar \frac{d\psi_{n}}{dx}=\hbar n \psi_{n}(x)\to p_{n}=\hbar n, \; \Delta_{n}p=0
+$$
+...MA... $\Delta_{n}x\leq 2\pi\implies \Delta_{n}x\cdot \Delta_{n}p=0$ e ho una violazione del principio di indeterminazione.
+Il motivo è che $e^{ inx } \not\in \mathcal{D}(x)$ perchè $x\psi_{n}(x)=xe^{ inx }$ non è periodico. 
+Si tratta di stati che non soddisfano le ipotesi delle relazioni di indeterminazioni, cioè $\ket{n}\in\mathcal{D}(x)\cap \mathcal{D}(p)$. Per questo motivo l'assenza di indeterminazione non è un problema.
+
 **Lezione Associata**: [[6.Principi Fondativi della meccanica quantistica]]

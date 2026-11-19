@@ -44,8 +44,7 @@ $$
 $$
 Adesso $x$, $p$ e $H$ sono operatori e $[x,p]=i\hbar$.
 Devo costruire un ICOC, qual è l'osservabile piuù furba per costruire il nostro ICOC?
-A noi interessa lo studio di stati stazionari $\implies$ ICOC: $\{ H \}$
-RIVEDI QUESTA AFFERMAZIONE
+A noi interessa lo studio di stati stazionari in una dimensione, sappiamo che ogni stato stazionario è completamente definito dalla sua energia. Ha dunque scegliere come ICOC il solo operatore Hamiltoniano: $\{ H \}$.
 
 Riscrivo l'equazione agli autovalori:
 $$
@@ -58,13 +57,13 @@ Osservazioni preliminari:
 - $E_{n}>0$ $\forall n$:
 $$
 	\begin{aligned}
-	E_{n}&=\bra{n} H \ket{n} = \frac{1}{2m} \bra{n} p^2 \ket{n} + \frac{1}{2}m\omega^2 \bra{n} x \ket{n} \\
+	E_{n}&=\bra{n} H \ket{n} = \frac{1}{2m} \bra{n} p^2 \ket{n} + \frac{1}{2}m\omega^2 \bra{n} x^2 \ket{n} \\
 	&=\frac{1}{2m}[(\Delta_{n}p)^2+\bra{n} p\ket{n} ^2]+\frac{1}{2} m\omega^2 [(\Delta_{n}x)^2+\bra{n} x\ket{n} ^2]\geq \frac{1}{2m}(\Delta_{n}p)^2+ \frac{1}{2 }m\omega^2 (\Delta_{n}x)^2>0
 	\end{aligned}
   $$
   L'ultima disuguaglianza è data dal principio di indeterminazione
   
-Qual è il valore minimo di energia compatibile? Continuo la catena di disuguaglianze:
+Qual è il valore minimo di energia compatibile? Continuando la catena di disuguaglianze otteniamo:
 $$
 	E_{n}\geq \frac{1}{2m} (\Delta_{n}p)^2+\frac{1}{2} m\omega^2 \frac{\hbar^2}{4(\Delta_{n}p)^2}
 $$
@@ -84,9 +83,9 @@ $$
 Possiamo trovare lo stesso risultato partendo dal commutatore (infatti il commutatore è quello che mi da il principio di indeterminazione).
 $$
 	\begin{aligned}
-	E_{n}&=\bra{n} H \ket{n} = \frac{1}{2m} \bra{n} p^2 \ket{n} + \frac{1}{2}m\omega^2 \bra{n} x \ket{n} \\
+	E_{n}&=\bra{n} H \ket{n} = \frac{1}{2m} \bra{n} p^2 \ket{n} + \frac{1}{2}m\omega^2 \bra{n} x^2 \ket{n} \\
 	&= \frac{1}{2m} \sum_{k} [ \bra{n}p\ket{k} \bra{k} p\ket{n} +m^2\omega^2 \bra{n} x\ket{k} \bra{k} x\ket{n}  ]\\
-	&= \frac{1}{2m} \sum_{k} \left[ |\bra{n} p\ket{k} |^2+m^2 \omega^2 |\bra{n} x\ket{k} |^2 \right] \overset{?}{=}0\iff \bra{n} p\ket{n} =\bra{n} x\ket{p} =0\; \forall \ket{k} 
+	&= \frac{1}{2m} \sum_{k} \left[ |\bra{n} p\ket{k} |^2+m^2 \omega^2 |\bra{n} x\ket{k} |^2 \right] \overset{?}{=}0\iff \bra{n} p\ket{k} =\bra{n} x\ket{k} =0\; \forall \ket{k} 
 	\end{aligned}
 $$
 Ora sfrutto il commutatore:
@@ -100,7 +99,7 @@ Dunque $E_{n}$ è necessariamente diverso (maggiore) di $0$.
 $$
 	\begin{cases}
 	[x,H]= i\hbar \frac{p}{m} \\
-	[p,H]= -i\hbar m\omega^2x \quad \text{DIMOSTRA}
+	[p,H]= -i\hbar m\omega^2x 
 	\end{cases}
 $$
   Guardiamo come sono fatti gli elementi di matrice dei commutatori:  
@@ -135,7 +134,7 @@ $$
 $$
 	i\hbar = \bra{n_{0}} [x,p]\ket{n_{0}}= \sum_{k} [\bra{n_{0}} x \ket{k} \bra{k} p\ket{n_{0}}-\bra{n_{0}} p\ket{k} \bra{k} x \ket{n_{0}}   ]=0  
   $$
-### Soluzione
+### Soluzione all'oscillatore armonico
 
 Per comodità definisco una nuova Hamiltoniana adimensionale:
 $$
@@ -173,7 +172,7 @@ $$
 	[\mathcal{H},a^{\dagger}]=a^{\dagger}
 	\end{cases}
 $$
-Preso un qualunque stato $\ket{l}$ posso considerare un nuovo stato $a^{\dagger}\ket{l}$. Cosa so sull'energia di questo nuovo stato? Per studiarlo ci faccio agire sopre l'Hamiltoniana:
+Preso un qualunque stato $\ket{l}$ posso considerare un nuovo stato $a^{\dagger}\ket{l}$. Cosa so sull'energia di questo nuovo stato? Per studiarlo ci faccio agire sopra l'Hamiltoniana:
 $$
 	\begin{aligned}
 	\mathcal{H}[a^{\dagger}\ket{l} ]&= [a^{\dagger}\mathcal{H}+a^{\dagger}]\ket{l} =(\varepsilon_{l}+1)(a^{\dagger}\ket{l} )\\
@@ -190,7 +189,7 @@ $$
 $$
 Dunque $\varepsilon_{0}=\frac{1}{2}$, cioè $E_{0}=\frac{1}{2}\hbar \omega$.
 $$
-	\varepsilon_{n}=\left( n+\frac{1}{2} \right) \implies E_{n}\left( n+\frac{1}{2} \right)\hbar \omega
+	\varepsilon_{n}=\left( n+\frac{1}{2} \right) \implies E_{n}=\left( n+\frac{1}{2} \right)\hbar \omega
 $$
 **Studio di $a$ e $a^{\dagger}$**
 
@@ -202,20 +201,19 @@ $$
 $$
 Dunque:
 $$
-	(\varepsilon_{k}-(\varepsilon_{l}+1))=\bra{k} a^{\dagger}\ket{l} =0
+	(\varepsilon_{k}-(\varepsilon_{l}+1))\bra{k} a^{\dagger}\ket{l} =0
 $$
 Dunque $\bra{k}a^{\dagger}\ket{l}=0$ tranne se $\varepsilon_{k}=\varepsilon_{l+1}\implies k=l+1$.
-Trovo un analogo per $a$ (completa a casa).
-$\bra{k}a\ket{l}=0$ a meno che $k=l-1$.
-E vale:
+Analogamente per $a$ si trova che $\bra{k}a\ket{l}=0$ a meno che $k=l-1$. Cioè:
 $$
-	\bra{l+1} a^{\dagger} \ket{l} ^* = \bra{l} a \ket{l+1} 
+		\bra{k} a \ket{l}  = \lambda_{l} \delta_{k,l-1}
 $$
-Posso riscrivere queste cose come:
+Con $\lambda_{l}$ autovalore di $a$ per lo stato $\ket{l}$.
+Per definizione di autoaggiunta vale:
 $$
-	\bra{k} a \ket{l}  = \lambda_{l} \delta_{k,l-1}
+	\bra{l+1} a^{\dagger} \ket{l} = \bra{l} a \ket{l+1} ^*
 $$
-e:
+Dunque:
 $$
 	\bra{k} a \ket{l} ^* = \bra{l} a^{\dagger} \ket{k} = \lambda_{l}^* \delta_{k,l-1}
 $$
@@ -246,14 +244,14 @@ $$
 	0 & 0 & \sqrt{ 3 } & \cdot & \cdot & \cdot
 	\end{pmatrix}
 $$
-Ora posso trovare la matrice che rappresenta $\mathcal{H}$ e quelle che rappresentano $p$ e $x$:
+Ora posso trovare la matrice che rappresenta $\mathcal{H}$ (è la matrice diagonale con elementi $\varepsilon_{n}$) e quelle che rappresentano $p$ e $x$:
 $$
 	\begin{cases}
 	p=\sqrt{ \frac{m\hbar \omega}{2} } (a+a^{\dagger}) \\
 	x= -i\sqrt{ \frac{\hbar}{2m\omega} }(a^{\dagger}-a)
 	\end{cases}
 $$
-Entrambe hanno diagonale nulla, dunque:
+Entrambe hanno diagonale nulla (somma di due matrici con diagonale nulla), dunque:
 $$
 	\bra{n} p\ket{n} =\bra{n} x \ket{n} =0
 $$

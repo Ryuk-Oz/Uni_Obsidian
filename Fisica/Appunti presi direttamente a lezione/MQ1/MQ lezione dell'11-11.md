@@ -1,6 +1,5 @@
 
 Continuiamo a trattare le armoniche sferiche
-
 $$
 	Y^{-l}_{l}(\theta,\varphi)= \frac{1}{2^l l!} \sqrt{ \frac{(2l+1)!}{4\pi} } (\sin \theta)^l e^{ -il }
 $$
