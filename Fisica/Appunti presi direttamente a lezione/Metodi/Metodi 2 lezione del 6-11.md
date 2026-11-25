@@ -158,3 +158,5 @@ $$
 	I(t) = e^{ tf(x_{0}) } \int^{b-x_{0}}_{a-x_{0}} dw \, e^{ -(t/2)f''(x_{0})w^2 } \underbrace{H(x,t)}_{g_{0}+\sum^\infty_{l=1} h_{l}(t)w^l}
 $$
 Ho un integrale contenente un fattore gaussiano.
+
+

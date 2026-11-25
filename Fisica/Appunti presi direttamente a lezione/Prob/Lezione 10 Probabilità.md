@@ -1,7 +1,7 @@
 
 ### Proprietà delle catene di Markov
 
-- una catena è detta reversibile se la probabilità di ossevrare una certa sequenza $P(x_{0},x_{1},\dots,x_{n})$ è uguale alla probabilità della sequenza inversa $P(x_{n},\dots \times_{1},x_{0})$.
+- una catena è detta reversibile se la probabilità di ossevare una certa sequenza $P(x_{0},x_{1},\dots,x_{n})$ è uguale alla probabilità della sequenza inversa $P(x_{n},\dots \times_{1},x_{0})$.
   Questo equivale a chiedere il cosìdetto bilancio dettagliato, cioè:
 $$
 	\forall i,j \quad \pi_{i}W_{ij}=\pi_{j}W_{ji}
@@ -211,7 +211,7 @@ $$
 $$
 Separo in 2 la sommatoria:
 $$
-	\sum^\infty_{n=2} n p^{n-1} q=q \frac{d}{dp} \sum p^n = q \frac{d}{dp} \left[ \frac{1}{1-p} \right]=q\left( \frac{1}{(1-p)^2}-1 \right)=q\left( \frac{1}{q^2}-1 \right)=\frac{1}{q}-q
+	\sum^\infty_{n=2} n p^{n-1} q=q \frac{d}{dp} \sum_{n=2} p^n = q \frac{d}{dp} \left[ \frac{1}{1-p} -1-p \right]=q\left( \frac{1}{(1-p)^2}-1 \right)=q\left( \frac{1}{q^2}-1 \right)=\frac{1}{q}-q
 $$
 L'altra metà si calcola per simmetria.
 Così otteniamo:

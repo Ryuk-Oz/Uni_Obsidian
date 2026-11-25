@@ -41,7 +41,7 @@ $$
 	\end{cases}
 $$
 Cioè, nell'intorno di un punto stazionario di una funzione analitica $f$, nè la parte reale, nè la parte immaginaria di $f$ hanno un massimo o un minimo, hanno bensì un **punto a sella**. Il fatto che io veda un massimo o un minimo dipende dalla fase ($\alpha+2\varphi$) con cui attraverso $z_{0}$.
-Noi sappiamo studiare bene funzioni reali attorno a un massimo, allora per studiare l'andamento di $\mathrm{Re}f(z)$ ci interessa il caso in cui $\cos(\alpha+2\varphi)<0$. 
+Noi sappiamo studiare bene funzioni reali attorno a un massimo, allora per studiare l'andamento di $\mathrm{Re}f(z)$ ci interessa il caso in cui $\mathrm{Re}f(z_{0})>\mathrm{Re}f(z)$, cioè il caso in cui $\cos(\alpha+2\varphi)<0$. 
 La scelta migliore che possiamo fare è attraversare l'intervallo con la fase data da:
 $$
 	\cos(\alpha+2\varphi)=-1\implies \alpha+2\varphi=\pi+2k\pi
@@ -63,7 +63,7 @@ $$
 $$
 Quello che fa $f(x)$ è cambiare il "tasso" con cui l'argomento dell'integrale oscilla, e il risultato è sempre nullo.
 Questo è apparentemente problematico. A cosa mi serve studiare il max della parte reale se poi l'argomento preso tutto insieme oscilla?
-...MA... per gli angoli nei quali $\cos(\alpha+2\varphi)=-1$, ho che la parte immaginaria è stazionaria ed il contributo è puramente reale.
+Se prendo il caso specifico degli angoli nei quali $\cos(\alpha+2\varphi)=-1$, ho che la parte immaginaria di $f(z)$ è stazionaria ed il contributo diventa puramente reale, non ho più il problema dell'oscillazione di cui prima.
 
 Come abbiamo visto nel caso reale, l'unico contributo significativo dello sviluppo è dato dall'intorno del massimo. Dunque:
 
@@ -88,7 +88,8 @@ Dunque:
 $$
 	I(t)\sim\int^\delta_{-\delta} e^{ i\varphi } d\rho\, e^{ tf(z_{0}) }e^{ -tA\rho^2 }e^{ t\sum^\infty_{l=3} f_{l}\rho^l e^{ il\varphi } }\left( g(z_{0})+\sum^\infty_{k=1}g_{k}\rho^ke^{ ik\varphi } \right)
 $$
-Come abbiamo già fatto nel caso reale, questo $\sim \int^\infty_{-\infty}\dots$
+Da qua in poi procediamo come quanto fatto con il metodo di Laplace: 
+$I(t)\sim \int^\infty_{-\infty}\dots$
 $$
 	I(t)\sim e^{ i\varphi }e^{ tf(z_{0}) }\int^\infty_{-\infty}d\rho e^{ -tA\rho^2 }(1+\dots)(g(z_{0})+\dots)
 $$
@@ -162,7 +163,7 @@ $$
 $$
 	I(t)=\int^\delta_{-\delta} e^{ i 3\pi/4 }d\rho \,e^{ it } e^{ -t/2 \, \rho^2}e^{ t(\dots) }e^{ i\pi/2 \, (-\nu-1)}(1+\rho e^{ i\pi/4 })^{-\nu-1}
 $$
-Mi interessa solo il primo ordine (fai i calcoli completi a csa):
+Mi interessa solo il primo ordine e ottengo:
 $$
 	I(t)\sim e^{ i\pi/4 } e^{ i\pi/2 \; \nu}e^{ it } \sqrt{ \frac{2\pi}{t} }
 $$

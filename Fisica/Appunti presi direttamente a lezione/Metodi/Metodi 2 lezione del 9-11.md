@@ -158,7 +158,7 @@ L'ordine successivo, a meno di errori di conto, dovrebbe essere $-\frac{15}{228}
 a $+\infty$ e $-\infty$ gli andamenti sono significativamente diversi.
 
 
-### Formula di stirling
+### Formula di Stirling
 
 Parto dalla funzione $\Gamma$:
 $$

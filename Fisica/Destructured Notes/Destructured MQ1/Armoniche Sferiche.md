@@ -62,7 +62,7 @@ $$
 Normalizziamola:
 $$
 	\begin{aligned}
-	1&=\underbrace{(Y^{-l}_{l}, Y^{-l}_{l})}_{\iff \braket{ l,-l | l,-l } =1}= |N|^2 \int^1_{-1}d\cos \theta \int^{2\pi}_{0} d\varphi\, (\sin \theta)^2l=\\
+	1&=\underbrace{(Y^{-l}_{l}, Y^{-l}_{l})}_{\iff \braket{ l,-l | l,-l } =1}= |N|^2 \int^1_{-1}d\cos \theta \int^{2\pi}_{0} d\varphi\, (\sin \theta)^{2l}=\\
 	&=|N|^2 2\pi \int^1_{-1} dx\, (1-x^2)^{l}
 	\end{aligned}
 $$
@@ -70,11 +70,11 @@ con un cambio di variabili intelligente: $t=\frac{1+x}{2}\implies x=2t-1$,
 $\begin{cases}(1-x)=2(1-t) \\  (1+x)=2t\end{cases}\quad dx=2tdt$
 Arriviamo a:
 $$
-	1=2\pi |N|^2 2^{2l+1} \underbrace{\int^1_{0} dt\, t^l (1-t)^l}_{B(l+1,l+1)}=2\pi |N|^2 2^{2l} \frac{(l!)^2}{(2l+1)!}
+	1=2\pi |N|^2 2^{2l+1} \underbrace{\int^1_{0} dt\, t^l (1-t)^l}_{B(l+1,l+1)}=4\pi |N|^2 2^{2l} \frac{(l!)^2}{(2l+1)!}
 $$
 E troviamo:
 $$
-	Y^{-l}_{l}(\theta,\varphi)= \frac{1}{2^l l!} \sqrt{ \frac{(2l+1)!}{4\pi} } (\sin \theta)^l e^{ -il }
+	Y^{-l}_{l}(\theta,\varphi)= \frac{1}{2^l l!} \sqrt{ \frac{(2l+1)!}{4\pi} } (\sin \theta)^l e^{ -il \varphi}
 $$
 Le armoniche successive si costruiscono mediante l'operatore gradino.
 $$
@@ -99,7 +99,7 @@ $$
 $$
 Se volessimo calcolare in maniera esplicita le armoniche sferiche, dovremmo fare uso dei Polinomi di Legendre.
 
-Anche per i polinomi di Legendre esiste una formula di Rodrigues:ù
+Anche per i polinomi di Legendre esiste una formula di Rodrigues:
 $$
 	P_{l}(x)=\frac{1}{2^l l!}\left( \frac{d}{dx} \right)^l (x^2-1)^l
 $$
